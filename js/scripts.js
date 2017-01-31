@@ -646,8 +646,19 @@ $(document).ready(function() {
 
       };
 
-       $(window).scroll(scrollFunction);
-          
+        // We want the scrollFunction() to fire, at most, three times per second.
+        //$(window).scroll(scrollFunction);
+        window.did_scroll = 0;
+        $(window).scroll(scrollFunctionWrapper);
+        function scrollFunctionWrapper() { did_scroll = 1; }
+        setInterval(function()
+        {
+            if ( did_scroll == 1 )
+            {
+                did_scroll = 0;
+                scrollFunction();
+            }
+        }, 1000);
 
   });
 
