@@ -274,7 +274,7 @@ $(document).ready(function() {
     };
 
     function onEachFeature2(feature, layer) {
-        layer.bindPopup(feature.properties.stations + "<br><span style='color: #FFFAC0; font-weight: bold; font-size: 15px; text-align: center; text-transform: uppercase'>No articles for this stop</span>", {offset:new L.Point(0,0)});
+        layer.bindPopup(feature.properties.stations + "<br><span style='color: #00FAC0; font-weight: bold; font-size: 15px; text-align: center; text-transform: uppercase'>No articles for this stop</span>", {offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         if (windowWidth > 480) {    
           layer.on('mouseover', function(e){
@@ -311,6 +311,7 @@ $(document).ready(function() {
         $(".popup-back").width(popup_width)
         $(".popup-back").height(popup_height)
         var windowWidth = $(window).width();
+        //window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + selected.toLowerCase().replace(' ', '-'));
         // if (windowWidth > 480) {
                 geojson_stop.setStyle(style_stop);
                 var layer = e.target;
@@ -505,11 +506,17 @@ $(document).ready(function() {
     };
 
 
+    // If someone clicks on a subway line at the top of the screen
     $(".legend").click(function (){
         line_selected = $(this).attr("id");
+        clickLegend(line_selected);
+    });
+
+    function clickLegend(value){
         if ($.inArray(line_selected,lines_no) == -1) {
         for (i=0;i<rss.length;i++) {
           if (rss[i].line == line_selected) {
+            window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + line_selected);
             json_selected = rss[i].link;
             $(".logo_box").removeClass("selected");
             $(this).closest(".logo_box").addClass("selected");
@@ -517,7 +524,7 @@ $(document).ready(function() {
         }
           loadMap(line_selected, json_selected);
         }
-    });
+    }
 
     loadMap(line_selected, json_selected);
 
