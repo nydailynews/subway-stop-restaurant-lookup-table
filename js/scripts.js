@@ -31,18 +31,20 @@ $(document).ready(function() {
     {"line":"M", "link":"http://www.nydailynews.com/json/cmlink/eating-m-line-1.2761327"},
     {"line":"G", "link":"http://www.nydailynews.com/json/cmlink/eating-g-line-1.2761325"},
     {"line":"A", "link":"http://www.nydailynews.com/json/cmlink/eating-a-line-1.2761311"},
-    {"line":"2", "link":"http://www.nydailynews.com/json/cmlink/eating-2-line-1.2734246"}
+    {"line":"2", "link":"http://www.nydailynews.com/json/cmlink/eating-2-line-1.2734246"},
+    {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"}
   ]
 
    var cover = [
-    {"line":"N", "image":"img/N_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"7", "image":"img/7_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"Q", "image":"img/Q_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"4", "image":"img/4_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"M", "image":"img/M_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"G", "image":"img/G_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"A", "image":"img/A_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."},
-    {"line":"2", "image":"img/2_Train-min.jpg","text":"Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks. Cool off during the dog days of summer with a trip to the park with your pup. Make sure that both you and your dog have the key essentials—water, coffee, bathrooms and shade—by checking out our interactive map to the City’s best dog parks."}
+    {"line":"N", "image":"img/N_Train-min.jpg","text":""},
+    {"line":"7", "image":"img/7_Train-min.jpg","text":""},
+    {"line":"Q", "image":"img/Q_Train-min.jpg","text":""},
+    {"line":"4", "image":"img/4_Train-min.jpg","text":""},
+    {"line":"M", "image":"img/M_Train-min.jpg","text":""},
+    {"line":"G", "image":"img/G_Train-min.jpg","text":""},
+    {"line":"A", "image":"img/A_Train-min.jpg","text":""},
+    {"line":"2", "image":"img/2_Train-min.jpg","text":""},
+    {"line":"J", "image":"img/J_Train-min.jpg","text":""}
   ]
 
 
@@ -65,7 +67,8 @@ $(document).ready(function() {
     {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av"]},
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
-    {"line":"2", "upper":["149th St - Grand Concourse"]}
+    {"line":"2", "upper":["149th St - Grand Concourse"]},
+    {"line":"J", "upper":[""]}
   ]
 
   for (i=0;i<rss.length;i++) {
@@ -75,7 +78,7 @@ $(document).ready(function() {
   }
 
     var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L','S']
-    var lines_no = ['1','3','5','6','C','E','B','D','F','R','J','Z','L','S']
+    var lines_no = ['1','3','5','6','C','E','B','D','F','R','Z','L','S']
 
     for (i=0; i<lines.length; i++) {
         $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png"</div>')
@@ -116,7 +119,7 @@ $(document).ready(function() {
           attribution: 'Mapbox',
           maxZoom: 20,
           minZoom: 13,
-          //token: 'pk.eyJ1Ijoibnlkbm1hcHMiLCJhIjoiM1dZem9aWSJ9.x22rTAWkRpNy2bOTlVe1jg',
+          //token: '',
       }).addTo(map);
 
     L.control.zoom ({
