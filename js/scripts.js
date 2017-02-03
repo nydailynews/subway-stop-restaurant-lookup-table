@@ -59,6 +59,7 @@ $(document).ready(function() {
   //   {"line":"2", "link":"data/rss-2.json"}
   // ]
 
+  // These are the stations that have labels that need to be angled up
   var labels = [
     {"line":"N", "upper":["57th St"]},
     {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "46th St", "Junction Blvd", "Woodside - 61st St", "74th St - Broadway", "90th St - Elmhurst Av", "40th St"]},
@@ -68,7 +69,7 @@ $(document).ready(function() {
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
     {"line":"2", "upper":["149th St - Grand Concourse"]},
-    {"line":"J", "upper":[""]}
+    {"line":"J", "upper":["Halsey St", "Chauncey St", "Broadway Junction"]}
   ]
 
   for (i=0;i<rss.length;i++) {
@@ -274,7 +275,7 @@ $(document).ready(function() {
     };
 
     function onEachFeature2(feature, layer) {
-        layer.bindPopup(feature.properties.stations + "<br><span style='color: #FFFAC0; font-weight: bold; font-size: 15px; text-align: center; text-transform: uppercase'>No articles for this stop</span>", {offset:new L.Point(0,0)});
+        layer.bindPopup(feature.properties.stations + "<br><span style='color: #00FAC0; font-weight: bold; font-size: 15px; text-align: center; text-transform: uppercase'>No articles for this stop</span>", {offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         if (windowWidth > 480) {    
           layer.on('mouseover', function(e){
@@ -311,6 +312,7 @@ $(document).ready(function() {
         $(".popup-back").width(popup_width)
         $(".popup-back").height(popup_height)
         var windowWidth = $(window).width();
+        //window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + selected.toLowerCase().replace(' ', '-'));
         // if (windowWidth > 480) {
                 geojson_stop.setStyle(style_stop);
                 var layer = e.target;
@@ -445,6 +447,10 @@ $(document).ready(function() {
             if (labels[p].line == line_selected) {
                 for (i = 0; i < selected_stops.length; i++) {
                   selected.push(selected_stops[i].properties.stations)
+                  // This logic determines if subway stop labels appear horizontal
+                  // or turned up at an angle. This is necessary to fix situations
+                  // where labels overlap.
+                  // This logic looks for whether the subway station is listed in the subway line's 'upper' array.
                   if ($.inArray(selected_stops[i].properties.stations,labels[p].upper) == -1) {
                     loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);
                   } else {
@@ -505,20 +511,32 @@ $(document).ready(function() {
     };
 
 
+    // If someone clicks on a subway line at the top of the screen
     $(".legend").click(function (){
         line_selected = $(this).attr("id");
-        if ($.inArray(line_selected,lines_no) == -1) {
+        clickLegend(line_selected);
+    });
+
+    function clickLegend(value){
+        if ($.inArray(value,lines_no) == -1) {
         for (i=0;i<rss.length;i++) {
-          if (rss[i].line == line_selected) {
+          if (rss[i].line == value) {
+            window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
             json_selected = rss[i].link;
             $(".logo_box").removeClass("selected");
             $(this).closest(".logo_box").addClass("selected");
           }
         }
-          loadMap(line_selected, json_selected);
+          loadMap(value, json_selected);
         }
-    });
+    }
 
+    // Runs the first time the page loads
+    if ( window.location.hash !== '' )
+    {
+        // Parse out the pieces of the hash, which we use for permanent links
+        line_selected = window.location.hash[1];
+    }
     loadMap(line_selected, json_selected);
 
 
