@@ -13,6 +13,12 @@ $(document).ready(function() {
     var line_selected = $.bbq.getState("line");
   } else {
     var line_selected = "N"
+    // Runs the first time the page loads
+    if ( window.location.hash !== '' )
+    {
+        // Parse out the pieces of the hash, which we use for permanent links
+        line_selected = window.location.hash[1];
+    }
   }
   var json_selected;
   var cover_height;
@@ -531,12 +537,6 @@ $(document).ready(function() {
         }
     }
 
-    // Runs the first time the page loads
-    if ( window.location.hash !== '' )
-    {
-        // Parse out the pieces of the hash, which we use for permanent links
-        line_selected = window.location.hash[1];
-    }
     loadMap(line_selected, json_selected);
 
 
