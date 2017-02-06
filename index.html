@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html class="no-js" lang="en">
   <head>
 
@@ -65,23 +65,20 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 
  <!-- ads -->
         <script>
-         //if( !/Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {  
           var googletag = googletag || {};
           googletag.cmd = googletag.cmd || [];
           (function() {
           var gads = document.createElement('script');
           gads.async = true;
-          gads.type = 'text/javascript';
           var useSSL = 'https:' == document.location.protocol;
-          gads.src = (useSSL ? 'https:' : 'http:') + 
-          '//www.googletagservices.com/tag/js/gpt.js';
+          gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
           var node = document.getElementsByTagName('script')[0];
           node.parentNode.insertBefore(gads, node);
           })();
-        //  }
+          var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         </script>
         <script>
-      if( !/Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
           .setTargeting("interactive","dog-park-nyc")
@@ -91,9 +88,8 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
           });
         }
         </script>
-        
         <script>
-      if( !/Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      if( !is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
           .setTargeting("interactive","dog-park-nyc")
@@ -106,9 +102,8 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 
         
         <!-- mobile ad -->
-
         <script>
-         if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {         
+      if( is_mobile ) {
           var googletag = googletag || {};
           googletag.cmd = googletag.cmd || [];
           (function() {
@@ -124,7 +119,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
           }
         </script>
         <script>
-        if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {        
+      if( is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
           .setTargeting("interactive","dog-park-nyc")
@@ -136,7 +131,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
         </script>  
 
         <script>
-        if( /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {        
+      if( is_mobile ) {
           googletag.cmd.push(function() {
           googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
           .setTargeting("interactive","dog-park-nyc")
@@ -146,9 +141,6 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
           });
         }
         </script>  
-      
-
-
 
     <meta name="themeKey" content="nydailynews" />
     <meta name="mapThemeKey" content="responsive" />
