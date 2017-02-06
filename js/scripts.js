@@ -69,7 +69,7 @@ $(document).ready(function() {
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
     {"line":"2", "upper":["149th St - Grand Concourse"]},
-    {"line":"J", "upper":["Halsey St", "Chauncey St", "Broadway Junction"]}
+    {"line":"J", "upper":["Halsey St", "Chauncey St", "Broadway Junction", "Alabama Ave", "Van Siclen Ave", "Cleveland St", "Cypress Hills", "75th St - Eldert Ln", "85th St - Forest Pky", "95th St - Forest Pky", "Woodhaven Blvd", "104th-102nd Sts", "121st St"]}
   ]
 
   for (i=0;i<rss.length;i++) {
