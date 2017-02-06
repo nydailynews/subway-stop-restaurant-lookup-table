@@ -594,3 +594,7 @@ border: 1px solid #333;
     }
 
 }
+.center {
+    text-align:center;
+    margin: auto;
+}
