@@ -489,7 +489,8 @@ $(document).ready(function() {
               var stop = data[i].body[0].paragraphs.split(": ")[0];
               var headline = data[i].title;
               var details = data[i].body[0].paragraphs.split(": ")[1];
-              var image = data[i].images[0].originalSrc;
+              // We don't want the full-size image, so we edit the image string
+              var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
               var url = data[i].url;     
               $("#info-box-desktop").append("<div class='window' id='window"+i+"'><div class='stop'><span class='stop_name'>"+stop+"</span><span class='map_label'><img class='view_map' src='img/view_map.png'></span></div><div style='position: relative;'><img class='profile' src='"+image+"' /><div class='name'>"+headline+"</div></div><div class='details'>"+details+"</div><a target='_blank' href='"+url+"''><div class='visit-page'>READ MORE</div></a><div id='social'><a class='fb-share' href='http://www.facebook.com/sharer.php?u=http://interactive.nydailynews.com/2016/02/why-hollywood-obsessed-with-apocalypse/index.html' target='_blank'><div id='facebook' class='small-text-center'></div></a><a href='https://twitter.com/share?url=http://nydn.us/apocalypse&text=We're doomed! Why is Hollywood obsessed with the apocalypse? @NYDailynews ' target='_new'><div id='twitter'></div></a><a href='mailto:?subject=We're doomed! Why is Hollywood obsessed with the apocalypse?&body=It’s the end of the world as we know it — at least if the upcoming blockbusters are any indication. http://nydn.us/apocalypse'><div id='email'></div></a></div></div>");
 
