@@ -71,7 +71,7 @@ $(document).ready(function() {
     {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "45th Rd - Court House Sq", "46th St", "52nd St", "Junction Blvd", "Woodside - 61st St", "69th St", "74th St - Broadway", "82nd St - Jackson Hts", "90th St - Elmhurst Av", "40th St"]},
     {"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},
     {"line":"4", "upper":["Franklin Ave"]},
-    {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av"]},
+    {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av", "36th St"]},
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
     {"line":"2", "upper":["149th St - Grand Concourse"]},
@@ -544,7 +544,7 @@ $(document).ready(function() {
       cover_height = $("#box").css("height");
       // $("#info-box-desktop").css("top", parseInt(cover_height) + 457)      
 
-      function  scrollFunction() {
+      function scrollFunction() {
         var window_height = $(window).height();
         var window_top_position = $(window).scrollTop();
         var window_bottom_position = (window_top_position + window_height);
@@ -595,7 +595,6 @@ $(document).ready(function() {
                             $(".window").removeClass("highlighted");
                             $(this).addClass("highlighted"); 
                         }
-
           }
           
         });
@@ -652,27 +651,32 @@ $(document).ready(function() {
           })
         })
 
-
         if (window_top_position < parseInt(cover_height) + 300) {
             $("#label").css({"display":"none"})
             $("#label_back").css({"display":"none"})
-            
         }
 
         if (window_top_position < 50 ) {
-           $(".right, .left").css({"top":50-window_top_position})
+           $(".right, .left").css({"top":50 - window_top_position})
         } else {
-          $(".right, .left").css({"top":"0px"}) 
+          $(".right, .left").css({"top":0}) 
         }
-
 
       };
 
         // We want the scrollFunction() to fire, at most, three times per second.
         //$(window).scroll(scrollFunction);
-        window.did_scroll = 0;
-        $(window).scroll(scrollFunctionWrapper);
-        function scrollFunctionWrapper() { did_scroll = 1; }
+        did_scroll = 0;
+        scroll_pos = 0;
+        $(window).scroll( function () { 
+            // The waypoints library appears to fire the scroll handler even
+            // if scrolling hasn't occured, so we check to see if the window's
+            // scrolltop position has actually changed.
+            if ( scroll_pos !== $(this).scrollTop() ) {
+                scroll_pos = $(this).scrollTop();
+                did_scroll = 1;
+            }
+        });
         setInterval(function()
         {
             if ( did_scroll == 1 )
