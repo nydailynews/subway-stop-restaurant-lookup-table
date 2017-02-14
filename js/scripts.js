@@ -561,16 +561,17 @@ $(document).ready(function() {
         // We run this loop twice: The first time to figure out what the active station is,
         // the second time to perform the browser actions on the active station (if necessary).
         $.each($(".window"), function() {
-          var element_height = $(this).outerHeight();
-          var element_top_position = $(this).offset().top;
-          var element_bottom_position = (element_top_position + element_height);
-          var currentID = $(this).attr("id").split("window")[1];
-          station = $(this).find(".stop_name").text()
+            var element_height = $(this).outerHeight();
+            var element_top_position = $(this).offset().top;
+            var element_bottom_position = (element_top_position + element_height);
 
-          // Check to see if this current panel is near / within viewport
-          var window_pos = element_top_position - window_top_position;
-          // Break the loop when we get the panel closest to the top of the screen.
-          if ( window_pos > 0 ) { return false; }
+            // No "var" on this variable means we have it available in our next loop.
+            station = $(this).find(".stop_name").text()
+
+            // Check to see if this current panel is near / within viewport
+            var window_pos = element_top_position - window_top_position;
+            // Break the loop when we get the panel closest to the top of the screen.
+            if ( window_pos > 0 ) { return false; }
         });
 
         // Now that we have the station, if our station is different from the 
@@ -578,46 +579,47 @@ $(document).ready(function() {
         if ( station === old_station ) { return false; }
 
         $.each($(".window"), function() {
-          var current_station = $(this).find(".stop_name").text()
-          if ( current_station === station ) {
-              old_station = station;
-              var station1 = station.split(" & ")[0];
-              var station2 = station.split(" & ")[1];
+            var current_station = $(this).find(".stop_name").text()
+            if ( current_station === station ) {
+                old_station = station;
+                var station1 = station.split(" & ")[0];
+                var station2 = station.split(" & ")[1];
 
-                        $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png'><img class='map_label' src='img/map.png'>");
-                        var width = $("#label").css("width");
-                        var height= $("#label").css("height");
-                        $("#label_back").css({"width":parseInt(width)+20, "height":parseInt(height)+0})
-                        $("#label").css({"display":"inline"})
-                        $("#label_back").css({"display":"inline"})
+                $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png'><img class='map_label' src='img/map.png'>");
+                var width = $("#label").css("width");
+                var height= $("#label").css("height");
+                $("#label_back").css({"width":parseInt(width)+20, "height":parseInt(height)+0});
+                $("#label").css({"display":"inline"});
+                $("#label_back").css({"display":"inline"});
 
-                        $.each(geojson_stop._layers, function() {
-                          var stop = $(this)[0].feature.properties.stations;
-                          var layer = $(this)[0];
-                          var latlng = $(this)[0].feature.geometry.coordinates;
-                          if (station1 == stop) {
-                            var lat = latlng[0];
-                            var lng = latlng[1];
-                            geojson_stop.setStyle(style_stop);
-                            geojson_stop_empty.setStyle(style_stop_empty);
-                            layer.setStyle(style_stop_clicked);
-                            layer.openPopup();
-                            select_layer = layer;
-                            map.panTo(layer._latlng);
-                          } else {}
-                          if (station2 == stop) {
-                            geojson_stop.setStyle(style_stop);
-                            geojson_stop_empty.setStyle(style_stop_empty);
-                            layer.setStyle(style_stop_clicked);
-                            layer.openPopup();
-                            select_layer2 = layer;
-                          }
-                        })
-                        var windowWidth = $(window).width();
-                        if (windowWidth > 480 ) {
-                            $(".window").removeClass("highlighted");
-                            $(this).addClass("highlighted"); 
-                        }
+                $.each(geojson_stop._layers, function() {
+                    var stop = $(this)[0].feature.properties.stations;
+                    var layer = $(this)[0];
+                    var latlng = $(this)[0].feature.geometry.coordinates;
+                    if (station1 == stop) {
+                        var lat = latlng[0];
+                        var lng = latlng[1];
+                        geojson_stop.setStyle(style_stop);
+                        geojson_stop_empty.setStyle(style_stop_empty);
+                        layer.setStyle(style_stop_clicked);
+                        layer.openPopup();
+                        select_layer = layer;
+                        map.panTo(layer._latlng);
+                    }
+                    if (station2 == stop) {
+                        geojson_stop.setStyle(style_stop);
+                        geojson_stop_empty.setStyle(style_stop_empty);
+                        layer.setStyle(style_stop_clicked);
+                        layer.openPopup();
+                        select_layer2 = layer;
+                    }
+                });
+
+                var windowWidth = $(window).width();
+                if (windowWidth > 480 ) {
+                    $(".window").removeClass("highlighted");
+                    $(this).addClass("highlighted"); 
+                }
           }
           
         });
