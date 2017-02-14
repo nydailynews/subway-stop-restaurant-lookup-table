@@ -68,7 +68,7 @@ $(document).ready(function() {
   // These are the stations that have labels that need to be angled up
   var labels = [
     {"line":"N", "upper":["57th St"]},
-    {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "46th St", "Junction Blvd", "Woodside - 61st St", "74th St - Broadway", "90th St - Elmhurst Av", "40th St"]},
+    {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "45th Rd - Court House Sq", "46th St", "52nd St", "Junction Blvd", "Woodside - 61st St", "69th St", "74th St - Broadway", "82nd St - Jackson Hts", "90th St - Elmhurst Av", "40th St"]},
     {"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},
     {"line":"4", "upper":["Franklin Ave"]},
     {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av"]},
