@@ -199,18 +199,6 @@ $(document).ready(function() {
         };
     };
 
-    function style_stop_highlight(feature) {
-        color = getLine(feature.properties.line)
-        return {
-            weight: 2,
-            color: color,
-            fillColor: "white",
-            fillOpacity: 0,
-            opacity: 0,
-            radius: 12,
-        };
-    };
-
     function style_stop_empty(feature) {
         color = getLine(feature.properties.line)
         return {
@@ -293,25 +281,6 @@ $(document).ready(function() {
         }
     };
 
-    function onEachFeature3(feature, layer) { 
-        layer.on({
-            click: highlightFeature,
-        });
-        layer.bindPopup(feature.properties.stations+'<img class="line_label" src="img/line_'+feature.properties.line+'.png">', {offset:new L.Point(0,0)});
-        // var windowWidth = $(window).width();
-        // layer.on('mouseover', function(e){
-        //   if (windowWidth > 480) {  
-        //       geojson_stop.setStyle(style_stop);
-        //       layer.setStyle(style_stop_hovered);
-        //   }
-        // });
-        // layer.on('mouseout', function(e){
-        //   if (windowWidth > 480) {             
-        //       geojson_stop.setStyle(style_stop);
-        //   }
-        // });
-    };
-
     function highlightFeature(e) {
         var popup_width = $(".leaflet-popup-content").width();
         var popup_height = $(".leaflet-popup-content").height();
@@ -344,13 +313,6 @@ $(document).ready(function() {
         },
         style: style_stop_hide,
     }).addTo(map);
-    // geojson_stop_highlight = L.geoJson(stops, {
-    //     pointToLayer: function (feature, latlng) {
-    //         return L.circleMarker(latlng);
-    //     },
-    //     style: style_stop_highlight,
-    // }).addTo(map);
-
 
 
     // function myIcon() {
@@ -437,14 +399,6 @@ $(document).ready(function() {
               onEachFeature: onEachFeature2
           }).addTo(map);
 
-          // geojson_stop_highlight = L.geoJson(selected_stops, {
-          //     pointToLayer: function (feature, latlng) {                            
-          //         return L.circleMarker(latlng);
-          //     },
-          //     style: style_stop_highlight,
-          //     onEachFeature: onEachFeature3
-          // }).addTo(map);
-
           for (i = 0; i < markersArray.length; i++) {
             map.removeLayer(markersArray[i]);
           }
@@ -483,7 +437,7 @@ $(document).ready(function() {
         };
         $("#box").html('<div class"img_box" style="position: relative"><img id="img1" src="' + banner + '"><div id="social_map" class="large-12 medium-12 small-12 columns"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a></div></div><div id="head">Eating along the ' + line_selected + ' line</div><div class="text">'+ intro +'</div></div><div class="scroll_box"><img class="scroll" src="img/scroll.png"></div>');
 
-          $(".scroll").on("click",function (){
+          $(".scroll").on("click",function(){
               $('html, body').animate({
                   scrollTop: $("#info-box-desktop").offset().top - 120
               }, 600);
@@ -525,7 +479,7 @@ $(document).ready(function() {
 
 
     // If someone clicks on a subway line at the top of the screen
-    $(".legend").click(function (){
+    $(".legend").click(function(){
         line_selected = $(this).attr("id");
         clickLegend(line_selected);
     });
@@ -642,7 +596,6 @@ $(document).ready(function() {
               var lng = latlng[1];
               geojson_stop.setStyle(style_stop);
               geojson_stop_empty.setStyle(style_stop_empty);
-              //geojson_stop_highlight.setStyle(style_stop_highlight);
               layer.setStyle(style_stop_clicked);
               layer.openPopup();
               map.panTo([lng,lat]);
@@ -650,7 +603,6 @@ $(document).ready(function() {
             if (stations2 == stop) {
               geojson_stop.setStyle(style_stop);
               geojson_stop_empty.setStyle(style_stop_empty);
-              //geojson_stop_highlight.setStyle(style_stop_highlight);
               layer.setStyle(style_stop_clicked);
               layer.openPopup();
             }
@@ -690,11 +642,10 @@ $(document).ready(function() {
       };
 
         // We want the scrollFunction() to fire, at most, three times per second.
-        //$(window).scroll(scrollFunction);
         did_scroll = 0;
         scroll_pos = 0;
         old_station = '';
-        $(window).scroll( function () { 
+        $(window).scroll( function() { 
             // The waypoints library appears to fire the scroll handler even
             // if scrolling hasn't occured, so we check to see if the window's
             // scrolltop position has actually changed.
@@ -703,7 +654,7 @@ $(document).ready(function() {
                 did_scroll = 1;
             }
         });
-        setInterval(function()
+        setInterval( function()
         {
             if ( did_scroll == 1 )
             {
@@ -845,5 +796,3 @@ $(document).ready(function() {
         bottoming: !1,
         offset_top: 0,
     });
-
-
