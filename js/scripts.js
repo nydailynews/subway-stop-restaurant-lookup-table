@@ -104,8 +104,8 @@ $(document).ready(function() {
     $("#1").css("margin-left", "52px");
     $("#S").css("margin-right", "52px");
 
-    $("#legend_box").prepend('<div class="left_box" ><img style="cursor: pointer;" class="left" src="img/left.png"</div>');
-    $("#legend_box").append('<div class="right_box" ><img style="cursor: pointer;" class="right" src="img/right.png"</div>');
+    $("#legend_box").prepend('<div class="left_box" ><img style="cursor: pointer;" class="left" src="img/left.png"></div>');
+    $("#legend_box").append('<div class="right_box" ><img style="cursor: pointer;" class="right" src="img/right.png"></div>');
 
     $(".left").click(function() {
         var slideW = $('.logo_box').width();
