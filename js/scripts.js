@@ -549,18 +549,25 @@ $(document).ready(function() {
         var window_top_position = $(window).scrollTop();
         var window_bottom_position = (window_top_position + window_height);
 
+        // Loop through each of the restaurant panels to see which one is in
+        // view, if it's in view we make sure its label on the line map is visible.
         $.each($(".window"), function() {
           var element_height = $(this).outerHeight();
           var element_top_position = $(this).offset().top;
           var element_bottom_position = (element_top_position + element_height);
           var currentID = $(this).attr("id").split("window")[1];
           var station = $(this).find(".stop_name").text()
+          if ( station === old_station ) { console.log("HA", station); return false; }
+          old_station = station;
+          //console.log(station);
           var station1 = station.split(" & ")[0];
           var station2 = station.split(" & ")[1];
 
 
-          //check to see if this current container is within viewport
-          if ( (element_top_position - window_top_position) < 140 ) {
+          //check to see if this current panel is near / within viewport
+          var window_pos = element_top_position - window_top_position;
+          if ( window_pos < 340 ) {
+                //console.log(window_pos, station);
                         $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png'><img class='map_label' src='img/map.png'>");
                         var width = $("#label").css("width");
                         var height= $("#label").css("height");
@@ -668,6 +675,7 @@ $(document).ready(function() {
         //$(window).scroll(scrollFunction);
         did_scroll = 0;
         scroll_pos = 0;
+        old_station = '';
         $(window).scroll( function () { 
             // The waypoints library appears to fire the scroll handler even
             // if scrolling hasn't occured, so we check to see if the window's
