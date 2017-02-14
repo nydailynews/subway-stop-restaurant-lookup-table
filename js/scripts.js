@@ -474,8 +474,14 @@ $(document).ready(function() {
           }
         }
 
-
-        $("#box").html('<div class"img_box" style="position: relative"><img id="img1" src="' + banner + '"><div id="social_map" class="large-12 medium-12 small-12 columns"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=http://interactive.nydailynews.com/2016/02/why-hollywood-obsessed-with-apocalypse/index.html" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=http://nydn.us/apocalypse&text=We"re doomed! Why is Hollywood obsessed with the apocalypse? @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=We"re doomed! Why is Hollywood obsessed with the apocalypse?&body=It’s the end of the world as we know it — at least if the upcoming blockbusters are any indication. http://nydn.us/apocalypse"><div id="email"></div></a></div></div><div id="head">Eating along the ' + line_selected + ' line</div><div class="text">'+ intro +'</div></div><div class="scroll_box"><img class="scroll" src="img/scroll.png"></div>');
+        var share = {
+            url: 'http://interactive.nydailynews.com/projects/nyc-restaurant-guide-subway/',
+            url_short: '',
+            subject: '',
+            blurb: '',
+            blurb_encoded: ''
+        };
+        $("#box").html('<div class"img_box" style="position: relative"><img id="img1" src="' + banner + '"><div id="social_map" class="large-12 medium-12 small-12 columns"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a></div></div><div id="head">Eating along the ' + line_selected + ' line</div><div class="text">'+ intro +'</div></div><div class="scroll_box"><img class="scroll" src="img/scroll.png"></div>');
 
           $(".scroll").on("click",function (){
               $('html, body').animate({
@@ -492,7 +498,7 @@ $(document).ready(function() {
               // We don't want the full-size image, so we edit the image string
               var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
               var url = data[i].url;     
-              $("#info-box-desktop").append("<div class='window' id='window"+i+"'><div class='stop'><span class='stop_name'>"+stop+"</span><span class='map_label'><img class='view_map' src='img/view_map.png'></span></div><div style='position: relative;'><img class='profile' src='"+image+"' /><div class='name'>"+headline+"</div></div><div class='details'>"+details+"</div><a target='_blank' href='"+url+"''><div class='visit-page'>READ MORE</div></a><div id='social'><a class='fb-share' href='http://www.facebook.com/sharer.php?u=http://interactive.nydailynews.com/2016/02/why-hollywood-obsessed-with-apocalypse/index.html' target='_blank'><div id='facebook' class='small-text-center'></div></a><a href='https://twitter.com/share?url=http://nydn.us/apocalypse&text=We're doomed! Why is Hollywood obsessed with the apocalypse? @NYDailynews ' target='_new'><div id='twitter'></div></a><a href='mailto:?subject=We're doomed! Why is Hollywood obsessed with the apocalypse?&body=It’s the end of the world as we know it — at least if the upcoming blockbusters are any indication. http://nydn.us/apocalypse'><div id='email'></div></a></div></div>");
+              $('#info-box-desktop').append('<div class="window" id="window'+i+'"><div class="stop"><span class="stop_name">'+stop+'</span><span class="map_label"><img class="view_map" src="img/view_map.png"></span></div><div style="position: relative;"><img class="profile" src="'+image+'" /><div class="name">'+headline+'</div></div><div class="details">'+details+'</div><a target="_blank" href="'+url+'""><div class="visit-page">READ MORE</div></a><div id="social"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a></div></div>');
 
           }
 
@@ -551,23 +557,33 @@ $(document).ready(function() {
 
         // Loop through each of the restaurant panels to see which one is in
         // view, if it's in view we make sure its label on the line map is visible.
+        //
+        // We run this loop twice: The first time to figure out what the active station is,
+        // the second time to perform the browser actions on the active station (if necessary).
         $.each($(".window"), function() {
           var element_height = $(this).outerHeight();
           var element_top_position = $(this).offset().top;
           var element_bottom_position = (element_top_position + element_height);
           var currentID = $(this).attr("id").split("window")[1];
-          var station = $(this).find(".stop_name").text()
-          if ( station === old_station ) { console.log("HA", station); return false; }
-          old_station = station;
-          //console.log(station);
-          var station1 = station.split(" & ")[0];
-          var station2 = station.split(" & ")[1];
+          station = $(this).find(".stop_name").text()
 
-
-          //check to see if this current panel is near / within viewport
+          // Check to see if this current panel is near / within viewport
           var window_pos = element_top_position - window_top_position;
-          if ( window_pos < 340 ) {
-                //console.log(window_pos, station);
+          // Break the loop when we get the panel closest to the top of the screen.
+          if ( window_pos > 0 ) { return false; }
+        });
+
+        // Now that we have the station, if our station is different from the 
+        // previous station we loaded, we load the new station.
+        if ( station === old_station ) { return false; }
+
+        $.each($(".window"), function() {
+          var current_station = $(this).find(".stop_name").text()
+          if ( current_station === station ) {
+              old_station = station;
+              var station1 = station.split(" & ")[0];
+              var station2 = station.split(" & ")[1];
+
                         $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png'><img class='map_label' src='img/map.png'>");
                         var width = $("#label").css("width");
                         var height= $("#label").css("height");
