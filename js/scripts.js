@@ -88,7 +88,7 @@ $(document).ready(function() {
     var lines_no = ['1','3','5','6','C','E','B','D','F','R','Z','L','S']
 
     for (i=0; i<lines.length; i++) {
-        $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png"</div>')
+        $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
     }
     
     $.each($(".legend"), function() {
