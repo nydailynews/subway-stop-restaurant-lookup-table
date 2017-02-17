@@ -802,7 +802,7 @@
  {
    "stations": "39th Ave",
    "line1": "N",
-   "line2": "Q",
+   "line2": "",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -810,7 +810,7 @@
  {
    "stations": "36th Ave",
    "line1": "N",
-   "line2": "Q",
+   "line2": "",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -1858,7 +1858,7 @@
  {
    "stations": "Astoria Blvd",
    "line1": "N",
-   "line2": "Q",
+   "line2": "",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -1866,7 +1866,7 @@
  {
    "stations": "Astoria - Ditmars Blvd",
    "line1": "N",
-   "line2": "Q",
+   "line2": "",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -2402,7 +2402,7 @@
  {
    "stations": "Broadway",
    "line1": "N",
-   "line2": "Q",
+   "line2": "",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -2410,7 +2410,7 @@
  {
    "stations": "30th Ave",
    "line1": "N",
-   "line2": "Q",
+   "line2": "",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -2810,7 +2810,7 @@
  {
    "stations": "Lexington Ave - 63rd St",
    "line1": "F",
-   "line2": "",
+   "line2": "Q",
    "line3": "",
    "line4": "",
    "line5": ""
@@ -2850,16 +2850,40 @@
  {
    "stations": "5th Ave - 59th St",
    "line1": "N",
-   "line2": "Q",
-   "line3": "R",
+   "line2": "R",
+   "line3": "",
    "line4": "",
    "line5": ""
  },
  {
    "stations": "Lexington Ave - 59th St",
    "line1": "N",
-   "line2": "Q",
-   "line3": "R",
+   "line2": "R",
+   "line3": "",
+   "line4": "",
+   "line5": ""
+ },
+ {
+   "stations": "72nd St",
+   "line1": "Q",
+   "line2": "",
+   "line3": "",
+   "line4": "",
+   "line5": ""
+ },
+ {
+   "stations": "86th St",
+   "line1": "Q",
+   "line2": "",
+   "line3": "",
+   "line4": "",
+   "line5": ""
+ },
+ {
+   "stations": "96th St",
+   "line1": "Q",
+   "line2": "",
+   "line3": "",
    "line4": "",
    "line5": ""
  },
