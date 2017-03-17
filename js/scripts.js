@@ -78,7 +78,7 @@ $(document).ready(function() {
     {"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},
     {"line":"4", "upper":["Franklin Ave"]},
     {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av", "36th St"],
-                 "lower":["Myrtle Ave", "Central Ave", "Fresh Pond Rd"]},
+                 "lower":["Myrtle Ave", "Central Ave", "Knickerbocker Ave", "Fresh Pond Rd"]},
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
     {"line":"2", "upper":["149th St - Grand Concourse"]},
@@ -437,7 +437,7 @@ $(document).ready(function() {
                   else if ($.inArray(selected_stops[i].properties.stations,labels[p].lower) >= 0 ) {
                     loadMarker_lower(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
                   } else {
-                    loadMarker_upper(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
+                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
                   }
                 }            
             }
