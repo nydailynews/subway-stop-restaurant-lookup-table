@@ -74,17 +74,21 @@ $(document).ready(function() {
   // These are the stations that have labels that need to be angled up
   var labels = [
     {"line":"N", "upper":["57th St"]},
-    {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "45th Rd - Court House Sq", "46th St", "52nd St", "Junction Blvd", "Woodside - 61st St", "69th St", "74th St - Broadway", "82nd St - Jackson Hts", "90th St - Elmhurst Av", "40th St"]},
+    {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "46th St", "52nd St", "Junction Blvd", "Woodside - 61st St", "69th St", "74th St - Broadway", "82nd St - Jackson Hts", "90th St - Elmhurst Av", "40th St"],
+                 "lower":["45th Rd - Court House Sq", "Hunters Point Ave"]},
     {"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},
     {"line":"4", "upper":["Franklin Ave"]},
     {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av", "36th St"],
-                 "lower":["Myrtle Ave", "Central Ave", "Knickerbocker Ave", "Fresh Pond Rd"]},
+                 "lower":["Myrtle Ave", "Central Ave", "Knickerbocker Ave", "Fresh Pond Rd", "Steinway St"]},
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
-    {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
-    {"line":"2", "upper":["149th St - Grand Concourse"]},
+    {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Utica Ave", "Broadway Junction"],
+                 "lower":["Euclid Ave"]},
+    {"line":"2", "upper":["149th St - Grand Concourse"],
+                 "lower":["Jackson Ave", "3rd Ave - 149th St"]},
     {"line":"Z", "upper":["Chauncey St", "Broadway Junction", "75th St - Eldert Ln", "104th-102nd Sts", "121st St", ]},
     {"line":"5", "upper":[""]},
-    {"line":"3", "upper":[""]},
+    {"line":"3", "upper":[""],
+                 "lower":["Franklin Ave"]},
     {"line":"J", "upper":["Hewes St", "Lorimer St", "Flushing Ave", "Myrtle Ave", "Kosciuszko St", "Gates Ave", "Halsey St", "Chauncey St", "Broadway Junction", "Alabama Ave", "Van Siclen Ave", "Cleveland St", "Cypress Hills", "75th St - Eldert Ln", "85th St - Forest Pky", "95th St - Forest Pky", "Woodhaven Blvd", "104th-102nd Sts", "121st St"],
                  "lower":["Norwood Ave", "Sutphin Blvd - Archer Av"]}
   ]
@@ -95,6 +99,7 @@ $(document).ready(function() {
     }
   }
 
+    // BUILD THE LEGEND
     var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
     var lines_no = ['1','6','C','E','B','D','F','R','L']
 
