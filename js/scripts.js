@@ -347,8 +347,10 @@ $(document).ready(function() {
         };
         var lat = latlng[0];
         var lng = latlng[1];
+
         // Remove detritus from stop name
-        var stop_name = stop.replace(/ St| Ave| Av/i, '');
+        var stop_name = stop.replace(/ Sts?| Ave?s?| Rds?/i, '');
+
         var marker = L.marker([lng, lat], {
             icon: L.divIcon({
                 className: marker_type,
