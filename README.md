@@ -20,7 +20,11 @@ Convert it into something usable with https://ogre.adc4gis.com/ on the web or th
 
 Most all of this is done in js/scripts.js.
 
-1. 
+1. In the `var rss = [...` array, add an object that looks like this with the line number and URL to that line's RSS feed, `{"line":"2", "link":"http://www.nydailynews.com/json/cmlink/eating-2-line-1.2734246"},`, somewhere inside the array.
+2. Add a "cover" photo that's representative of the line into the img directory. Name it like `img/A_Train-min.jpg` except well you know. The image should be horizontal and at least 400px wide.
+3. In the  `var cover = [...` array in scripts.js add an object that looks like `{"line":"2", "image":"img/2_Train-min.jpg","text":""},` except for the line you're adding.
+4. If there are any subway line labels that need to be angled up, add an object for that particular line to the `var labels = [...` array like this `{"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},`.
+5. Remove the line from the `var lines_no = [...` array.
 
 ### How to remove a subway route
 
