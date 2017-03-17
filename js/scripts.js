@@ -339,16 +339,16 @@ $(document).ready(function() {
             'upper-right': [30, 90],
             'lower-right': [20, -75]
         };
-              var lat = latlng[0];
-              var lng = latlng[1];
-              var marker = L.marker([lng, lat], {
-                icon: L.divIcon({
-                    className: marker_type,
-                    html: "<div class='" + marker_type + "-inner'>"+stop+"</div>",
-                    iconAnchor: anchors[marker_type],
-                    iconSize: 100})
-              }).addTo(map);
-              markersArray.push(marker);
+        var lat = latlng[0];
+        var lng = latlng[1];
+        var marker = L.marker([lng, lat], {
+        icon: L.divIcon({
+            className: marker_type,
+            html: "<div class='" + marker_type + "-inner'>"+stop+"</div>",
+            iconAnchor: anchors[marker_type],
+            iconSize: 100})
+        }).addTo(map);
+        markersArray.push(marker);
     }
 
     var loadMap = function (line_selected, json_selected) {   
