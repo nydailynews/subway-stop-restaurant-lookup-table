@@ -3,7 +3,8 @@ body{
   width: 100%;
 }
 
-.horizontal {
+/* LINE MARKER STYLES */
+.horizontal, .upper-right, .lower-right {
   top: 0px !important;
   font-size: 11px !important;
   text-transform: uppercase !important;
@@ -19,22 +20,18 @@ body{
     -moz-transform: rotate(0deg) !important;
 }
 
-
-.upper-right {
-  top: 0px !important;
-  font-size: 11px !important;
-  text-transform: uppercase !important;
-  width: 200px !important;
-  font-weight: bold !important;
-  z-index: -1 !important;
-
-}
-
 .upper-right-inner {
     -o-transform: rotate(-45deg) !important;
     -khtml-transform: rotate(-45deg) !important;
     -webkit-transform: rotate(-45deg) !important; 
     -moz-transform: rotate(-45deg) !important;
+}
+
+.lower-right-inner {
+    -o-transform: rotate(45deg) !important;
+    -khtml-transform: rotate(45deg) !important;
+    -webkit-transform: rotate(45deg) !important; 
+    -moz-transform: rotate(45deg) !important;
 }
 
 #map-container { 

@@ -77,7 +77,8 @@ $(document).ready(function() {
     {"line":"7", "upper":["Vernon Blvd - Jackson Ave", "45th Rd - Court House Sq", "46th St", "52nd St", "Junction Blvd", "Woodside - 61st St", "69th St", "74th St - Broadway", "82nd St - Jackson Hts", "90th St - Elmhurst Av", "40th St"]},
     {"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},
     {"line":"4", "upper":["Franklin Ave"]},
-    {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av", "36th St"]},
+    {"line":"M", "upper":["Seneca Ave", "Forest Ave", "23rd St - Ely Av", "36th St"],
+                 "lower":["Myrtle Ave", "Central Ave", "Fresh Pond Rd"]},
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
     {"line":"2", "upper":["149th St - Grand Concourse"]},
@@ -349,6 +350,16 @@ $(document).ready(function() {
               markersArray.push(marker);
     }
 
+    function loadMarker_lower(latlng, stop, line, i) {
+        // Soooo muuuuuch duplicated code
+              var lat = latlng[0];
+              var lng = latlng[1];
+              var marker = L.marker([lng, lat], {
+                icon: L.divIcon({className: 'lower-right', html: "<div class='lower-right-inner'>"+stop+"</div>", iconAnchor: [20, -75]})
+              }).addTo(map);
+              markersArray.push(marker);
+    }
+
     var loadMap = function (line_selected, json_selected) {   
       $.getJSON(json_selected, function(data){
           if (line_selected == "4") {
@@ -419,9 +430,12 @@ $(document).ready(function() {
                   // This logic determines if subway stop labels appear horizontal
                   // or turned up at an angle. This is necessary to fix situations
                   // where labels overlap.
-                  // This logic looks for whether the subway station is listed in the subway line's 'upper' array.
-                  if ($.inArray(selected_stops[i].properties.stations,labels[p].upper) == -1) {
-                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);
+                  // This logic looks for whether the subway station is listed in the subway line's 'upper' or 'lower' arrays.
+                  if ($.inArray(selected_stops[i].properties.stations,labels[p].upper) >= 0 ) {
+                    loadMarker_upper(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);
+                  }
+                  else if ($.inArray(selected_stops[i].properties.stations,labels[p].lower) >= 0 ) {
+                    loadMarker_lower(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
                   } else {
                     loadMarker_upper(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
                   }
