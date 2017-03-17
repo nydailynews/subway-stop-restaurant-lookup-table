@@ -341,12 +341,14 @@ $(document).ready(function() {
         };
         var lat = latlng[0];
         var lng = latlng[1];
+        // Remove detritus from stop name
+        var stop_name = stop.replace(/ St| Ave| Av/i, '');
         var marker = L.marker([lng, lat], {
-        icon: L.divIcon({
-            className: marker_type,
-            html: "<div class='" + marker_type + "-inner'>"+stop+"</div>",
-            iconAnchor: anchors[marker_type],
-            iconSize: 100})
+            icon: L.divIcon({
+                className: marker_type,
+                html: "<div class='" + marker_type + "-inner'>"+stop_name+"</div>",
+                iconAnchor: anchors[marker_type],
+                iconSize: 100})
         }).addTo(map);
         markersArray.push(marker);
     }
