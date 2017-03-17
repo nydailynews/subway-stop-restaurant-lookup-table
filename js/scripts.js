@@ -469,6 +469,11 @@ $(document).ready(function() {
               var url = data[i].url;     
               $('#info-box-desktop').append('<div class="window" id="window'+i+'"><div class="stop"><span class="stop_name">'+stop+'</span><span class="map_label"><img class="view_map" src="img/view_map.png"></span></div><div style="position: relative;"><img class="profile" src="'+image+'" /><div class="name">'+headline+'</div></div><div class="details">'+details+'</div><a target="_blank" href="'+url+'""><div class="visit-page">READ MORE</div></a><div id="social"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a></div></div>');
 
+              // Add an ad after the first card.
+              if ( i == 0 ) {
+                  $('#info-box-desktop').append($('#top_ad'));
+              }
+
           }
 
           $('html, body').animate({
