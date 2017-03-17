@@ -38,6 +38,9 @@ $(document).ready(function() {
     {"line":"G", "link":"http://www.nydailynews.com/json/cmlink/eating-g-line-1.2761325"},
     {"line":"A", "link":"http://www.nydailynews.com/json/cmlink/eating-a-line-1.2761311"},
     {"line":"2", "link":"http://www.nydailynews.com/json/cmlink/eating-2-line-1.2734246"},
+    {"line":"Z", "link":"http://www.nydailynews.com/json/cmlink/eating-Z-line-1.3001224"},
+    {"line":"5", "link":"http://www.nydailynews.com/json/cmlink/eating-5-line-1.3001238"},
+    {"line":"3", "link":"http://www.nydailynews.com/json/cmlink/eating-3-line-1.3001232"},
     {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"}
   ]
 
@@ -50,6 +53,9 @@ $(document).ready(function() {
     {"line":"G", "image":"img/G_Train-min.jpg","text":""},
     {"line":"A", "image":"img/A_Train-min.jpg","text":""},
     {"line":"2", "image":"img/2_Train-min.jpg","text":""},
+    {"line":"Z", "image":"img/Z_Train-min.jpg","text":""},
+    {"line":"5", "image":"img/5_Train-min.jpg","text":""},
+    {"line":"3", "image":"img/3_Train-min.jpg","text":""},
     {"line":"J", "image":"img/J_Train-min.jpg","text":""}
   ]
 
@@ -75,6 +81,9 @@ $(document).ready(function() {
     {"line":"G", "upper":["Clinton - Washington Aves", "Hoyt - Schermerhorn Sts", "Fulton St", "Classon Ave"]},
     {"line":"A", "upper":["Nostrand Ave", "Beach 105th St", "Beach 98th St", "Rockaway Park - Beach 116 St", "Beach 90th St", "Utica Ave", "Broadway Junction"]},
     {"line":"2", "upper":["149th St - Grand Concourse"]},
+    {"line":"Z", "upper":[""]},
+    {"line":"5", "upper":[""]},
+    {"line":"3", "upper":[""]},
     {"line":"J", "upper":["Halsey St", "Chauncey St", "Broadway Junction", "Alabama Ave", "Van Siclen Ave", "Cleveland St", "Cypress Hills", "75th St - Eldert Ln", "85th St - Forest Pky", "95th St - Forest Pky", "Woodhaven Blvd", "104th-102nd Sts", "121st St"]}
   ]
 
@@ -85,7 +94,7 @@ $(document).ready(function() {
   }
 
     var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
-    var lines_no = ['1','3','5','6','C','E','B','D','F','R','Z','L']
+    var lines_no = ['1','6','C','E','B','D','F','R','L']
 
     for (i=0; i<lines.length; i++) {
         $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
