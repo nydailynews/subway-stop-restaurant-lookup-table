@@ -114,8 +114,8 @@ $(document).ready(function() {
     $("#1").css("margin-left", "52px");
     $("#S").css("margin-right", "52px");
 
-    $("#legend_box").prepend('<div class="left_box" ><img style="cursor: pointer;" class="left" src="img/left.png"></div>');
-    $("#legend_box").append('<div class="right_box" ><img style="cursor: pointer;" class="right" src="img/right.png"></div>');
+    $("#legend_box").prepend('<div class="left_box" ><img style="cursor: pointer;" class="left" src="img/left.png" alt="Scroll left"></div>');
+    $("#legend_box").append('<div class="right_box" ><img style="cursor: pointer;" class="right" src="img/right.png" alt="Scroll right"></div>');
 
     $(".left").click(function() {
         var slideW = $('.logo_box').width();
@@ -332,30 +332,21 @@ $(document).ready(function() {
 
 
 
-    function loadMarker(latlng, stop, line, i) {
+    function loadMarker(latlng, stop, line, i, marker_type) {
+        // Handle placing and naming markers. 
+        // marker_type will be either 'horizontal' 'upper' or 'lower'
+        var anchors = { horizontal: [-15, 10],
+            'upper-right': [30, 90],
+            'lower-right': [20, -75]
+        };
               var lat = latlng[0];
               var lng = latlng[1];
               var marker = L.marker([lng, lat], {
-                icon: L.divIcon({className: 'horizontal', html: "<div class='horizontal-inner'>"+stop+"</div>", iconAnchor: [-15, 10], iconSize: 100})
-              }).addTo(map);
-              markersArray.push(marker);
-    }
-
-    function loadMarker_upper(latlng, stop, line, i) {
-              var lat = latlng[0];
-              var lng = latlng[1];
-              var marker = L.marker([lng, lat], {
-                icon: L.divIcon({className: 'upper-right', html: "<div class='upper-right-inner'>"+stop+"</div>", iconAnchor: [30, 90]})
-              }).addTo(map);
-              markersArray.push(marker);
-    }
-
-    function loadMarker_lower(latlng, stop, line, i) {
-        // Soooo muuuuuch duplicated code
-              var lat = latlng[0];
-              var lng = latlng[1];
-              var marker = L.marker([lng, lat], {
-                icon: L.divIcon({className: 'lower-right', html: "<div class='lower-right-inner'>"+stop+"</div>", iconAnchor: [20, -75]})
+                icon: L.divIcon({
+                    className: marker_type,
+                    html: "<div class='" + marker_type + "-inner'>"+stop+"</div>",
+                    iconAnchor: anchors[marker_type],
+                    iconSize: 100})
               }).addTo(map);
               markersArray.push(marker);
     }
@@ -432,12 +423,12 @@ $(document).ready(function() {
                   // where labels overlap.
                   // This logic looks for whether the subway station is listed in the subway line's 'upper' or 'lower' arrays.
                   if ($.inArray(selected_stops[i].properties.stations,labels[p].upper) >= 0 ) {
-                    loadMarker_upper(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);
+                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'upper-right');
                   }
                   else if ($.inArray(selected_stops[i].properties.stations,labels[p].lower) >= 0 ) {
-                    loadMarker_lower(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
+                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'lower-right');
                   } else {
-                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i);            
+                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'horizontal');
                   }
                 }            
             }
