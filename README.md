@@ -16,3 +16,14 @@ Convert it into something usable with https://ogre.adc4gis.com/ on the web or th
 1. Make sure the line is in the array assigned to the stop in data/stops.json
 2. Make sure the article is tagged with "eating along the X line"
 
+### How to remove a subway route
+
+#### If the line hasn't been activated
+
+1. Remove the letter / number of the line from these two arrays in js/scripts.js:
+```js
+    var lines = ['1','2','3',...
+    var lines_no = ['1',....
+``` 
+
+#### If the line is active on the site 

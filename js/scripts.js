@@ -84,8 +84,8 @@ $(document).ready(function() {
     }
   }
 
-    var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L','S']
-    var lines_no = ['1','3','5','6','C','E','B','D','F','R','Z','L','S']
+    var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
+    var lines_no = ['1','3','5','6','C','E','B','D','F','R','Z','L']
 
     for (i=0; i<lines.length; i++) {
         $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
