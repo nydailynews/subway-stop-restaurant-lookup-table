@@ -495,7 +495,7 @@ $(document).ready(function() {
     };
 
 
-    // If someone clicks on a subway line at the top of the screen
+    // ACTION: If someone clicks on a subway line at the top of the screen
     $(".legend").click(function(){
         line_selected = $(this).attr("id");
         clickLegend(line_selected);
@@ -508,7 +508,8 @@ $(document).ready(function() {
             window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
             json_selected = rss[i].link;
             $(".logo_box").removeClass("selected");
-            $(this).closest(".logo_box").addClass("selected");
+            var line_link = document.getElementById(value);
+            $(line_link).closest(".logo_box").addClass("selected");
           }
         }
           loadMap(value, json_selected);

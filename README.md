@@ -26,6 +26,10 @@ Most all of this is done in js/scripts.js.
 4. If there are any subway line labels that need to be angled up, add an object for that particular line to the `var labels = [...` array like this `{"line":"Q", "upper":["57th St", "Ocean Pkwy", "Coney Island - Stillwell Av"]},`.
 5. Remove the line from the `var lines_no = [...` array.
 
+### How to remove stops along a subway route
+
+Edit the data/subway_geo.geojson file.
+
 ### How to remove a subway route
 
 #### If the line hasn't been activated
