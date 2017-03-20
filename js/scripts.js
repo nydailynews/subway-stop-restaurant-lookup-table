@@ -506,16 +506,20 @@ $(document).ready(function() {
         for (i=0;i<rss.length;i++) {
           if (rss[i].line == value) {
             window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
+            highlightLegend(value);
             json_selected = rss[i].link;
-            $(".logo_box").removeClass("selected");
-            var line_link = document.getElementById(value);
-            $(line_link).closest(".logo_box").addClass("selected");
           }
         }
           loadMap(value, json_selected);
         }
     }
+    function highlightLegend(value) {
+        $(".logo_box").removeClass("selected");
+        var line_link = document.getElementById(value);
+        $(line_link).closest(".logo_box").addClass("selected");
+    }
 
+    highlightLegend(line_selected);
     loadMap(line_selected, json_selected);
 
 
