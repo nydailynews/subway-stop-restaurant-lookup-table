@@ -340,7 +340,7 @@ $(document).ready(function() {
         var lng = latlng[1];
 
         // Remove detritus from stop name
-        var stop_name = stop.replace(/ Sts?| Ave?s?| Rds?/i, '');
+        var stop_name = stop.replace(/ Ave?s?| Rds?/i, '');
 
         var marker = L.marker([lng, lat], {
             icon: L.divIcon({
@@ -467,7 +467,27 @@ $(document).ready(function() {
               // We don't want the full-size image, so we edit the image string
               var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
               var url = data[i].url;     
-              $('#info-box-desktop').append('<div class="window" id="window'+i+'"><div class="stop"><span class="stop_name">'+stop+'</span><span class="map_label"><img class="view_map" src="img/view_map.png"></span></div><div style="position: relative;"><img class="profile" src="'+image+'" /><div class="name">'+headline+'</div></div><div class="details">'+details+'</div><a target="_blank" href="'+url+'""><div class="visit-page">READ MORE</div></a><div id="social"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a></div></div>');
+              $('#info-box-desktop').append('<div class="window" id="window'+i+'">\n\
+<div class="stop">\n\
+    <span class="stop_name">'+stop+'</span>\n\
+    <span class="map_label">\n\
+        <img class="view_map" src="img/view_map.png">\n\
+    </span>\n\
+</div>\n\
+<div style="position: relative;">\n\
+    <img class="profile" src="'+image+'" />\n\
+    <div class="name">'+headline+'</div>\n\
+</div>\n\
+<div class="details">'+details+'</div>\n\
+<a target="_blank" href="'+url+'"">\n\
+    <div class="visit-page">READ MORE</div>\n\
+</a>\n\
+<div id="social">\n\
+    <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
+    <a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a>\n\
+    <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a>\n\
+</div>\n\
+</div>');
 
               // AD JUGGLER Add an ad after the first card.
               if ( i == 0 ) {
