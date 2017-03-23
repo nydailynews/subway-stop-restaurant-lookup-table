@@ -372,6 +372,13 @@ body{
 .highlighted {
   border: solid 8px rgba(0,0,0,0.3);
 }
+.highlighted .profile {
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+}
 
 .stop {
     color: white;
@@ -388,18 +395,20 @@ body{
 }
 
 .visit-page {
+  background-color: #0077A2;
   padding: 10px;
   text-align: center;
-  font-family: Open Sans Condensed;
+  font-family: 'Open Sans Condensed';
   font-size: 25px;
   line-height: 28px;
-  margin: 15px;
+  margin: 15px auto;
   height: 52px;
   display: block;
   cursor: pointer;
-  color: #333;
+  color: white;
   font-weight: bold;
-  border: #333 2px solid;
+  width: 80%;
+  border-width: 0;
 }
 
 .visit-page:hover {

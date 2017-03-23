@@ -480,7 +480,7 @@ $(document).ready(function() {
 </div>\n\
 <p class="details">'+details+'</p>\n\
 <a target="_blank" href="'+url+'"">\n\
-    <div class="visit-page">READ MORE</div>\n\
+    <button class="visit-page">READ MORE</button>\n\
 </a>\n\
 <div id="social">\n\
     <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
