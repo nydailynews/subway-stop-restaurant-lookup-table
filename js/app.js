@@ -468,17 +468,17 @@ $(document).ready(function() {
               var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
               var url = data[i].url;     
               $('#info-box-desktop').append('<div class="window" id="window'+i+'">\n\
+<div style="position: relative;">\n\
+    <img class="profile" src="'+image+'" />\n\
 <div class="stop">\n\
     <span class="stop_name">'+stop+'</span>\n\
     <span class="map_label">\n\
-        <img class="view_map" src="img/view_map.png">\n\
+        <img class="view_map" alt="map icon" src="img/view_map.png">\n\
     </span>\n\
 </div>\n\
-<div style="position: relative;">\n\
-    <img class="profile" src="'+image+'" />\n\
-    <div class="name">'+headline+'</div>\n\
+    <h3 class="name">'+headline+'</h3>\n\
 </div>\n\
-<div class="details">'+details+'</div>\n\
+<p class="details">'+details+'</p>\n\
 <a target="_blank" href="'+url+'"">\n\
     <div class="visit-page">READ MORE</div>\n\
 </a>\n\
