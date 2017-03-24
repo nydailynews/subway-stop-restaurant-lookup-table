@@ -233,6 +233,7 @@ $(document).ready(function() {
     var style_stop_clicked = {
       fillColor: "white",
       radius: 12,
+      weight: 7,
     }
 
     function scrollToCard(stop) {
@@ -593,7 +594,7 @@ $(document).ready(function() {
                 var station1 = station.split(" & ")[0];
                 var station2 = station.split(" & ")[1];
 
-                $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png'><img class='map_label' src='img/map.png'>");
+                $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png' alt='"+ line_selected + " line'><img class='map_label' src='img/map.png' alt='Map icon'>");
                 var width = $("#label").css("width");
                 var height= $("#label").css("height");
                 $("#label_back").css({"width":parseInt(width)+20, "height":parseInt(height)+0});
@@ -664,7 +665,7 @@ $(document).ready(function() {
 
           $("#map-container").css("z-index",5);
           $("#legend_box").css("z-index",6);
-          $("#close_box").html("<img class='back' src='img/back.png'>BACK");
+          $("#close_box").html("<img class='back' src='img/back.png' alt=''>BACK");
           $("#close_box").css("display","block");
           $("#close_box_back").css("display","block");
           var width = $("#close_box").css("width");
