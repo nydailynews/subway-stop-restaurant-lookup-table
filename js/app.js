@@ -450,7 +450,18 @@ $(document).ready(function() {
             blurb: '',
             blurb_encoded: ''
         };
-        $("#box").html('<div class"img_box" style="position: relative"><img id="img1" src="' + banner + '"><div id="social_map" class="large-12 medium-12 small-12 columns"><a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a><a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a><a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a></div></div><div id="head">Eating along the ' + line_selected + ' line</div><div class="text">'+ intro +'</div></div><div class="scroll_box"><img class="scroll" src="img/scroll.png"></div>');
+        $("#box").html('<div class"img_box" style="position: relative">\n\
+<!-- <img id="img1" src="' + banner + '"> -->\n\
+<div id="social_map" class="large-12 medium-12 small-12 columns">\n\
+    <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
+    <a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a>\n\
+    <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a>\n\
+</div>\n\
+</div>\n\
+<div id="head">Eating along the ' + line_selected + ' line</div>\n\
+<div class="text">'+ intro +'</div>\n\
+</div>\n\
+<div class="scroll_box"><img class="scroll" src="img/scroll.png" alt="Scroll down image"></div>');
 
           $(".scroll").on("click",function(){
               $('html, body').animate({
