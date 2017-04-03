@@ -337,7 +337,7 @@ body{
   background-color: #333;
 }
 
-.details{
+.details, .details a {
   font-family: "PT serif", serif;
   font-size: 16px;
   line-height: 20px;
@@ -615,3 +615,5 @@ border: 1px solid #333;
     text-align:center;
     margin: auto;
 }
+
+a .stop_name, h3 a { color: white; }

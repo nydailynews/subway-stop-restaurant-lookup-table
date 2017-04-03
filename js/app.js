@@ -486,14 +486,16 @@ $(document).ready(function() {
 <div style="position: relative;">\n\
     <img class="profile" src="'+image+'" />\n\
 <div class="stop">\n\
+    <a target="_blank" href="'+url+'"">\n\
     <span class="stop_name">'+stop+'</span>\n\
     <span class="map_label">\n\
         <img class="view_map" alt="map icon" src="img/view_map.png">\n\
     </span>\n\
+    </a>\n\
 </div>\n\
-    <h3 class="name">'+headline+'</h3>\n\
+    <h3 class="name"><a target="_blank" href="'+url+'"">'+headline+'</a></h3>\n\
 </div>\n\
-<p class="details">'+details+'</p>\n\
+<p class="details"><a target="_blank" href="'+url+'"">'+details+'</a></p>\n\
 <a target="_blank" href="'+url+'"">\n\
     <button class="visit-page">READ MORE</button>\n\
 </a>\n\
