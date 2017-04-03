@@ -41,7 +41,8 @@ $(document).ready(function() {
     {"line":"Z", "link":"http://www.nydailynews.com/json/cmlink/eating-Z-line-1.3001224"},
     {"line":"5", "link":"http://www.nydailynews.com/json/cmlink/eating-5-line-1.3001238"},
     {"line":"3", "link":"http://www.nydailynews.com/json/cmlink/eating-3-line-1.3001232"},
-    {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"}
+    {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"},
+    {"line":"1", "link":""}
   ]
 
    var cover = [
@@ -101,7 +102,7 @@ $(document).ready(function() {
 
     // BUILD THE LEGEND
     var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
-    var lines_no = ['1','6','C','E','B','D','F','R','L']
+    var lines_no = ['6','C','E','B','D','F','R','L']
 
     for (i=0; i<lines.length; i++) {
         $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
@@ -230,10 +231,12 @@ $(document).ready(function() {
       radius: 12,
     }
 
-    var style_stop_clicked = {
-      fillColor: "white",
-      radius: 12,
-      weight: 7,
+    var style_stop_clicked = function(color) {
+        return {
+          fillColor: color,
+          radius: 12,
+          //weight: 7,
+        }
     }
 
     function scrollToCard(stop) {
@@ -272,14 +275,14 @@ $(document).ready(function() {
         layer.on('mouseover', function(e){
           if (windowWidth > 480  && select_layer.feature.properties.stations != feature.properties.stations) {  
               geojson_stop.setStyle(style_stop);
-              select_layer.setStyle(style_stop_clicked);
+              select_layer.setStyle(style_stop_clicked(getLine(feature.properties.line)));
               layer.setStyle(style_stop_hovered);
           }
         });
         layer.on('mouseout', function(e){
           if (windowWidth > 480 && select_layer.feature.properties.stations != feature.properties.stations) {   
               geojson_stop.setStyle(style_stop);
-              select_layer.setStyle(style_stop_clicked);
+              select_layer.setStyle(style_stop_clicked(getLine(feature.properties.line)));
           }
         });
     };
@@ -307,7 +310,7 @@ $(document).ready(function() {
         // if (windowWidth > 480) {
                 geojson_stop.setStyle(style_stop);
                 var layer = e.target;
-                layer.setStyle(style_stop_clicked);
+                layer.setStyle(style_stop_clicked(getLine(feature.properties.line)));
                 scrollToCard(layer.feature.properties.stations);
                 map.panTo(layer._latlng);
                 layer.openPopup();
@@ -610,7 +613,7 @@ $(document).ready(function() {
                         var lng = latlng[1];
                         geojson_stop.setStyle(style_stop);
                         geojson_stop_empty.setStyle(style_stop_empty);
-                        layer.setStyle(style_stop_clicked);
+                        layer.setStyle(style_stop_clicked(getLine(line_selected)));
                         layer.openPopup();
                         select_layer = layer;
                         map.panTo(layer._latlng);
@@ -618,7 +621,7 @@ $(document).ready(function() {
                     if (station2 == stop) {
                         geojson_stop.setStyle(style_stop);
                         geojson_stop_empty.setStyle(style_stop_empty);
-                        layer.setStyle(style_stop_clicked);
+                        layer.setStyle(style_stop_clicked(getLine(line_selected)));
                         layer.openPopup();
                         select_layer2 = layer;
                     }
@@ -651,14 +654,14 @@ $(document).ready(function() {
               var lng = latlng[1];
               geojson_stop.setStyle(style_stop);
               geojson_stop_empty.setStyle(style_stop_empty);
-              layer.setStyle(style_stop_clicked);
+              layer.setStyle(style_stop_clicked(getLine()));
               layer.openPopup();
               map.panTo([lng,lat]);
             }
             if (stations2 == stop) {
               geojson_stop.setStyle(style_stop);
               geojson_stop_empty.setStyle(style_stop_empty);
-              layer.setStyle(style_stop_clicked);
+              layer.setStyle(style_stop_clicked(getLine()));
               layer.openPopup();
             }
           })
