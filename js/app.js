@@ -309,10 +309,10 @@ $(document).ready(function() {
         //window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + selected.toLowerCase().replace(' ', '-'));
         // if (windowWidth > 480) {
                 geojson_stop.setStyle(style_stop);
-                var layer = e.target;
-                layer.setStyle(style_stop_clicked(getLine(feature.properties.line)));
+                layer = e.target;
+                layer.setStyle(style_stop_clicked(getLine(layer.feature.properties.line)));
                 scrollToCard(layer.feature.properties.stations);
-                map.panTo(layer._latlng);
+                map.panTo(e.latlng);
                 layer.openPopup();
         //}
         select_layer = layer;
