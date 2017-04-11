@@ -209,14 +209,15 @@ body{
   position: relative;
 }
 
+.info_box {
+  z-index: 2;
+  width:400px; 
+  margin: 20px;
+  position: relative;
+}
 #info-box-desktop {
 /*  position: absolute;
   left: 0;*/
-  width:400px; 
-  margin: 20px;
-/*  margin-bottom: 1000px;*/
-  z-index: 2;
-  position: relative;
 }
 
 

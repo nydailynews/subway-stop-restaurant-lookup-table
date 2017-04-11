@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+  var main_div = 'info-box-desktop';
+  if ( is_mobile ) main_div = 'info-box-handheld';
   var map;
   var markersArray =[];
   var markerList = {};
@@ -470,11 +471,11 @@ $(document).ready(function() {
 
           $(".scroll").on("click",function(){
               $('html, body').animate({
-                  scrollTop: $("#info-box-desktop").offset().top - 120
+                  scrollTop: $("#" + main_div).offset().top - 120
               }, 600);
           });
 
-          $("#info-box-desktop").empty();
+          $("#" + main_div).empty();
 
           for (i = 0; i<data.length; i++) {
               var stop = data[i].body[0].paragraphs.split(": ")[0];
@@ -483,7 +484,7 @@ $(document).ready(function() {
               // We don't want the full-size image, so we edit the image string
               var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
               var url = data[i].url;     
-              $('#info-box-desktop').append('<div class="window" id="window'+i+'">\n\
+              $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
 <div style="position: relative;">\n\
     <img class="profile" src="'+image+'" />\n\
 <div class="stop">\n\
@@ -509,8 +510,8 @@ $(document).ready(function() {
 
               // AD JUGGLER Add an ad after the first card.
               if ( i == 0 ) {
-                  $('#info-box-desktop').append($('#top_ad'));
-                  $('#info-box-desktop #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
+                  $('#' + main_div).append($('#top_ad'));
+                  $('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
               }
 
           }
@@ -563,7 +564,6 @@ $(document).ready(function() {
 
 
       cover_height = $("#box").css("height");
-      // $("#info-box-desktop").css("top", parseInt(cover_height) + 457)      
 
       function scrollFunction() {
         var window_height = $(window).height();
