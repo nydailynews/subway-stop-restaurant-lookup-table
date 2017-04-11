@@ -724,6 +724,24 @@ $(document).ready(function() {
             }
         }, 1000);
 
+
+// HANDHELD-SPECIFIC
+if ( is_mobile ) {
+    $('#' + main_div).append($('#box-wrapper'));
+    $('#' + main_div).append($('#top-ad-wrapper'));
+    //$('#' + main_div).append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
+    window.setTimeout(function() {
+    $('#' + main_div).touchwipe({
+         wipeLeft: function() { console.log('left'); },
+         wipeRight: function() { },
+         //wipeUp: function() { alert("up"); },
+         //wipeDown: function() { alert("down"); },
+         min_move_x: 20,
+         min_move_y: 20,
+         preventDefaultEvents: false
+    }); }, 1000);
+}
+
   });
 
 $(document).ready(function() {}), 

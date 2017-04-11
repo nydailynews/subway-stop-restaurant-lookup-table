@@ -219,6 +219,24 @@ body{
 /*  position: absolute;
   left: 0;*/
 }
+#info-box-handheld .window {
+    transform: rotate(90deg);
+    transform-origin: right top;
+}
+
+#info-box-handheld {
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    margin: auto;
+    border: 2px solid red;
+    height: 400px;
+    width: 200px;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    right: 400px;
+    top: 500px;
+}
 
 
 #bottom_ad {
