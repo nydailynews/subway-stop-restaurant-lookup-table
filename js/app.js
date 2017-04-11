@@ -150,6 +150,7 @@ $(document).ready(function() {
     }).addTo(map);
 
     function getLine(d) {
+        // Return the line's color, or black if the line name doesn't match anything we've set up.
         return d == "1" || d == "2" || d == "3" ? '#ee352e' :
                d == "4" || d == "5" || d == "6"  ? '#00933c' :
                d == "7"  ? '#b933ad' :
