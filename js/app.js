@@ -477,6 +477,13 @@ $(document).ready(function() {
 
           $("#" + main_div).empty();
 
+        // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
+        if ( is_mobile )
+        {
+            console.log($('body').width());
+            $('#' + main_div).height($('body').width());
+        }
+
           for (i = 0; i<data.length; i++) {
               var stop = data[i].body[0].paragraphs.split(": ")[0];
               var headline = data[i].title;

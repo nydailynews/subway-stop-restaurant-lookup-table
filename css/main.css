@@ -291,8 +291,8 @@ body{
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    right: 98%;
-    top: 30%;
+    right: 100%;
+    bottom: 10px;
 }
 
 
