@@ -515,12 +515,20 @@ $(document).ready(function() {
                   $('#' + main_div).append($('#top_ad'));
                   $('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
               }
+              if ( is_mobile && i == 5 ) {
+                  $('#' + main_div).append($('#bottom_ad'));
+                  //$('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
+              }
+                
 
           }
 
+        if ( !is_mobile )
+        {
           $('html, body').animate({
               scrollTop: $("#box").offset().top - 120
           }, 0);
+        }
 
           $.each(geojson_stop._layers, function() { 
               var layer_stop = $(this)[0].feature.properties.stations;
@@ -568,8 +576,10 @@ $(document).ready(function() {
       cover_height = $("#box").css("height");
 
       function scrollFunction() {
-        var window_height = $(window).height();
-        var window_top_position = $(window).scrollTop();
+        var scroll_obj = window;
+        if ( is_mobile ) scroll_obj = document.getElementById('info-box-handheld');
+        var window_height = $(scroll_obj).height();
+        var window_top_position = $(scroll_obj).scrollTop();
         var window_bottom_position = (window_top_position + window_height);
 
         // Loop through each of the restaurant panels to see which one is in
@@ -708,11 +718,16 @@ $(document).ready(function() {
         did_scroll = 0;
         scroll_pos = 0;
         old_station = '';
-        $(window).scroll( function() { 
+        var scroll_obj = window;
+        if ( is_mobile ) scroll_obj = document.getElementById('info-box-handheld');
+        console.log(scroll_obj);
+        $(scroll_obj).scroll( function() { 
             // The waypoints library appears to fire the scroll handler even
             // if scrolling hasn't occured, so we check to see if the window's
             // scrolltop position has actually changed.
+            console.log(scroll_pos, $(this).scrollTop());
             if ( scroll_pos !== $(this).scrollTop() ) {
+                console.log(scroll_pos);
                 scroll_pos = $(this).scrollTop();
                 did_scroll = 1;
             }
