@@ -481,6 +481,9 @@ $(document).ready(function() {
         if ( is_mobile )
         {
             $('#' + main_div).height($('body').width());
+            $('#' + main_div).width($('body').height());
+            $('#info-box-handheld #bottom_ad').height($('body').width());
+            //$('#info-box-handheld #bottom_ad').width($('body').height());
         }
 
           for (i = 0; i<data.length; i++) {

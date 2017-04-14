@@ -222,6 +222,13 @@ body{
 #info-box-handheld .window:first-child {
     margin-top: 320px;
 }
+#info-box-handheld #bottom_ad {
+    transform: rotate(90deg);
+    transform-origin: right top;
+    margin-top: 330px;
+    width: 300px;
+    margin-left: 100px;
+}
 #info-box-handheld .window {
     min-width: 300px;
     width: 320px;
@@ -291,7 +298,6 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     right: 100%;
-    bottom: 10px;
 }
 
 
