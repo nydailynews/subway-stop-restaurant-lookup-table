@@ -229,7 +229,7 @@ body{
     right: 0;
     transform: rotate(90deg);
     transform-origin: right top;
-    border: 3px solid blue!important;
+    border: 5px solid rgba(0,0,0,0.3)!important;
     margin-top: 130px;
 }
 #info-box-handheld .window img.profile {
@@ -245,10 +245,10 @@ body{
     color: #333;
 }
 #info-box-handheld .window a .map_label { display: none; }
+.window .stop_name { margin-bottom: 0; }
 #info-box-handheld .window .stop_name {
     line-height: 12px;
     font-size: 12px;
-    margin-bottom: 0;
 }
 #info-box-handheld .window .stop a,
 #info-box-handheld .window .stop_name,
@@ -285,11 +285,10 @@ body{
     transform: rotate(-90deg);
     transform-origin: right top;
     margin: auto;
-    border: 2px solid red;
     height: 400px;
     width: 500px;
     position: fixed;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     right: 100%;
     bottom: 10px;
@@ -448,7 +447,7 @@ body{
 .highlighted {
   border: solid 8px rgba(0,0,0,0.3);
 }
-.highlighted .profile {
+#info-box-desktop .highlighted .profile {
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
   -moz-filter: brightness(100%);
@@ -692,4 +691,4 @@ border: 1px solid #333;
     margin: auto;
 }
 
-a .stop_name, h3 a { color: white; }
+.stop_name a, h3 a { color: white; }
