@@ -219,9 +219,66 @@ body{
 /*  position: absolute;
   left: 0;*/
 }
+#info-box-handheld .window:first-child {
+    margin-top: 320px;
+}
 #info-box-handheld .window {
+    min-width: 300px;
+    width: 320px;
+    min-height: 200px;
+    right: 0;
     transform: rotate(90deg);
     transform-origin: right top;
+    border: 3px solid blue!important;
+    margin-top: 130px;
+}
+#info-box-handheld .window img.profile {
+    width: 100px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    clear: both;
+}
+#info-box-handheld .window .stop {
+    background: none;
+    bottom: 0;
+    position: inherit;
+    color: #333;
+}
+#info-box-handheld .window a .map_label { display: none; }
+#info-box-handheld .window .stop_name {
+    line-height: 12px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+#info-box-handheld .window .stop a,
+#info-box-handheld .window .stop_name,
+#info-box-handheld .window h3.name a,
+#info-box-handheld .window h3.name {
+    color: #333;
+    background-color: transparent;
+}
+#info-box-handheld .window h3.name {
+    font-size: 20px;
+    line-height: 20px;
+    top: 0;
+}
+#info-box-handheld .window .details {
+    display: none;
+}
+#info-box-handheld .window a.button.visit-page { display: block; }
+#info-box-handheld .window button.visit-page {
+    width: 150px;
+    float: right;
+    margin: 0 10px;
+}
+#info-box-handheld .window #social {
+    float: left;
+    width: 120px;
+    padding: 0;
+    margin: 5px 0 0 17px;
+}
+#info-box-handheld .window #social div {
+    margin-right: 0;
 }
 
 #info-box-handheld {
@@ -230,12 +287,12 @@ body{
     margin: auto;
     border: 2px solid red;
     height: 400px;
-    width: 200px;
+    width: 500px;
     position: fixed;
     overflow-y: auto;
     overflow-x: hidden;
-    right: 400px;
-    top: 500px;
+    right: 98%;
+    top: 30%;
 }
 
 
@@ -332,7 +389,7 @@ body{
   border-bottom: solid 2px #999; 
 }
 
-.profile {
+#info-box-desktop .profile {
   width: 100%;
   filter: brightness(70%);
   -webkit-filter: brightness(70%);

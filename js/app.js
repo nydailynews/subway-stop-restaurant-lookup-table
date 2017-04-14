@@ -487,18 +487,13 @@ $(document).ready(function() {
               $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
 <div style="position: relative;">\n\
     <img class="profile" src="'+image+'" />\n\
-<div class="stop">\n\
-    <a target="_blank" href="'+url+'"">\n\
-    <span class="stop_name">'+stop+'</span>\n\
-    <span class="map_label">\n\
-        <img class="view_map" alt="map icon" src="img/view_map.png">\n\
-    </span>\n\
-    </a>\n\
-</div>\n\
+    <div class="stop">\n\
+        <p class="stop_name"><a target="_blank" href="'+url+'"">'+stop+'</a></p>\n\
+    </div>\n\
     <h3 class="name"><a target="_blank" href="'+url+'"">'+headline+'</a></h3>\n\
 </div>\n\
 <p class="details"><a target="_blank" href="'+url+'"">'+details+'</a></p>\n\
-<a target="_blank" href="'+url+'"">\n\
+<a class="button_link" target="_blank" href="'+url+'"">\n\
     <button class="visit-page">READ MORE</button>\n\
 </a>\n\
 <div id="social">\n\
@@ -732,7 +727,7 @@ if ( is_mobile ) {
     //$('#' + main_div).append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
-         wipeLeft: function() { console.log('left'); },
+         wipeLeft: function() { did_scroll = 1; console.log('left'); },
          wipeRight: function() { },
          //wipeUp: function() { alert("up"); },
          //wipeDown: function() { alert("down"); },
