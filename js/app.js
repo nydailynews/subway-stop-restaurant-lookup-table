@@ -480,7 +480,6 @@ $(document).ready(function() {
         // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
         if ( is_mobile )
         {
-            console.log($('body').width());
             $('#' + main_div).height($('body').width());
         }
 
@@ -580,7 +579,8 @@ $(document).ready(function() {
         if ( is_mobile ) scroll_obj = document.getElementById('info-box-handheld');
         var window_height = $(scroll_obj).height();
         var window_top_position = $(scroll_obj).scrollTop();
-        var window_bottom_position = (window_top_position + window_height);
+        if ( is_mobile ) window_top_position = $(scroll_obj).scrollLeft();
+        //console.log('*', window_height, window_top_position);
 
         // Loop through each of the restaurant panels to see which one is in
         // view, if it's in view we make sure its label on the line map is visible.
@@ -589,14 +589,19 @@ $(document).ready(function() {
         // the second time to perform the browser actions on the active station (if necessary).
         $.each($(".window"), function() {
             var element_height = $(this).outerHeight();
+            if ( is_mobile ) element_height = $(this).outerWidth();
+
             var element_top_position = $(this).offset().top;
-            var element_bottom_position = (element_top_position + element_height);
+            if ( is_mobile ) element_top_position = $(this).offset().left;
+
+            //console.log('**', element_height, $(this).offset());
 
             // No "var" on this variable means we have it available in our next loop.
             station = $(this).find(".stop_name").text()
 
             // Check to see if this current panel is near / within viewport
             var window_pos = element_top_position - window_top_position;
+            //console.log('***', element_top_position, window_top_position, window_pos);
             // Break the loop when we get the panel closest to the top of the screen.
             if ( window_pos > 0 ) { return false; }
         });
@@ -615,9 +620,8 @@ $(document).ready(function() {
                 $("#label").html(station + "<img class='line_label' src='img/line_"+line_selected+".png' alt='"+ line_selected + " line'><img class='map_label' src='img/map.png' alt='Map icon'>");
                 var width = $("#label").css("width");
                 var height= $("#label").css("height");
-                $("#label_back").css({"width":parseInt(width)+20, "height":parseInt(height)+0});
+                $("#label_back").css({"width":parseInt(width)+20, "height":parseInt(height)+0, "display":"inline"});
                 $("#label").css({"display":"inline"});
-                $("#label_back").css({"display":"inline"});
 
                 $.each(geojson_stop._layers, function() {
                     var stop = $(this)[0].feature.properties.stations;
@@ -642,7 +646,7 @@ $(document).ready(function() {
                     }
                 });
 
-                var windowWidth = $(window).width();
+                var windowWidth = $(scroll_obj).width();
                 if (windowWidth > 480 ) {
                     $(".window").removeClass("highlighted");
                     $(this).addClass("highlighted"); 
@@ -720,14 +724,12 @@ $(document).ready(function() {
         old_station = '';
         var scroll_obj = window;
         if ( is_mobile ) scroll_obj = document.getElementById('info-box-handheld');
-        console.log(scroll_obj);
         $(scroll_obj).scroll( function() { 
             // The waypoints library appears to fire the scroll handler even
             // if scrolling hasn't occured, so we check to see if the window's
             // scrolltop position has actually changed.
-            console.log(scroll_pos, $(this).scrollTop());
+            //console.log(scroll_pos, $(this).scrollTop());
             if ( scroll_pos !== $(this).scrollTop() ) {
-                console.log(scroll_pos);
                 scroll_pos = $(this).scrollTop();
                 did_scroll = 1;
             }
