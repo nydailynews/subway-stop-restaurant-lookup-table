@@ -225,9 +225,10 @@ body{
 #info-box-handheld #bottom_ad {
     transform: rotate(90deg);
     transform-origin: right top;
-    margin-top: 330px;
-    width: 300px;
+    margin-top: 120px;
     margin-left: 100px;
+    margin-bottom: -40px;
+    width: 300px;
 }
 #info-box-handheld .window {
     min-width: 300px;

@@ -754,7 +754,7 @@ if ( is_mobile ) {
     //$('#' + main_div).append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
-         wipeLeft: function() { did_scroll = 1; console.log('left'); },
+         wipeLeft: function() { did_scroll = 1; window.alert('left'); },
          wipeRight: function() { },
          //wipeUp: function() { alert("up"); },
          //wipeDown: function() { alert("down"); },
