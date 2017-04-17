@@ -99,7 +99,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <script>
     if( is_mobile ) {
         googletag.cmd.push(function() {
-            googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
+            googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
             .setTargeting("interactive","dog-park-nyc")
             .setTargeting("position","x101");
             googletag.pubads().enableSingleRequest();
@@ -109,6 +109,13 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
             googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
             .setTargeting("interactive","dog-park-nyc")
             .setTargeting("position","x102");          
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
+            .setTargeting("interactive","dog-park-nyc")
+            .setTargeting("position","x103");
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -222,12 +229,12 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <div id="label_small_back"></div>
 
     <div id="box-wrapper"><div id="box"></div></div>
-    <div id="top-ad-wrapper"><div id='top_ad' class='center'><div id='div-gpt-ad-1423507761396-1'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); });</script></div></div></div>
+    <div id="top-ad-wrapper"><div id='top_ad' class='ad center'><div id='div-gpt-ad-1423507761396-1'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); });</script></div></div></div>
 
     <div class="info_box" id="info-box-desktop"></div>
     <div class="info_box" id="info-box-handheld"></div>
 
-    <div id='bottom_ad' class='center'><div id='div-gpt-ad-1423507761396-2'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });</script></div></div>
+    <div id="bottom-ad-wrapper"><div id='bottom_ad' class='ad center'><div id='div-gpt-ad-1423507761396-2'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });</script></div></div></div>
 
     <footer id="nydn-footer"></footer>
 

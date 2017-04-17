@@ -483,7 +483,7 @@ $(document).ready(function() {
             $('#' + main_div).height($('body').width());
             $('#' + main_div).width($('body').height());
             $('#info-box-handheld #bottom_ad').height($('body').width());
-            //$('#info-box-handheld #bottom_ad').width($('body').height());
+            $('#info-box-handheld #top_ad').width($('body').height());
         }
 
           for (i = 0; i<data.length; i++) {
@@ -517,13 +517,16 @@ $(document).ready(function() {
                   $('#' + main_div).append($('#top_ad'));
                   $('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
               }
-              if ( is_mobile && i == 5 ) {
-                  $('#' + main_div).append($('#bottom_ad'));
+              if ( is_mobile && i == 1 ) {
+                  $('#' + main_div).append($('#top-ad-wrapper'));
                   //$('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
               }
-                
-
+          } // end that big for loop
+          // Place the final ad on mobile
+          if ( is_mobile ) {
+              $('#' + main_div).append($('#bottom_ad'));
           }
+
 
         if ( !is_mobile )
         {
@@ -750,8 +753,6 @@ $(document).ready(function() {
 // HANDHELD-SPECIFIC
 if ( is_mobile ) {
     $('#' + main_div).append($('#box-wrapper'));
-    $('#' + main_div).append($('#top-ad-wrapper'));
-    //$('#' + main_div).append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
          wipeLeft: function() { did_scroll = 1; window.alert('left'); },

@@ -222,7 +222,7 @@ body{
 #info-box-handheld .window:first-child {
     margin-top: 320px;
 }
-#info-box-handheld #bottom_ad {
+#info-box-handheld .ad {
     transform: rotate(90deg);
     transform-origin: right top;
     margin-top: 120px;
