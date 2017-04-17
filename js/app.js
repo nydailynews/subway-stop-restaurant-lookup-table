@@ -783,27 +783,23 @@ scroll_horiz = function scroll_horiz(lr) {
     $.each($(".window"), function() {
         // Oh, this is some logic. Lord have mercy should you need to fix this.
         id = $(this)[0].id;
-        console.log(station, id);
         if ( found_it == 1 ) {
             offset = document.getElementById(prev_id).offsetTop;
-            console.log(offset);
             return false;
         }
 
         // The outcomes of this each loop hinges on this if-statement match
         if ( station == $(this).find(".stop_name").text() ) {
-            console.log(station, found_it, prev_id, $('#' + prev_id).find(".stop_name").text());
+            //console.log(station, found_it, prev_id, $('#' + prev_id).find(".stop_name").text());
             found_it = 1;
             if ( lr == -1 ) {
                 offset = document.getElementById(prev_prev_id).offsetTop;
-                console.log(offset);
                 return false;
             }
         }
         if ( typeof prev_id !== 'undefined' ) prev_prev_id = prev_id;
         prev_id = $(this)[0].id;
     });
-    console.log(offset);
     $('#info-box-handheld').animate({ scrollTop: offset }, 600);
 }
 
