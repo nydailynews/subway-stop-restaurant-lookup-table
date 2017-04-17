@@ -612,7 +612,7 @@ $(document).ready(function() {
             //console.log('**', element_height, $(this).offset());
 
             // No "var" on this variable means we have it available in our next loop.
-            station = $(this).find(".stop_name").text()
+            station = $(this).find(".stop_name").text();
 
             // Check to see if this current panel is near / within viewport
             var window_pos = element_top_position - window_top_position;
@@ -768,8 +768,36 @@ scroll_horiz = function scroll_horiz(lr) {
     did_scroll = 1;
     if ( lr == 'left' ) lr = -1;
     else lr = 1;
-    scroll_distance = 300 * lr;
-    $('#info-box-handheld').animate({ scrollTop: scroll_pos + scroll_distance }, 600);
+
+    // The var "station" will be set to whatever the station is in view.
+    // That's set in scrollFunction().
+    // We want to scroll to the top of the next or previous item.
+    found_it = 0;
+    $.each($(".window"), function() {
+        // Oh, this is some logic. Lord have mercy should you need to fix this.
+        id = $(this)[0].id;
+        console.log(station, id);
+        if ( found_it == 1 ) {
+            offset = document.getElementById(prev_id).offsetTop;
+            console.log(offset);
+            return false;
+        }
+
+        // The outcomes of this each loop hinges on this if-statement match
+        if ( station == $(this).find(".stop_name").text() ) {
+            console.log(station, found_it, prev_id, $('#' + prev_id).find(".stop_name").text());
+            found_it = 1;
+            if ( lr == -1 ) {
+                offset = document.getElementById(prev_prev_id).offsetTop;
+                console.log(offset);
+                return false;
+            }
+        }
+        if ( typeof prev_id !== 'undefined' ) prev_prev_id = prev_id;
+        prev_id = $(this)[0].id;
+    });
+    console.log(offset);
+    $('#info-box-handheld').animate({ scrollTop: offset }, 600);
 }
 
 if ( is_mobile ) {
