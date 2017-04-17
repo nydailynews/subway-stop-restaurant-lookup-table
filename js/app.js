@@ -357,51 +357,53 @@ $(document).ready(function() {
     }
 
     var load_map = function (line_selected, json_selected, subsequent_click) {   
-      $.getJSON(json_selected, function(data){
-          if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
+        $.getJSON(json_selected, function(data){
+            if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
-          selected_mta = [];
-          selected_stops = [];
-          selected_stops_empty = [];
-          for (i=0; i<mta.features.length; i++) {
+            selected_mta = [];
+            selected_stops = [];
+            selected_stops_empty = [];
+            for (i=0; i<mta.features.length; i++) {
               if (mta.features[i].properties.route_id == line_selected) {
                   map.removeLayer(geojson_line);
                   selected_mta.push(mta.features[i])
                   geojson_line = L.geoJson(selected_mta, {style: style_line}).addTo(map);
               }
-          }
-
-          var my_stops = []
-          for (p = 0; p<data.length; p++) {
-              var stop1 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[0];
-              var stop2 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[1];
-              my_stops.push(stop1);
-              if (stop2 != null && $.inArray(stop2,my_stops) == -1) {
-                  my_stops.push(stop2)
-              } 
-          }
-
-          for (i=0; i<stops.features.length; i++) {
-            if (stops.features[i].properties.line == line_selected) {
-                  if ($.inArray(stops.features[i].properties.stations,my_stops) !== -1) {
-                      selected_stops.push(stops.features[i]);
-                  } else {
-                      selected_stops_empty.push(stops.features[i])
-                  }
             }
-          }
-        
-          map.removeLayer(geojson_stop);
-          map.removeLayer(geojson_stop_empty); 
-          //map.removeLayer(geojson_stop_highlight);   
 
-          geojson_stop = L.geoJson(selected_stops, {
-              pointToLayer: function (feature, latlng) {                            
-                  return L.circleMarker(latlng);
-              },
-              style: style_stop,
-              on_each_feature: on_each_feature
-          }).addTo(map);
+            var my_stops = []
+            var l = data.length;
+            for (p = 0; p<l; p++) {
+                var stop1 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[0];
+                var stop2 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[1];
+                my_stops.push(stop1);
+                if (stop2 != null && $.inArray(stop2,my_stops) == -1) {
+                    my_stops.push(stop2)
+                } 
+            }
+
+            var l = stops.features.length;
+            for (i=0; i<l; i++) {
+                if (stops.features[i].properties.line == line_selected) {
+                    if ($.inArray(stops.features[i].properties.stations,my_stops) !== -1) {
+                        selected_stops.push(stops.features[i]);
+                    } else {
+                        selected_stops_empty.push(stops.features[i])
+                    }
+                }
+            }
+        
+            map.removeLayer(geojson_stop);
+            map.removeLayer(geojson_stop_empty); 
+            //map.removeLayer(geojson_stop_highlight);   
+
+            geojson_stop = L.geoJson(selected_stops, {
+                pointToLayer: function (feature, latlng) {                            
+                    return L.circleMarker(latlng);
+                },
+                style: style_stop,
+                on_each_feature: on_each_feature
+            }).addTo(map);
 
           geojson_stop_empty = L.geoJson(selected_stops_empty, {
               pointToLayer: function (feature, latlng) {                            
@@ -434,7 +436,6 @@ $(document).ready(function() {
                 }            
             }
           }
-
 
         for (i=0;i<cover.length;i++) {
           if (cover[i].line == line_selected) {
