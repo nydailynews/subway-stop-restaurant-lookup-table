@@ -148,7 +148,7 @@ $(document).ready(function() {
       position: "bottomright"
     }).addTo(map);
 
-    function getLine(d) {
+    function get_line(d) {
         // Return the line's color, or black if the line name doesn't match anything we've set up.
         return d == "1" || d == "2" || d == "3" ? '#ee352e' :
                d == "4" || d == "5" || d == "6"  ? '#00933c' :
@@ -165,7 +165,7 @@ $(document).ready(function() {
 
     function style_line(feature) {
         weight = 3,
-        color = getLine(feature.properties.route_id)
+        color = get_line(feature.properties.route_id)
         return {
             weight: weight,
             color: color,
@@ -175,7 +175,7 @@ $(document).ready(function() {
 
     function style_line_hide(feature) {
         weight = 3,
-        color = getLine(feature.properties.route_id)
+        color = get_line(feature.properties.route_id)
         return {
             weight: weight,
             color: color,
@@ -192,7 +192,7 @@ $(document).ready(function() {
     };
 
     function style_stop(feature) {
-        color = getLine(feature.properties.line)
+        color = get_line(feature.properties.line)
         return {
             weight: 2,
             color: color,
@@ -204,7 +204,7 @@ $(document).ready(function() {
     };
 
     function style_stop_hide(feature) {
-        color = getLine(feature.properties.line)
+        color = get_line(feature.properties.line)
         return {
             weight: 2,
             color: color,
@@ -216,7 +216,7 @@ $(document).ready(function() {
     };
 
     function style_stop_empty(feature) {
-        color = getLine(feature.properties.line)
+        color = get_line(feature.properties.line)
         return {
             weight: 2,
             color: color,
@@ -239,7 +239,7 @@ $(document).ready(function() {
         }
     }
 
-    function scrollToCard(stop) {
+    function scroll_to_card(stop) {
       $.each($(".window"), function() {
           var currentID = $(this).attr("id").split("window")[1];
           var station = $(this).find(".stop").find(".stop_name").text()
@@ -266,28 +266,28 @@ $(document).ready(function() {
 
     };
 
-    function onEachFeature(feature, layer) {
+    function on_each_feature(feature, layer) {
         layer.on({
-            click: highlightFeature,
+            click: highlight_feature,
         });
         layer.bindPopup('<div class="popup-back"></div><div class="popup-front">'+feature.properties.stations+'<img class="line_label" src="img/line_'+feature.properties.line+'.png"></div>', {offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         layer.on('mouseover', function(e){
           if (windowWidth > 480  && select_layer.feature.properties.stations != feature.properties.stations) {  
               geojson_stop.setStyle(style_stop);
-              select_layer.setStyle(style_stop_clicked(getLine(feature.properties.line)));
+              select_layer.setStyle(style_stop_clicked(get_line(feature.properties.line)));
               layer.setStyle(style_stop_hovered);
           }
         });
         layer.on('mouseout', function(e){
           if (windowWidth > 480 && select_layer.feature.properties.stations != feature.properties.stations) {   
               geojson_stop.setStyle(style_stop);
-              select_layer.setStyle(style_stop_clicked(getLine(feature.properties.line)));
+              select_layer.setStyle(style_stop_clicked(get_line(feature.properties.line)));
           }
         });
     };
 
-    function onEachFeature2(feature, layer) {
+    function on_each_feature2(feature, layer) {
         layer.bindPopup(feature.properties.stations + "<br><span style='color: #000; font-weight: bold; font-size: 15px; text-align: center; text-transform: uppercase'>No articles for this stop</span>", {offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         if (windowWidth > 480) {    
@@ -300,7 +300,7 @@ $(document).ready(function() {
         }
     };
 
-    function highlightFeature(e) {
+    function highlight_feature(e) {
         var popup_width = $(".leaflet-popup-content").width();
         var popup_height = $(".leaflet-popup-content").height();
         $(".popup-back").width(popup_width)
@@ -310,8 +310,8 @@ $(document).ready(function() {
         // if (windowWidth > 480) {
                 geojson_stop.setStyle(style_stop);
                 layer = e.target;
-                layer.setStyle(style_stop_clicked(getLine(layer.feature.properties.line)));
-                scrollToCard(layer.feature.properties.stations);
+                layer.setStyle(style_stop_clicked(get_line(layer.feature.properties.line)));
+                scroll_to_card(layer.feature.properties.stations);
                 map.panTo(e.latlng);
                 layer.openPopup();
         //}
@@ -333,7 +333,7 @@ $(document).ready(function() {
         style: style_stop_hide,
     }).addTo(map);
 
-    function loadMarker(latlng, stop, line, i, marker_type) {
+    function load_marker(latlng, stop, line, i, marker_type) {
         // Handle placing and naming markers. 
         // marker_type will be either 'horizontal' 'upper' or 'lower'
         var anchors = { horizontal: [-15, 10],
@@ -356,7 +356,7 @@ $(document).ready(function() {
         markersArray.push(marker);
     }
 
-    var loadMap = function (line_selected, json_selected, subsequent_click) {   
+    var load_map = function (line_selected, json_selected, subsequent_click) {   
       $.getJSON(json_selected, function(data){
           if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
@@ -400,7 +400,7 @@ $(document).ready(function() {
                   return L.circleMarker(latlng);
               },
               style: style_stop,
-              onEachFeature: onEachFeature
+              on_each_feature: on_each_feature
           }).addTo(map);
 
           geojson_stop_empty = L.geoJson(selected_stops_empty, {
@@ -408,7 +408,7 @@ $(document).ready(function() {
                   return L.circleMarker(latlng);
               },
               style: style_stop_empty,
-              onEachFeature: onEachFeature2
+              on_each_feature: on_each_feature2
           }).addTo(map);
 
           for (i = 0; i < markersArray.length; i++) {
@@ -424,12 +424,12 @@ $(document).ready(function() {
                   // where labels overlap.
                   // This logic looks for whether the subway station is listed in the subway line's 'upper' or 'lower' arrays.
                   if ($.inArray(selected_stops[i].properties.stations,labels[p].upper) >= 0 ) {
-                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'upper-right');
+                    load_marker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'upper-right');
                   }
                   else if ($.inArray(selected_stops[i].properties.stations,labels[p].lower) >= 0 ) {
-                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'lower-right');
+                    load_marker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'lower-right');
                   } else {
-                    loadMarker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'horizontal');
+                    load_marker(selected_stops[i].geometry.coordinates, selected_stops[i].properties.stations, selected_stops[i].properties.line, i, 'horizontal');
                   }
                 }            
             }
@@ -456,7 +456,7 @@ $(document).ready(function() {
         $("#box").html('\n\
         <svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
-            <g id="subway_line" fill="' + getLine(line_selected) + '">\n\
+            <g id="subway_line" fill="' + get_line(line_selected) + '">\n\
                 <path d="M2,8 L365.138914,8 C329.250684,71.8546012 261.381149,114.92314 183.570374,114.92314 C105.753806,114.92314 37.8863002,71.8546012 2.00002871,8.00005109 Z" id="subway_line_path"></path>\n\
             </g>\n\
         </g>\n\
@@ -558,37 +558,40 @@ $(document).ready(function() {
     // ACTION: If someone clicks on a subway line at the top of the screen
     $(".legend").click(function(){
         line_selected = $(this).attr("id");
-        clickLegend(line_selected);
+        click_legend(line_selected);
     });
 
-    function clickLegend(value) {
+    function click_legend(value) {
         // Handle clicks and taps on the legend at the top of the screen.
-        // Why is it called a legend and not a nav? Whooooo knoooooooooooows.
+        // Why is it called a legend and not a nav
         if ($.inArray(value,lines_no) == -1) {
             var l = rss.length;
             for ( i=0; i<l; i++ ) {
                 if (rss[i].line == value) {
                     window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
-                    highlightLegend(value);
+                    highlight_legend(value);
                     json_selected = rss[i].link;
                 }
             }
-            loadMap(value, json_selected, 1);
+            load_map(value, json_selected, 1);
         }
     }
-    function highlightLegend(value) {
+
+    function highlight_legend(value) {
         $(".logo_box").removeClass("selected");
         var line_link = document.getElementById(value);
         $(line_link).closest(".logo_box").addClass("selected");
     }
 
-    highlightLegend(line_selected);
-    loadMap(line_selected, json_selected, 0);
+    // This is what fires on the initial load.
+    // That "0" in load_map means "this is the initial load."
+    highlight_legend(line_selected);
+    load_map(line_selected, json_selected, 0);
 
 
     cover_height = $("#box").css("height");
 
-    function scrollFunction() {
+    function scroll_function() {
         // This is what fires when a reader scrolls.
         var scroll_obj = window;
         if ( is_mobile ) scroll_obj = document.getElementById('info-box-handheld');
@@ -647,7 +650,7 @@ $(document).ready(function() {
                         var lng = latlng[1];
                         geojson_stop.setStyle(style_stop);
                         geojson_stop_empty.setStyle(style_stop_empty);
-                        layer.setStyle(style_stop_clicked(getLine(line_selected)));
+                        layer.setStyle(style_stop_clicked(get_line(line_selected)));
                         layer.openPopup();
                         select_layer = layer;
                         map.panTo(layer._latlng);
@@ -655,7 +658,7 @@ $(document).ready(function() {
                     if (station2 == stop) {
                         geojson_stop.setStyle(style_stop);
                         geojson_stop_empty.setStyle(style_stop_empty);
-                        layer.setStyle(style_stop_clicked(getLine(line_selected)));
+                        layer.setStyle(style_stop_clicked(get_line(line_selected)));
                         layer.openPopup();
                         select_layer2 = layer;
                     }
@@ -688,14 +691,14 @@ $(document).ready(function() {
               var lng = latlng[1];
               geojson_stop.setStyle(style_stop);
               geojson_stop_empty.setStyle(style_stop_empty);
-              layer.setStyle(style_stop_clicked(getLine()));
+              layer.setStyle(style_stop_clicked(get_line()));
               layer.openPopup();
               map.panTo([lng,lat]);
             }
             if (stations2 == stop) {
               geojson_stop.setStyle(style_stop);
               geojson_stop_empty.setStyle(style_stop_empty);
-              layer.setStyle(style_stop_clicked(getLine()));
+              layer.setStyle(style_stop_clicked(get_line()));
               layer.openPopup();
             }
           })
@@ -733,7 +736,7 @@ $(document).ready(function() {
 
       };
 
-        // We want the scrollFunction() to fire, at most, three times per second.
+        // We want the scroll_function() to fire, at most, three times per second.
         did_scroll = 0;
         scroll_pos = 0;
         old_station = '';
@@ -754,15 +757,15 @@ $(document).ready(function() {
             if ( did_scroll == 1 )
             {
                 did_scroll = 0;
-                scrollFunction();
+                scroll_function();
             }
         }, 1000);
 
 
 // HANDHELD-SPECIFIC
 scroll_horiz = function scroll_horiz(lr) {
-    // This is our hack into the scrollFunction() method used when a reader
-    // swipes on mobile. We can't use scrollFunction() because scrollFunction()
+    // This is our hack into the scroll_function() method used when a reader
+    // swipes on mobile. We can't use scroll_function() because scroll_function()
     // doesn't do anything until the div scrolls. This is the method we use to
     // make the div scroll.
     did_scroll = 1;
@@ -777,7 +780,7 @@ scroll_horiz = function scroll_horiz(lr) {
         return false;
     }
     // The var "station" will be set to whatever the station is in view.
-    // That's set in scrollFunction().
+    // That's set in scroll_function().
     // We want to scroll to the top of the next or previous item.
     found_it = 0;
     $.each($(".window"), function() {
