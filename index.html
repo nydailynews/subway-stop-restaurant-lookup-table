@@ -246,9 +246,6 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <script src="data/mta.geojson"></script>
     <script src="data/nyc.geojson"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<!--
-    <script src="js/vendor/jquery.js"></script>
--->
     <script src="js/jquery.ba-bbq.min.js"></script>
     <script src="js/app.js"></script>
     <script>
@@ -256,9 +253,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
         {
             $('#info-box-desktop').remove();
             var s = document.createElement('script');
-            //s.setAttribute('src', 'js/jquery.mobile.custom.js');
             s.setAttribute('src', 'js/jquery.touchwipe.min.js');
-            //s.setAttribute('src', 'js/hammer.min.js');
             document.body.appendChild(s);
         }
         else $('#info-box-handheld').remove();

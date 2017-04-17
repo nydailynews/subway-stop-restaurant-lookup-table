@@ -516,9 +516,9 @@ $(document).ready(function() {
     <button class="visit-page">READ MORE</button>\n\
 </a>\n\
 <div id="social">\n\
-    <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-    <a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a>\n\
-    <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a>\n\
+    <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
+    <a href="https://twitter.com/share?url=' + url + '&text=' + headline + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+    <a href="mailto:?subject=' + headline+ '&body=' + details + ' ' + url + '"><div id="email"></div></a>\n\
 </div>\n\
 </div>');
 
