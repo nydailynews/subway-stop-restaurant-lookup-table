@@ -358,9 +358,7 @@ $(document).ready(function() {
 
     var loadMap = function (line_selected, json_selected, subsequent_click) {   
       $.getJSON(json_selected, function(data){
-          if (line_selected == "4" || line_selected == "5" ) {
-                data.reverse();   
-          }
+          if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
           selected_mta = [];
           selected_stops = [];
@@ -372,7 +370,6 @@ $(document).ready(function() {
                   geojson_line = L.geoJson(selected_mta, {style: style_line}).addTo(map);
               }
           }
-
 
           var my_stops = []
           for (p = 0; p<data.length; p++) {
@@ -393,7 +390,6 @@ $(document).ready(function() {
                   }
             }
           }
-
         
           map.removeLayer(geojson_stop);
           map.removeLayer(geojson_stop_empty); 
@@ -454,7 +450,9 @@ $(document).ready(function() {
             blurb: '',
             blurb_encoded: ''
         };
-            console.log($('#box'));
+
+        console.log(line_selected);
+        //$("#box").html('');
         $("#box").html('\n\
         <svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
@@ -530,6 +528,7 @@ $(document).ready(function() {
                 //$('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
             }
         } // end that big for loop
+
         // Place the final ad on mobile
         if ( is_mobile ) {
             $('#' + main_div).append($('#bottom_ad'));
@@ -562,16 +561,19 @@ $(document).ready(function() {
         clickLegend(line_selected);
     });
 
-    function clickLegend(value){
+    function clickLegend(value) {
+        // Handle clicks and taps on the legend at the top of the screen.
+        // Why is it called a legend and not a nav? Whooooo knoooooooooooows.
         if ($.inArray(value,lines_no) == -1) {
-        for (i=0;i<rss.length;i++) {
-          if (rss[i].line == value) {
-            window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
-            highlightLegend(value);
-            json_selected = rss[i].link;
-          }
-        }
-          loadMap(value, json_selected, 1);
+            var l = rss.length;
+            for ( i=0; i<l; i++ ) {
+                if (rss[i].line == value) {
+                    window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
+                    highlightLegend(value);
+                    json_selected = rss[i].link;
+                }
+            }
+            loadMap(value, json_selected, 1);
         }
     }
     function highlightLegend(value) {
