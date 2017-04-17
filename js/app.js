@@ -494,14 +494,14 @@ $(document).ready(function() {
             $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').width($('body').height());
         }
 
-          for (i = 0; i<data.length; i++) {
-              var stop = data[i].body[0].paragraphs.split(": ")[0];
-              var headline = data[i].title;
-              var details = data[i].body[0].paragraphs.split(": ")[1];
-              // We don't want the full-size image, so we edit the image string
-              var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
-              var url = data[i].url;     
-              $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
+        for (i = 0; i<data.length; i++) {
+            var stop = data[i].body[0].paragraphs.split(": ")[0];
+            var headline = data[i].title;
+            var details = data[i].body[0].paragraphs.split(": ")[1];
+            // We don't want the full-size image, so we edit the image string
+            var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
+            var url = data[i].url;     
+            $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
 <div class="card_top">\n\
     <img class="profile" src="'+image+'" />\n\
     <div class="stop">\n\
@@ -520,41 +520,39 @@ $(document).ready(function() {
 </div>\n\
 </div>');
 
-              // AD JUGGLER Add an ad after the first card.
-              if ( i == 0 ) {
-                  $('#' + main_div).append($('#top_ad'));
-                  $('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
-              }
-              if ( is_mobile && i == 1 ) {
-                  $('#' + main_div).append($('#top-ad-wrapper'));
-                  //$('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
-              }
-          } // end that big for loop
-          // Place the final ad on mobile
-          if ( is_mobile ) {
-              $('#' + main_div).append($('#bottom_ad'));
-          }
-
-
-        if ( !is_mobile )
-        {
-          $('html, body').animate({
-              scrollTop: $("#box").offset().top - 120
-          }, 0);
+            // AD JUGGLER Add an ad after the first card.
+            if ( i == 0 ) {
+                $('#' + main_div).append($('#top_ad'));
+                $('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
+            }
+            if ( is_mobile && i == 1 ) {
+                $('#' + main_div).append($('#top-ad-wrapper'));
+                //$('#' + main_div + ' #top_ad').append("<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); })</script>");
+            }
+        } // end that big for loop
+        // Place the final ad on mobile
+        if ( is_mobile ) {
+            $('#' + main_div).append($('#bottom_ad'));
         }
 
-          $.each(geojson_stop._layers, function() { 
-              var layer_stop = $(this)[0].feature.properties.stations;
-              var data_stop = data[0].body[0].paragraphs.split(": ")[0];
-              var data_stop_1 = data_stop.split(" & ")[0];
-              if (layer_stop ==  data_stop_1 ) {
-                  var latlng = $(this)[0].feature.geometry.coordinates;
-                  var lat = latlng[0];
-                  var lng = latlng[1];
-                  map.panTo([lng,lat]);
-              }
-          });
-       })
+        if ( !is_mobile ) {
+            $('html, body').animate({
+                scrollTop: $("#box").offset().top - 120
+            }, 0);
+        }
+
+        $.each(geojson_stop._layers, function() { 
+            var layer_stop = $(this)[0].feature.properties.stations;
+            var data_stop = data[0].body[0].paragraphs.split(": ")[0];
+            var data_stop_1 = data_stop.split(" & ")[0];
+            if (layer_stop ==  data_stop_1 ) {
+                var latlng = $(this)[0].feature.geometry.coordinates;
+                var lat = latlng[0];
+                var lng = latlng[1];
+                map.panTo([lng,lat]);
+            }
+        });
+    });
     };
 
 
