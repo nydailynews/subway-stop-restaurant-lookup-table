@@ -357,6 +357,7 @@ $(document).ready(function() {
     }
 
     var load_map = function (line_selected, json_selected, subsequent_click) {   
+        // This is the workhorse function. It loads the map and all the stop-cards.
         $.getJSON(json_selected, function(data){
             if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
@@ -452,8 +453,9 @@ $(document).ready(function() {
             blurb_encoded: ''
         };
 
-        console.log(line_selected);
-        //$("#box").html('');
+        // Clean up the main_div between different lines loading
+        $("#" + main_div + ' .window').remove();
+
         $("#box").html('\n\
         <svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
@@ -481,7 +483,6 @@ $(document).ready(function() {
               }, 600);
           });
 
-          $("#" + main_div).empty();
 
         // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
         if ( is_mobile && subsequent_click == 0 )
@@ -493,7 +494,8 @@ $(document).ready(function() {
             $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').width($('body').height());
         }
 
-        for (i = 0; i<data.length; i++) {
+        var l = data.length;
+        for (i = 0; i<l; i++) {
             var stop = data[i].body[0].paragraphs.split(": ")[0];
             var headline = data[i].title;
             var details = data[i].body[0].paragraphs.split(": ")[1];
