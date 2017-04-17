@@ -358,9 +358,9 @@ $(document).ready(function() {
         markersArray.push(marker);
     }
 
-    var loadMap = function (line_selected, json_selected) {   
+    var loadMap = function (line_selected, json_selected, subsequent_click) {   
       $.getJSON(json_selected, function(data){
-          if (line_selected == "4") {
+          if (line_selected == "4" || line_selected == "5" ) {
                 data.reverse();   
           }
 
@@ -456,6 +456,7 @@ $(document).ready(function() {
             blurb: '',
             blurb_encoded: ''
         };
+            console.log($('#box'));
         $("#box").html('\n\
         <svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
@@ -486,7 +487,7 @@ $(document).ready(function() {
           $("#" + main_div).empty();
 
         // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
-        if ( is_mobile )
+        if ( is_mobile && subsequent_click == 0 )
         {
             $('#' + main_div).append($('#box-wrapper'));
             $('#' + main_div).height($('body').width());
@@ -574,7 +575,7 @@ $(document).ready(function() {
             json_selected = rss[i].link;
           }
         }
-          loadMap(value, json_selected);
+          loadMap(value, json_selected, 1);
         }
     }
     function highlightLegend(value) {
@@ -584,7 +585,7 @@ $(document).ready(function() {
     }
 
     highlightLegend(line_selected);
-    loadMap(line_selected, json_selected);
+    loadMap(line_selected, json_selected, 0);
 
 
       cover_height = $("#box").css("height");
@@ -760,11 +761,16 @@ $(document).ready(function() {
 
 
 // HANDHELD-SPECIFIC
+scroll_to = function scroll_to(lr) {
+    lr = 1
+    if ( 'lr' == 'left' ) lr = -1
+    scroll_distance = 300 * lr;
+    $('.info_box').animate({ scrollTop: scroll_pos + scroll_distance }, 1000); }
 if ( is_mobile ) {
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
-         wipeLeft: function() { did_scroll = 1; window.alert('left'); },
-         wipeRight: function() { },
+         wipeLeft: function() { did_scroll = 1; scroll_to('right'); },
+         wipeRight: function() { did_scroll = 1; scroll_to('left'); },
          //wipeUp: function() { alert("up"); },
          //wipeDown: function() { alert("down"); },
          min_move_x: 20,

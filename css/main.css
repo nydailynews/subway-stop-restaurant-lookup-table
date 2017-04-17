@@ -232,7 +232,7 @@ body #info-box-handheld #box {
     overflow-y: hidden;
 }
 body #info-box-handheld #box .scroll_box {
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
     margin: 0 auto;
     padding-bottom: 0;
     width: 64px;
