@@ -378,18 +378,18 @@ body #info-box-handheld #box .scroll_box {
 }
 
 .right, .left {
-  height: 62px;
-  z-index: 5;
-  display: none;
+    cursor: pointer;
+    height: 62px;
+    z-index: 5;
+    display: none;
+    position: fixed;
 }
 
 .left {
-  position: fixed;
   top: 55px;
   left: 0px;
 }
 .right {
-  position: fixed;
   top: 62px;
   right: 0px;
 }

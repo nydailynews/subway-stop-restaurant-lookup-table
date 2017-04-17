@@ -121,8 +121,8 @@ $(document).ready(function() {
     $("#1").css("margin-left", "52px");
     $("#S").css("margin-right", "52px");
 
-    $("#legend_box").prepend('<div class="left_box" ><img style="cursor: pointer;" class="left" src="img/left.png" alt="Scroll left"></div>');
-    $("#legend_box").append('<div class="right_box" ><img style="cursor: pointer;" class="right" src="img/right.png" alt="Scroll right"></div>');
+    $("#legend_box").prepend('<div class="left_box" ><img class="left" src="img/left.png" alt="Scroll left"></div>');
+    $("#legend_box").append('<div class="right_box" ><img class="right" src="img/right.png" alt="Scroll right"></div>');
 
     function scroll_legend(lr) {
         var slideW = $('.logo_box').width();
