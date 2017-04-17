@@ -219,6 +219,12 @@ body{
 /*  position: absolute;
   left: 0;*/
 }
+.card_top { position: relative; }
+
+#info-box-handheld .card_top {
+    height: 129px;
+    overflow: hidden;
+}
 body #info-box-handheld #box {
     padding-bottom: 40px;
     margin: 230px 0 -40px 175px;

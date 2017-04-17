@@ -495,7 +495,7 @@ $(document).ready(function() {
               var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
               var url = data[i].url;     
               $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
-<div style="position: relative;">\n\
+<div class="card_top">\n\
     <img class="profile" src="'+image+'" />\n\
     <div class="stop">\n\
         <p class="stop_name"><a target="_blank" href="'+url+'"">'+stop+'</a></p>\n\
