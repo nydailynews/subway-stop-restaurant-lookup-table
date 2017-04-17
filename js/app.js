@@ -126,7 +126,7 @@ $(document).ready(function() {
 
     function scroll_legend(lr) {
         var slideW = $('.logo_box').width();
-        if ( lr == 'right' ) $('#legend_box').animate({scrollLeft: "-="+slideW*2 }, 600);      
+        if ( lr == 'left' ) $('#legend_box').animate({scrollLeft: "-="+slideW*2 }, 600);      
         else $('#legend_box').animate({scrollLeft: "+="+slideW*2 }, 600);
     }
     $(".left").click(function() { scroll_legend('left'); });
@@ -586,9 +586,10 @@ $(document).ready(function() {
     loadMap(line_selected, json_selected, 0);
 
 
-      cover_height = $("#box").css("height");
+    cover_height = $("#box").css("height");
 
-      function scrollFunction() {
+    function scrollFunction() {
+        // This is what fires when a reader scrolls.
         var scroll_obj = window;
         if ( is_mobile ) scroll_obj = document.getElementById('info-box-handheld');
         var window_height = $(scroll_obj).height();
@@ -759,16 +760,23 @@ $(document).ready(function() {
 
 
 // HANDHELD-SPECIFIC
-scroll_to = function scroll_to(lr) {
-    lr = 1
-    if ( 'lr' == 'left' ) lr = -1
+scroll_horiz = function scroll_horiz(lr) {
+    // This is our hack into the scrollFunction() method used when a reader
+    // swipes on mobile. We can't use scrollFunction() because scrollFunction()
+    // doesn't do anything until the div scrolls. This is the method we use to
+    // make the div scroll.
+    did_scroll = 1;
+    if ( lr == 'left' ) lr = -1;
+    else lr = 1;
     scroll_distance = 300 * lr;
-    $('.info_box').animate({ scrollTop: scroll_pos + scroll_distance }, 1000); }
+    $('#info-box-handheld').animate({ scrollTop: scroll_pos + scroll_distance }, 600);
+}
+
 if ( is_mobile ) {
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
-         wipeLeft: function() { did_scroll = 1; scroll_to('right'); },
-         wipeRight: function() { did_scroll = 1; scroll_to('left'); },
+         wipeLeft: function() { scroll_horiz('right'); },
+         wipeRight: function() { scroll_horiz('left'); },
          min_move_x: 20,
          min_move_y: 20,
          preventDefaultEvents: false
@@ -782,6 +790,7 @@ if ( is_mobile ) {
 
   });
 
+// I THINK THIS MAKES THINGS STICKY.
 $(document).ready(function() {}), 
     function() {
         var e, t;
