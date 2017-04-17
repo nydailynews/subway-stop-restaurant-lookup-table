@@ -219,10 +219,13 @@ body{
 /*  position: absolute;
   left: 0;*/
 }
-#info-box-handheld .window:first-child {
-    margin-top: 320px;
+body #info-box-handheld #box {
+    padding-bottom: 40px;
+    margin: 230px 0 -40px 175px;
+    width: 200px;
 }
-#info-box-handheld .ad {
+body #info-box-handheld #box .scroll_box { transform: rotate(-90deg); }
+#info-box-handheld .ad, #info-box-handheld #box {
     transform: rotate(90deg);
     transform-origin: right top;
     margin-top: 120px;
@@ -626,13 +629,9 @@ border: 1px solid #333;
     }
 
     #box {
-      width:90%; 
       margin-left: 5%;
       background-color: white;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-/*      position: absolute;
-      top: 120px;*/
-      left: 0;
     }
 
     #info-box-desktop {

@@ -480,10 +480,11 @@ $(document).ready(function() {
         // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
         if ( is_mobile )
         {
+            $('#' + main_div).append($('#box-wrapper'));
             $('#' + main_div).height($('body').width());
             $('#' + main_div).width($('body').height());
-            $('#info-box-handheld #bottom_ad').height($('body').width());
-            $('#info-box-handheld #top_ad').width($('body').height());
+            $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').height($('body').width());
+            $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').width($('body').height());
         }
 
           for (i = 0; i<data.length; i++) {
@@ -752,7 +753,6 @@ $(document).ready(function() {
 
 // HANDHELD-SPECIFIC
 if ( is_mobile ) {
-    $('#' + main_div).append($('#box-wrapper'));
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
          wipeLeft: function() { did_scroll = 1; window.alert('left'); },
