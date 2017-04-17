@@ -124,15 +124,13 @@ $(document).ready(function() {
     $("#legend_box").prepend('<div class="left_box" ><img style="cursor: pointer;" class="left" src="img/left.png" alt="Scroll left"></div>');
     $("#legend_box").append('<div class="right_box" ><img style="cursor: pointer;" class="right" src="img/right.png" alt="Scroll right"></div>');
 
-    $(".left").click(function() {
+    function scroll_legend(lr) {
         var slideW = $('.logo_box').width();
-        $('#legend_box').animate({scrollLeft: "-="+slideW*1 }, 600);      
-    })
-
-    $(".right").click(function() {
-        var slideW = $('.logo_box').width();
-        $('#legend_box').animate({scrollLeft: "+="+slideW*1 }, 600);      
-    })
+        if ( lr == 'right' ) $('#legend_box').animate({scrollLeft: "-="+slideW*2 }, 600);      
+        else $('#legend_box').animate({scrollLeft: "+="+slideW*2 }, 600);
+    }
+    $(".left").click(function() { scroll_legend('left'); });
+    $(".right").click(function() { scroll_legend('right'); });
 
 
     var map = L.map("map-container",{
@@ -771,10 +769,13 @@ if ( is_mobile ) {
     $('#' + main_div).touchwipe({
          wipeLeft: function() { did_scroll = 1; scroll_to('right'); },
          wipeRight: function() { did_scroll = 1; scroll_to('left'); },
-         //wipeUp: function() { alert("up"); },
-         //wipeDown: function() { alert("down"); },
          min_move_x: 20,
          min_move_y: 20,
+         preventDefaultEvents: false
+    });
+    $('#legend_box').touchwipe({
+         wipeLeft: function() { scroll_legend('right'); },
+         wipeRight: function() { scroll_legend('left'); },
          preventDefaultEvents: false
     }); }, 1000);
 }
