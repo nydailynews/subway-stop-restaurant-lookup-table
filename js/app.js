@@ -288,7 +288,7 @@ $(document).ready(function() {
     };
 
     function on_each_feature2(feature, layer) {
-        layer.bindPopup(feature.properties.stations + "<br><span style='color: #000; font-weight: bold; font-size: 15px; text-align: center; text-transform: uppercase'>No articles for this stop</span>", {offset:new L.Point(0,0)});
+        layer.bindPopup(feature.properties.stations + "<div>No articles for this stop</div>", {className: 'no_articles', offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         if (windowWidth > 480) {    
           layer.on('mouseover', function(e){

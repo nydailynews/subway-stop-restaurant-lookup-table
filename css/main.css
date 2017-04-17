@@ -733,4 +733,14 @@ svg#subway + h3#N, #subway + h3#Q {
     left: 150px;
     top: -15px;
 }
-    
+
+.no_articles > div > div {
+    background-color: white;
+}
+.no_articles > div > div > div {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
