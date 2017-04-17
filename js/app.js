@@ -336,7 +336,8 @@ $(document).ready(function() {
     function load_marker(latlng, stop, line, i, marker_type) {
         // Handle placing and naming markers. 
         // marker_type will be either 'horizontal' 'upper' or 'lower'
-        var anchors = { horizontal: [-15, 10],
+        var anchors = { 
+            horizontal: [-15, 10],
             'upper-right': [30, 90],
             'lower-right': [20, -75]
         };
@@ -403,7 +404,7 @@ $(document).ready(function() {
                     return L.circleMarker(latlng);
                 },
                 style: style_stop,
-                on_each_feature: on_each_feature
+                onEachFeature: on_each_feature
             }).addTo(map);
 
           geojson_stop_empty = L.geoJson(selected_stops_empty, {
@@ -411,7 +412,7 @@ $(document).ready(function() {
                   return L.circleMarker(latlng);
               },
               style: style_stop_empty,
-              on_each_feature: on_each_feature2
+              onEachFeature: on_each_feature2
           }).addTo(map);
 
           for (i = 0; i < markersArray.length; i++) {
@@ -421,7 +422,7 @@ $(document).ready(function() {
           for (p = 0; p < labels.length; p++) {
             if (labels[p].line == line_selected) {
                 for (i = 0; i < selected_stops.length; i++) {
-                  selected.push(selected_stops[i].properties.stations)
+                  selected.push(selected_stops[i].properties.stations);
                   // This logic determines if subway stop labels appear horizontal
                   // or turned up at an angle. This is necessary to fix situations
                   // where labels overlap.
