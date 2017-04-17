@@ -449,8 +449,8 @@ $(document).ready(function() {
         var share = {
             url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
             url_short: '',
-            subject: '',
-            blurb: '',
+            subject: 'The Daily News Subway Restaurant Guide',
+            blurb: 'A curated guide to NYC restaurants for each MTA subway line in Manhattan, Brooklyn, Queens and the Bronx, by the New York Daily News',
             blurb_encoded: ''
         };
 
@@ -469,8 +469,8 @@ $(document).ready(function() {
 <div class"img_box" style="position: relative">\n\
 <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
     <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-    <a href="https://twitter.com/share?url=' + share.url_short + '&text=' + share.subject + ' @NYDailynews " target="_new"><div id="twitter"></div></a>\n\
-    <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url_short + '"><div id="email"></div></a>\n\
+    <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+    <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
 </div>\n\
 </div>\n\
 <div id="head">Eating along the ' + line_selected + ' line</div>\n\
