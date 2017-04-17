@@ -769,6 +769,13 @@ scroll_horiz = function scroll_horiz(lr) {
     if ( lr == 'left' ) lr = -1;
     else lr = 1;
 
+    // Initial swipe right
+    if ( typeof station === 'undefined' ) {
+        station = $('#window0').find(".stop_name").text();
+        offset = document.getElementById('window0').offsetTop - document.getElementById('window0').clientWidth;
+        $('#info-box-handheld').animate({ scrollTop: offset }, 600);
+        return false;
+    }
     // The var "station" will be set to whatever the station is in view.
     // That's set in scrollFunction().
     // We want to scroll to the top of the next or previous item.
