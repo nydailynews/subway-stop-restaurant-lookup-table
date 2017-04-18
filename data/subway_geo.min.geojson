@@ -7,6 +7,7 @@ stops = {"type":"FeatureCollection","crs":{"type":"name","properties":{"name":"u
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.89165772599068,40.67802854813373]},"properties":{"WKT":"POINT (-73.891657725990683 40.678028548133732)","stations":"Van Siclen Ave","line":"Z"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.91038356930946,40.682851634494526]},"properties":{"WKT":"POINT (-73.91038356930946 40.682851634494526)","stations":"Chauncey St","line":"Z"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.9042899974254,40.679366334574624]},"properties":{"WKT":"POINT (-73.904289997425394 40.679366334574624)","stations":"Broadway Junction","line":"Z"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.89852600099044,40.67699833360107]},"properties":{"WKT":"POINT (-73.898526000990444 40.67699833360107)","stations":"Alabama Ave","line":"Z"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.87962599833826,40.68152033389478]},"properties":{"WKT":"POINT (-73.879625998338255 40.681520333894781)","stations":"Norwood Ave","line":"Z"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.87392925190409,40.68315299047885]},"properties":{"WKT":"POINT (-73.873929251904087 40.683152990478852)","stations":"Crescent St","line":"Z"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.8672879987574,40.69129033462167]},"properties":{"WKT":"POINT (-73.867287998757405 40.691290334621669)","stations":"75th St - Eldert Ln","line":"Z"}},
