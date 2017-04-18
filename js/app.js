@@ -61,18 +61,6 @@ $(document).ready(function() {
     {"line":"J", "image":"img/J_Train-min.jpg","text":""}
   ]
 
-
-  // var rss = [
-  //   {"line":"N", "link":"data/rss-N.json"},
-  //   {"line":"7", "link":"data/rss-7.json"},
-  //   {"line":"Q", "link":"data/rss-Q.json"},
-  //   {"line":"4", "link":"data/rss-4.json"},
-  //   {"line":"M", "link":"data/rss-M.json"},
-  //   {"line":"G", "link":"data/rss-G.json"},
-  //   {"line":"A", "link":"data/rss-A.json"},
-  //   {"line":"2", "link":"data/rss-2.json"}
-  // ]
-
   // These are the stations that have labels that need to be angled up
   var labels = [
     {"line":"N", "upper":["57th St"]},
@@ -483,7 +471,6 @@ $(document).ready(function() {
                   scrollTop: $("#" + main_div).offset().top - 120
               }, 600);
           });
-
 
         // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
         if ( is_mobile && subsequent_click == 0 )
