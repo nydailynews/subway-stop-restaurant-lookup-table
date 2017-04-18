@@ -503,6 +503,7 @@ stops = {"type":"FeatureCollection","crs":{"type":"name","properties":{"name":"u
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.91989900076265,40.8680723332653]},"properties":{"WKT":"POINT (-73.919899000762655 40.868072333265303)","stations":"Inwood - 207th St","line":"A"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.94408792835779,40.82476669406457]},"properties":{"WKT":"POINT (-73.944087928357789 40.824766694064571)","stations":"145th St","line":"A"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.93072899845322,40.67936433301651]},"properties":{"WKT":"POINT (-73.930728998453219 40.679364333016508)","stations":"Utica Ave","line":"A"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.90531600029104,40.67833399982758]},"properties":{"WKT":"POINT (-73.905316000291037 40.678333999827579)","stations":"Broadway Junction","line":"A"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.98164872336676,40.768249864983254]},"properties":{"WKT":"POINT (-73.98164872336676 40.768249864983254)","stations":"59th St - Columbus Circle","line":"A"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-74.00762309342792,40.71016249872167]},"properties":{"WKT":"POINT (-74.007623093427924 40.710162498721672)","stations":"Fulton St","line":"A"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-74.0085847360681,40.714111334148996]},"properties":{"WKT":"POINT (-74.008584736068102 40.714111334148996)","stations":"Chambers St","line":"A"}},
