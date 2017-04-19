@@ -10,9 +10,9 @@ $(document).ready(function() {
   var selected_stops = [];
   var selected_stops_empty = [];
   var selected = [];
-  if ($.bbq.getState("line") != null) {
-    var line_selected = $.bbq.getState("line");
-  } else {
+  //if ($.bbq.getState("line") != null) {
+  //  var line_selected = $.bbq.getState("line");
+  //} else {
     var line_selected = "N"
     // Runs the first time the page loads
     if ( window.location.hash !== '' )
@@ -20,7 +20,7 @@ $(document).ready(function() {
         // Parse out the pieces of the hash, which we use for permanent links
         line_selected = window.location.hash[1];
     }
-  }
+  //}
   var json_selected;
   var cover_height;
   var select_layer;
