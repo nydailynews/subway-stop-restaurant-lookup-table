@@ -446,22 +446,22 @@ $(document).ready(function() {
         $("#" + main_div + ' .window').remove();
 
         $("#box").html('\n\
-        <svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
-            <g id="subway_line" fill="' + get_line(line_selected) + '">\n\
-                <path d="M2,8 L365.138914,8 C329.250684,71.8546012 261.381149,114.92314 183.570374,114.92314 C105.753806,114.92314 37.8863002,71.8546012 2.00002871,8.00005109 Z" id="subway_line_path"></path>\n\
-            </g>\n\
-        </g>\n\
-        </svg>\n\
-        <h3 id="' + line_selected + '">' + line_selected + '</h3>\n\
-<div class"img_box" style="position: relative">\n\
-<div id="social_map" class="large-12 medium-12 small-12 columns">\n\
-    <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-    <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
-    <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
+<svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
+    <g id="subway_line" fill="' + get_line(line_selected) + '">\n\
+        <path d="M2,8 L365.138914,8 C329.250684,71.8546012 261.381149,114.92314 183.570374,114.92314 C105.753806,114.92314 37.8863002,71.8546012 2.00002871,8.00005109 Z" id="subway_line_path"></path>\n\
+    </g>\n\
+</g>\n\
+</svg>\n\
+<h3 id="' + line_selected + '">' + line_selected + '</h3>\n\
+<h3 id="head">Eating along the ' + line_selected + ' line</h3>\n\
+<div class"img_box">\n\
+    <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
+        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+        <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
+        <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
+    </div>\n\
 </div>\n\
-</div>\n\
-<div id="head">Eating along the ' + line_selected + ' line</div>\n\
 <div class="text">'+ intro +'</div>\n\
 </div>\n\
 <div class="scroll_box"><img class="scroll" src="img/scroll.png" alt="Scroll down image"></div>');

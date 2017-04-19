@@ -744,3 +744,4 @@ svg#subway + h3#N, #subway + h3#Q {
     text-align: center;
     text-transform: uppercase;
 }
+.img_box { position: relative; }
