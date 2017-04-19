@@ -445,6 +445,8 @@ body #info-box-handheld #box .scroll_box {
 }
 
 .scroll_box {
+  width: 100%;
+  clear: both;
   text-align: center;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -554,9 +556,11 @@ body #info-box-handheld #box .scroll_box {
 }
 
 #social_map {
-  padding: 10px 0px 10px 247px;
-  position: absolute;
-  bottom: 0px;
+  margin: auto;
+  position: relative;
+  top: -20px;
+  width: 180px;
+  float: none;
 }
 
 #social_map #facebook{
@@ -592,10 +596,11 @@ body #info-box-handheld #box .scroll_box {
 }
 
 #head {
-  font-family: Open Sans Condensed;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   line-height: 35px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -744,4 +749,7 @@ svg#subway + h3#N, #subway + h3#Q {
     text-align: center;
     text-transform: uppercase;
 }
-.img_box { position: relative; }
+.img_box {
+    position: relative;
+    width: 100%;
+}
