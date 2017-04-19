@@ -11,12 +11,12 @@
         <meta name="format-detection" content="telephone=no"/>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
-        <title>NYC subway restaurant guide, by the NY Daily News</title>
+        <title>NYC subway stop restaurant reviews and dining guide, by the NY Daily News</title>
 
         <!-- TITLES-->
-        <meta property="og:title" content="NYC subway restaurant guide" />
-        <meta name="twitter:title" content="NYC subway restaurant guide"/>
-        <meta name="parsely-title" content="NYC subway restaurant guide" />
+        <meta property="og:title" content="NYC subway stop restaurant reviews and dining guide" />
+        <meta name="twitter:title" content="NYC subway stop restaurant reviews and dining guide"/>
+        <meta name="parsely-title" content="NYC subway stop restaurant reviews and dining guide" />
 
         <!-- DESCRIPTION-->
         <meta name="description" content="" />
@@ -76,22 +76,30 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
         node.parentNode.insertBefore(gads, node);
     })();
     var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    var ad_tag = 'restaurant-guide';
     </script>
     <script>
     if( !is_mobile ) {
         googletag.cmd.push(function() {
             googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-            .setTargeting("interactive","dog-park-nyc")
+            .setTargeting("interactive",ad_tag)
             .setTargeting("position","x101");
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
         googletag.cmd.push(function() {
             googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-            .setTargeting("interactive","dog-park-nyc")
+            .setTargeting("interactive",ad_tag)
             .setTargeting("position","x102");
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
+        });
+        googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/NYDN/Interactive',  [[728, 90]], 'div-gpt-ad-x101').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x50");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
         });
     }
     </script>
@@ -101,14 +109,14 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     if( is_mobile ) {
         googletag.cmd.push(function() {
             googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-            .setTargeting("interactive","dog-park-nyc")
+            .setTargeting("interactive",ad_tag)
             .setTargeting("position","x101");
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
         googletag.cmd.push(function() {
             googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-            .setTargeting("interactive","dog-park-nyc")
+            .setTargeting("interactive",ad_tag)
             .setTargeting("position","x102");          
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
@@ -221,7 +229,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 <!--
 <div id='top_ad' class='center'><div id='div-gpt-ad-1423507761396-1'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-1'); });</script></div></div>
 -->
-	<a href="./"><img src="img/title.svg" id="title" alt="New York City restaurant guide for each MTA subway line"></a>
+	<a href="./"><img src="img/title.svg" id="title" alt="New York City restaurant review and dining guide for each MTA subway line"></a>
 	<p>
         With 23 lines spanning more than 840 miles of track, the New York City subway system connects thousands of riders to what matters most: great food. 
         The diverse culture of the city is just a subway stop away, and hundreds of cuisines are available throughout the five boroughs.
