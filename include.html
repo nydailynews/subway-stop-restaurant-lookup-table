@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+	var lines = ['2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
+	var hash = document.location.hash.replace('#', '');
+		if (hash != "") {
+			if (lines.indexOf(hash.toUpperCase()) != -1) {
+				var line_from = hash.toUpperCase();
+			}
+		}
+
+
+
+
+
+function goToHash() {
+	var url="";
+	top.location = url+"#"+hash;
+}
+console.log("it works, yo");
+</script>
+
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700|Roboto:400,700" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 	<div class="include">
-		<div class="include_back_button">GO BACK TO THE MAP</div>
+		<p id="backbtn" class="include_back_button" onclick="goToHash()">
+		Click the button
+		</p>
 	</div>
 
 </body>
