@@ -226,11 +226,15 @@ body{
     overflow: hidden;
 }
 body #info-box-handheld #box {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin: 245px 0 -90px 225px;
     width: 230px;
     overflow-y: hidden;
 }
+body #info-box-handheld #box #head {
+    text-align: left;
+}
+body #info-box-handheld #box #head { }
 body #info-box-handheld #box .scroll_box {
     /* transform: rotate(-90deg); */
     margin: 0 auto;
@@ -559,6 +563,7 @@ body #info-box-handheld #box .scroll_box {
   margin: auto;
   position: relative;
   top: -20px;
+  left: -22px;
   width: 180px;
   float: none;
 }
@@ -667,7 +672,7 @@ border: 1px solid #333;
     }
 
     #social_map {
-      padding-left: 15px;
+      padding-left: 7px;
     }
 
     #label {
