@@ -800,8 +800,11 @@ scroll_horiz = function scroll_horiz(lr) {
 if ( is_mobile ) {
     window.setTimeout(function() {
     $('#' + main_div).touchwipe({
-         wipeLeft: function() { scroll_horiz('right'); },
-         wipeRight: function() { scroll_horiz('left'); },
+         wipeLeft: function() { window.alert('Scroll down, please.'); //scroll_horiz('right');
+         },
+         wipeRight: function() { window.alert('Scroll down, please.'); 
+            //scroll_horiz('left');
+        },
          min_move_x: 20,
          min_move_y: 20,
          preventDefaultEvents: false
