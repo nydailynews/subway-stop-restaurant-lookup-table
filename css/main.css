@@ -3,39 +3,6 @@ body{
   width: 100%;
 }
 
-/*INCLUDE BOX STYLES*/
-
-.include {
-  border: solid 8px #0077A2;
-  width: 600px;
-  height: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background-image: url(../img/include.png);
-  background-repeat: no-repeat;
-}
-
-.include_back_button {
-  background-color: #0077A2;
-  padding: 10px;
-  text-align: center;
-  font-family: Open Sans Condensed;
-  font-size: 25px;
-  line-height: 28px;
-  margin: 220px auto;
-  display: block;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  width: 40%;
-  border-width: 0;
-}
-
-.include_img {
-  width: 600px;
-  height: 300px;
-  background-position: center;
-}
-
 /* LINE MARKER STYLES */
 
 .horizontal, .upper-right, .lower-right {
