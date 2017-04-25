@@ -260,11 +260,15 @@ body{
     overflow: hidden;
 }
 body #info-box-handheld #box {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin: 245px 0 -90px 225px;
     width: 230px;
     overflow-y: hidden;
 }
+body #info-box-handheld #box #head {
+    text-align: left;
+}
+body #info-box-handheld #box #head { }
 body #info-box-handheld #box .scroll_box {
     /* transform: rotate(-90deg); */
     margin: 0 auto;
@@ -479,6 +483,8 @@ body #info-box-handheld #box .scroll_box {
 }
 
 .scroll_box {
+  width: 100%;
+  clear: both;
   text-align: center;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -588,9 +594,12 @@ body #info-box-handheld #box .scroll_box {
 }
 
 #social_map {
-  padding: 10px 0px 10px 247px;
-  position: absolute;
-  bottom: 0px;
+  margin: auto;
+  position: relative;
+  top: -20px;
+  left: -22px;
+  width: 180px;
+  float: none;
 }
 
 #social_map #facebook{
@@ -626,10 +635,11 @@ body #info-box-handheld #box .scroll_box {
 }
 
 #head {
-  font-family: Open Sans Condensed;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   line-height: 35px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -696,7 +706,7 @@ border: 1px solid #333;
     }
 
     #social_map {
-      padding-left: 15px;
+      padding-left: 7px;
     }
 
     #label {
@@ -777,4 +787,8 @@ svg#subway + h3#N, #subway + h3#Q {
     font-size: 15px;
     text-align: center;
     text-transform: uppercase;
+}
+.img_box {
+    position: relative;
+    width: 100%;
 }
