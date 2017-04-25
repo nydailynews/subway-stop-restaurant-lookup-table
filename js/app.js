@@ -80,7 +80,7 @@ $(document).ready(function() {
     {"line":"3", "upper":[""],
                  "lower":["Franklin Ave"]},
     {"line":"J", "upper":["Marcy Ave", "Hewes St", "Lorimer St", "Flushing Ave", "Myrtle Ave", "Kosciuszko St", "Gates Ave", "Halsey St", "Chauncey St", "Broadway Junction", "Alabama Ave", "Van Siclen Ave", "Cleveland St", "Cypress Hills", "75th St - Eldert Ln", "85th St - Forest Pky", "95th St - Forest Pky", "Woodhaven Blvd", "104th-102nd Sts", "121st St"],
-                 "lower":["Norwood Ave", "Sutphin Blvd - Archer Av"]}
+                 "lower":["Chambers St", "Canal St", "Norwood Ave", "Sutphin Blvd - Archer Av"]}
   ]
 
   for (i=0;i<rss.length;i++) {
