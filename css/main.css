@@ -564,9 +564,11 @@ body #info-box-handheld #box .scroll_box {
   margin: auto;
   position: relative;
   top: -20px;
-  left: -22px;
   width: 180px;
   float: none;
+}
+#info-box-handheld #social_map {
+  left: -22px;
 }
 
 #social_map #facebook{
