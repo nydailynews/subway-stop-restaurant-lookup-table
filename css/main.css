@@ -392,11 +392,11 @@ body #info-box-handheld #box .scroll_box {
 
 .left {
   top: 55px;
-  left: 0px;
+  left: -2px;
 }
 .right {
   top: 62px;
-  right: 0px;
+  right: -2px;
 }
 
 #nydn-header {
