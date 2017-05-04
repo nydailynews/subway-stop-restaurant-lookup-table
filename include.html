@@ -14,6 +14,25 @@
             background: url(img/include-return.jpg) no-repeat;
         }
 
+        img.left, img.right {
+            top: 87px;
+        }
+
+        button {
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+            padding: 0 7px 10px 7px;
+            margin: 13px auto 15px 30px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            color: white;
+            width: 42%;
+            border: 1px solid white;
+        }
+
         #standalone .include {
             height: 150px;
             background: url(img/include-default.jpg) no-repeat;
@@ -25,21 +44,6 @@
             float: right;
         }
 
-        button {
-            background: rgba(0,0,0,0.4);
-            text-align: center;
-            padding: 10px;
-            margin: 15px auto 15px 30px;
-            font-family: 'Open Sans Condensed', sans-serif;
-            font-size: 20px;
-            font-weight: 300;
-            letter-spacing: 0.1em;
-            cursor: pointer;
-            color: white;
-            width: 42%;
-            border: 1px solid white;
-        }
-
         #standalone button {
             padding: 5px;
             margin: 0 0 0 52px;
@@ -47,6 +51,14 @@
             font-weight: 700;
         }
 
+        #standalone img.left {
+            top: 158px;
+        }
+
+        #standalone img.right {
+            top: 158px;
+        }
+        
         .hide {
             display: none;
         }
@@ -99,7 +111,7 @@
             </div>
 
     <div id="legend_box">
-        <div class="left_box"><a href="javascript: scroll_legend('left');"><img alt="Scroll left" class="left" src="img/left.png" style="top: 80px;"></a></div>
+        <div class="left_box"><a href="javascript: scroll_legend('left');"><img alt="Scroll left" class="left" src="img/left.png"></a></div>
         <div class="logo_box"><a href="./#1" target="_top"><img alt="1 restaurants" class="legend no_restaurant" id="1" src="img/line_1.png"></a></div>
         <div class="logo_box"><a href="./#2" target="_top"><img alt="2 restaurants" class="legend" id="2" src="img/line_2.png"></a></div>
         <div class="logo_box"><a href="./#3" target="_top"><img alt="3 restaurants" class="legend" id="3" src="img/line_3.png"></a></div>
@@ -121,7 +133,7 @@
         <div class="logo_box"><a href="./#Z" target="_top"><img alt="Z restaurants" class="legend" id="Z" src="img/line_Z.png"></a></div>
         <div class="logo_box"><a href="./#G" target="_top"><img alt="G restaurants" class="legend" id="G" src="img/line_G.png"></a></div>
         <div class="logo_box"><a href="./#L" target="_top"><img alt="L restaurants" class="legend no_restaurant" id="L" src="img/line_L.png"></a></div>
-        <div class="right_box"><a href="javascript: scroll_legend('right');"><img alt="Scroll right" class="right" src="img/right.png" style="top: 80px;"></a></div>
+        <div class="right_box"><a href="javascript: scroll_legend('right');"><img alt="Scroll right" class="right" src="img/right.png"></a></div>
     </div>
     </div>
 
