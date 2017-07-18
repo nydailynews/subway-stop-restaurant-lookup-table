@@ -235,17 +235,13 @@ body #info-box-handheld #box {
 body #info-box-handheld #box #head {
     text-align: left;
 }
-body #info-box-handheld #box #head { }
 body #info-box-handheld #box .scroll_box {
-    /* transform: rotate(-90deg); */
     margin: 0 auto;
     padding-bottom: 0;
     width: 64px;
     height: 64px;
 }
 #info-box-handheld .ad, #info-box-handheld #box {
-    transform: rotate(90deg);
-    transform-origin: right top;
     margin-top: 120px;
     margin-left: 100px;
     margin-bottom: -40px;
@@ -256,8 +252,6 @@ body #info-box-handheld #box .scroll_box {
     width: 320px;
     min-height: 200px;
     right: 0;
-    transform: rotate(90deg);
-    transform-origin: right top;
     border: 5px solid rgba(0,0,0,0.3)!important;
     margin-top: 130px;
 }
@@ -311,15 +305,13 @@ body #info-box-handheld #box .scroll_box {
 }
 
 #info-box-handheld {
-    transform: rotate(-90deg);
-    transform-origin: right top;
     margin: auto;
     height: 400px;
     width: 500px;
-    position: fixed;
+/*
     overflow-y: scroll;
     overflow-x: hidden;
-    right: 100%;
+*/
 }
 
 
