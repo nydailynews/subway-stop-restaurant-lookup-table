@@ -383,12 +383,11 @@ body #info-box-handheld #box .scroll_box {
 }
 
 .left {
-  top: 55px;
   left: -2px;
 }
 .right {
-  top: 62px;
   right: -2px;
+  margin-top: -62px;
 }
 
 #nydn-header {
