@@ -40,7 +40,7 @@
         <meta property="og:image:height" content="512" />
 
         <!-- TIME -->
-        <meta name="parsely-pub-date" content="2017-05-22T06:00:00Z" />
+        <meta name="parsely-pub-date" content="2017-08-22T06:00:00Z" />
 
         <!-- NO NEED TO FILL -->
         <meta property="og:type" content="website" />
@@ -62,66 +62,8 @@
 window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
 </script>
 
- <!-- ads -->
-    <script>
-    var googletag = googletag || {};
-    googletag.cmd = googletag.cmd || [];
-    (function() {
-        var gads = document.createElement('script');
-        gads.async = true;
-        var useSSL = 'https:' == document.location.protocol;
-        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
-        var node = document.getElementsByTagName('script')[0];
-        node.parentNode.insertBefore(gads, node);
-    })();
-    var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    var ad_tag = 'restaurant-guide';
-    </script>
-    <script>
-    if( !is_mobile ) {
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-            .setTargeting("interactive",ad_tag)
-            .setTargeting("position","x101");
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-            .setTargeting("interactive",ad_tag)
-            .setTargeting("position","x102");
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
-    }
-    </script>
-
-    <!-- mobile ad -->
-    <script>
-    if( is_mobile ) {
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
-            .setTargeting("interactive",ad_tag)
-            .setTargeting("position","x101");
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
-            .setTargeting("interactive",ad_tag)
-            .setTargeting("position","x102");          
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
-        googletag.cmd.push(function() {
-            googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
-            .setTargeting("interactive",ad_tag)
-            .setTargeting("position","x103");
-            googletag.pubads().enableSingleRequest();
-            googletag.enableServices();
-        });
-    }
-    </script>  
+    <!-- ads -->
+    <script onload="nydn_ads('subway-eats');" src="http://interactive.nydailynews.com/includes/ads/ads.js"></script>
 
     <meta name="themeKey" content="nydailynews" />
     <meta name="mapThemeKey" content="responsive" />
@@ -131,7 +73,6 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <meta name="localeCountry" content="US"/>
     <meta name="localeLanguage" content="en" />
     <link rel="stylesheet" href="css/foundation.css" type="text/css" />
-    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700|Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -241,6 +182,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <footer id="nydn-footer"></footer>
 
     <script src="js/markerwithlabel_packed.js"></script>
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" type="text/css" />
     <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
     <script src="data/subway_geo.min.geojson"></script>
     <script src="data/mta.min.geojson"></script>
@@ -255,7 +197,10 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
             s.setAttribute('src', 'js/jquery.touchwipe.min.js');
             document.body.appendChild(s);
         }
-        else $('#info-box-handheld').remove();
+        else {
+            $('#info-box-handheld').remove();
+            // Load the map js
+        }
     </script>
     <script>_satellite.pageBottom();</script>
 

@@ -753,50 +753,6 @@ $(document).ready(function() {
         }, 1000);
 
 
-// HANDHELD-SPECIFIC
-scroll_horiz = function scroll_horiz(lr) {
-    // This is our hack into the scroll_function() method used when a reader
-    // swipes on mobile. We can't use scroll_function() because scroll_function()
-    // doesn't do anything until the div scrolls. This is the method we use to
-    // make the div scroll.
-    did_scroll = 1;
-    if ( lr == 'left' ) lr = -1;
-    else lr = 1;
-
-    // Initial swipe right
-    if ( typeof station === 'undefined' ) {
-        station = $('#window0').find(".stop_name").text();
-        offset = document.getElementById('window0').offsetTop - document.getElementById('window0').clientWidth;
-        $('#info-box-handheld').animate({ scrollTop: offset }, 600);
-        return false;
-    }
-    // The var "station" will be set to whatever the station is in view.
-    // That's set in scroll_function().
-    // We want to scroll to the top of the next or previous item.
-    found_it = 0;
-    $.each($(".window"), function() {
-        // Oh, this is some logic. Lord have mercy should you need to fix this.
-        id = $(this)[0].id;
-        if ( found_it == 1 ) {
-            offset = document.getElementById(prev_id).offsetTop;
-            return false;
-        }
-
-        // The outcomes of this each loop hinges on this if-statement match
-        if ( station == $(this).find(".stop_name").text() ) {
-            //console.log(station, found_it, prev_id, $('#' + prev_id).find(".stop_name").text());
-            found_it = 1;
-            if ( lr == -1 ) {
-                offset = document.getElementById(prev_prev_id).offsetTop;
-                return false;
-            }
-        }
-        if ( typeof prev_id !== 'undefined' ) prev_prev_id = prev_id;
-        prev_id = $(this)[0].id;
-    });
-    $('#info-box-handheld').animate({ scrollTop: offset }, 600);
-}
-
 if ( is_mobile ) {
     window.setTimeout(function() {
     $('#legend_box').touchwipe({
