@@ -251,7 +251,7 @@ body #info-box-handheld #box .scroll_box {
     min-width: 300px;
     width: 320px;
     min-height: 200px;
-    border: 5px solid rgba(0,0,0,0.3)!important;
+    border: 5px solid rgba(0,0,0,0.3);
     margin-top: 30px;
     margin-left: 10px;
 }
@@ -631,15 +631,71 @@ border: 1px solid #333;
 }
 
 
-@media (max-width: 950px) {
-  .right, .left {
-    display: inline-table;
-  }
+/*HANDHELD STYLES*/
+
+@media only screen and (min-width: 250px) and (max-width: 1100px) {
+    .right, .left {
+        display: inline-table;
+    }
+
+    body #info-box-handheld #box {
+        width: auto;
+        overflow: auto;
+    }
+
+    svg#subway {
+        margin-top: -8px;
+        margin-left: 14px;
+        width: 100%;
+    }
+    svg#subway + h3 {
+        position: absolute;
+        top: -10px;
+        color: white;
+        left: 174px;
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    #info-box-handheld svg#subway + h3 {
+        left: 123px;
+    }
+
+    body #info-box-handheld #box #head {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #info-box-handheld #social_map {
+        display: none;
+    }
+
+    #info-box-handheld .window {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+    }
+
+    #info-box-handheld .card_top {
+        width: 100%;
+        height: auto;
+    }
+
+    #info-box-handheld .window img.profile {
+        width: 100%;
+        margin: 0;
+        float: none;
+        clear: none;
+    }
+
+    #info-box-handheld .window .stop {
+        color: #333;
+    }
+
 
 }
-
-
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 
     #map-container { 
      z-index: -1;
@@ -653,7 +709,7 @@ border: 1px solid #333;
 
     #info-box-desktop {
 /*      position: absolute;
-      left: 0;*/
+      left: 0;
       width:90%; 
       margin-left: 5%;
     }
@@ -689,7 +745,7 @@ border: 1px solid #333;
     }
 
     .line_label {
-      /*display: none;*/
+      /*display: none;
     }
 
     .map_label {
@@ -708,7 +764,7 @@ border: 1px solid #333;
       padding: 0px;
     }
 
-}
+}*/
 .center {
     text-align:center;
     margin: auto;
@@ -716,27 +772,12 @@ border: 1px solid #333;
 
 .stop_name a, h3 a { color: white; }
 
-svg#subway {
-    margin-top: -8px;
-    margin-left: 14px;
-    content: 'hiiii';
-}
-svg#subway + h3 {
-    position: absolute;
-    top: -10px;
-    color: white;
-    left: 174px;
-    font-size: 80px;
-    font-weight: bold;
-}
+
 svg#subway + h3#N, #subway + h3#Q {
     color: black;
 }
 #info-box-handheld svg#subway { margin-left: 0; }
-#info-box-handheld svg#subway + h3 {
-    left: 150px;
-    top: -15px;
-}
+
 
 .no_articles > div > div {
     background-color: white;

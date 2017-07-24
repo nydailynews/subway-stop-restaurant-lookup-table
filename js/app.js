@@ -463,7 +463,7 @@ $(document).ready(function() {
 </g>\n\
 </svg>\n\
 <h3 id="' + line_selected + '">' + line_selected + '</h3>\n\
-<h3 id="head">Eating along the ' + line_selected + ' line</h3>\n\
+<h3 id="head">Explore the ' + line_selected + ' line</h3>\n\
 <div class"img_box">\n\
     <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
         <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
