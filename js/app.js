@@ -485,10 +485,10 @@ $(document).ready(function() {
         if ( is_mobile && subsequent_click == 0 )
         {
             $('#' + main_div).append($('#box-wrapper'));
-            $('#' + main_div).height($('body').width());
-            $('#' + main_div).width($('body').height());
-            $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').height($('body').width());
-            $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').width($('body').height());
+            $('#' + main_div).height($('body').height());
+            $('#' + main_div).width($('body').width());
+            $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').height($('body').height());
+            $('#' + main_div + '#bottom_ad, #' + main_div + ' #top_ad').width($('body').width());
         }
 
         var l = data.length;
