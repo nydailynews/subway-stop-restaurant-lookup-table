@@ -121,20 +121,22 @@ $(document).ready(function() {
     $(".right").click(function() { scroll_legend('right'); });
 
 
-    var map = L.map("map-container",{
-        scrollWheelZoom: false
-    }).setView([40.708670, -74.024773], 13);
+    if ( !is_mobile ) {
+        var map = L.map("map-container",{
+            scrollWheelZoom: false
+        }).setView([40.708670, -74.024773], 13);
 
-    L.tileLayer('https://api.mapbox.com/styles/v1/nydnmaps/cisgc1l2q001p2xpiqbx1o4bx/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoibnlkbm1hcHMiLCJhIjoiM1dZem9aWSJ9.x22rTAWkRpNy2bOTlVe1jg', {
-          attribution: 'Mapbox',
-          maxZoom: 20,
-          minZoom: 13,
-          //token: '',
-      }).addTo(map);
+        L.tileLayer('https://api.mapbox.com/styles/v1/nydnmaps/cisgc1l2q001p2xpiqbx1o4bx/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoibnlkbm1hcHMiLCJhIjoiM1dZem9aWSJ9.x22rTAWkRpNy2bOTlVe1jg', {
+              attribution: 'Mapbox',
+              maxZoom: 20,
+              minZoom: 13,
+              //token: '',
+          }).addTo(map);
 
-    L.control.zoom ({
-      position: "bottomright"
-    }).addTo(map);
+        L.control.zoom ({
+          position: "bottomright"
+        }).addTo(map);
+    }
 
     function get_line(d) {
         // Return the line's color, or black if the line name doesn't match anything we've set up.
@@ -306,22 +308,25 @@ $(document).ready(function() {
         select_layer = layer;
     };
 
-    //geojson_line = L.geoJson(nyc, {style: style_nyc}).addTo(map);
-    geojson_line = L.geoJson(mta, {style: style_line_hide}).addTo(map);
-    geojson_stop = L.geoJson(stops, {
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng);
-        },
-        style: style_stop_hide,
-    }).addTo(map);
-    geojson_stop_empty = L.geoJson(stops, {
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng);
-        },
-        style: style_stop_hide,
-    }).addTo(map);
+    if ( !is_mobile ) {
+        //geojson_line = L.geoJson(nyc, {style: style_nyc}).addTo(map);
+        geojson_line = L.geoJson(mta, {style: style_line_hide}).addTo(map);
+        geojson_stop = L.geoJson(stops, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng);
+            },
+            style: style_stop_hide,
+        }).addTo(map);
+        geojson_stop_empty = L.geoJson(stops, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng);
+            },
+            style: style_stop_hide,
+        }).addTo(map);
+    }
 
     function load_marker(latlng, stop, line, i, marker_type) {
+        if ( is_mobile ) return false;
         // Handle placing and naming markers. 
         // marker_type will be either 'horizontal' 'upper' or 'lower'
         var anchors = { 
@@ -353,11 +358,13 @@ $(document).ready(function() {
             selected_mta = [];
             selected_stops = [];
             selected_stops_empty = [];
-            for (i=0; i<mta.features.length; i++) {
+            for (i=0; i < mta.features.length; i++) {
               if (mta.features[i].properties.route_id == line_selected) {
-                  map.removeLayer(geojson_line);
-                  selected_mta.push(mta.features[i])
-                  geojson_line = L.geoJson(selected_mta, {style: style_line}).addTo(map);
+                    if ( !is_mobile ) {
+                      map.removeLayer(geojson_line);
+                      selected_mta.push(mta.features[i])
+                      geojson_line = L.geoJson(selected_mta, {style: style_line}).addTo(map);
+                    }
               }
             }
 
@@ -383,29 +390,31 @@ $(document).ready(function() {
                 }
             }
         
-            map.removeLayer(geojson_stop);
-            map.removeLayer(geojson_stop_empty); 
-            //map.removeLayer(geojson_stop_highlight);   
+            if ( !is_mobile ) {
+                map.removeLayer(geojson_stop);
+                map.removeLayer(geojson_stop_empty); 
+                //map.removeLayer(geojson_stop_highlight);   
 
-            geojson_stop = L.geoJson(selected_stops, {
-                pointToLayer: function (feature, latlng) {                            
-                    return L.circleMarker(latlng);
-                },
-                style: style_stop,
-                onEachFeature: on_each_feature
-            }).addTo(map);
+                geojson_stop = L.geoJson(selected_stops, {
+                    pointToLayer: function (feature, latlng) {                            
+                        return L.circleMarker(latlng);
+                    },
+                    style: style_stop,
+                    onEachFeature: on_each_feature
+                }).addTo(map);
 
-          geojson_stop_empty = L.geoJson(selected_stops_empty, {
-              pointToLayer: function (feature, latlng) {                            
-                  return L.circleMarker(latlng);
-              },
-              style: style_stop_empty,
-              onEachFeature: on_each_feature2
-          }).addTo(map);
+              geojson_stop_empty = L.geoJson(selected_stops_empty, {
+                  pointToLayer: function (feature, latlng) {                            
+                      return L.circleMarker(latlng);
+                  },
+                  style: style_stop_empty,
+                  onEachFeature: on_each_feature2
+              }).addTo(map);
 
-          for (i = 0; i < markersArray.length; i++) {
-            map.removeLayer(markersArray[i]);
-          }
+              for (i = 0; i < markersArray.length; i++) {
+                map.removeLayer(markersArray[i]);
+              }
+            }
 
           for (p = 0; p < labels.length; p++) {
             if (labels[p].line == line_selected) {
@@ -531,17 +540,19 @@ $(document).ready(function() {
             }, 0);
         }
 
-        $.each(geojson_stop._layers, function() { 
-            var layer_stop = $(this)[0].feature.properties.stations;
-            var data_stop = data[0].body[0].paragraphs.split(": ")[0];
-            var data_stop_1 = data_stop.split(" & ")[0];
-            if (layer_stop ==  data_stop_1 ) {
-                var latlng = $(this)[0].feature.geometry.coordinates;
-                var lat = latlng[0];
-                var lng = latlng[1];
-                map.panTo([lng,lat]);
-            }
-        });
+        if ( !is_mobile ) {
+            $.each(geojson_stop._layers, function() { 
+                var layer_stop = $(this)[0].feature.properties.stations;
+                var data_stop = data[0].body[0].paragraphs.split(": ")[0];
+                var data_stop_1 = data_stop.split(" & ")[0];
+                if (layer_stop ==  data_stop_1 ) {
+                    var latlng = $(this)[0].feature.geometry.coordinates;
+                    var lat = latlng[0];
+                    var lng = latlng[1];
+                    map.panTo([lng,lat]);
+                }
+            });
+        }
     });
     };
 
