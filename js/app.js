@@ -502,10 +502,12 @@ $(document).ready(function() {
             $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
 <div class="card_top">\n\
     <img class="profile" src="'+image+'" />\n\
+    <div class="stop-wrapper">\n\
     <div class="stop">\n\
         <p class="stop_name"><a target="_blank" href="'+url+'"">'+stop+'</a></p>\n\
     </div>\n\
     <h3 class="name"><a target="_blank" href="'+url+'"">'+headline+'</a></h3>\n\
+    </div>\n\
 </div>\n\
 <p class="details"><a target="_blank" href="'+url+'"">'+details+'</a></p>\n\
 <a class="button_link" target="_blank" href="'+url+'"">\n\
