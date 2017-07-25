@@ -222,10 +222,10 @@ body{
 }
 .card_top { position: relative; }
 
-#info-box-handheld .card_top {
+/*#info-box-handheld .card_top {
     height: 129px;
     overflow: hidden;
-}
+}*/
 body #info-box-handheld #box {
     padding-bottom: 20px;
     margin: 20px 0 -10px 20px;
@@ -255,12 +255,12 @@ body #info-box-handheld #box .scroll_box {
     margin-top: 30px;
     margin-left: 10px;
 }
-#info-box-handheld .window img.profile {
+/*#info-box-handheld .window img.profile {
     width: 100px;
     margin: 10px 10px 10px 10px;
     float: left;
     clear: both;
-}
+}*/
 #info-box-handheld .window .stop {
     background: none;
     bottom: 0;
@@ -280,34 +280,34 @@ body #info-box-handheld #box .scroll_box {
     color: #333;
     background-color: transparent;
 }
-#info-box-handheld .window h3.name {
+/*#info-box-handheld .window h3.name {
     font-size: 20px;
     line-height: 20px;
     top: 0;
-}
-#info-box-handheld .window .details {
+}*/
+/*#info-box-handheld .window .details {
     display: none;
-}
+}*/
 #info-box-handheld .window a.button.visit-page { display: block; }
-#info-box-handheld .window button.visit-page {
+/*#info-box-handheld .window button.visit-page {
     width: 150px;
     float: right;
     margin: 0 10px;
-}
-#info-box-handheld .window #social {
+}*/
+/*#info-box-handheld .window #social {
     float: left;
     width: 120px;
     padding: 0;
     margin: 5px 0 0 17px;
-}
-#info-box-handheld .window #social div {
+}*/
+/*#info-box-handheld .window #social div {
     margin-right: 0;
-}
+}*/
 
-#info-box-handheld {
+/*#info-box-handheld {
     margin: auto;
     height: 400px;
-    width: 500px;
+    width: 500px;*/
 /*
     overflow-y: scroll;
     overflow-x: hidden;
@@ -434,7 +434,7 @@ body #info-box-handheld #box .scroll_box {
 .details, .details a {
   font-family: "PT serif", serif;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 25px;
   color: #706F6F;
   padding: 0 15px;
   margin-top: -40px;
@@ -680,6 +680,8 @@ border: 1px solid #333;
     #info-box-handheld .card_top {
         width: 100%;
         height: auto;
+        overflow-y: hidden;
+        max-height: 400px;
     }
 
     #info-box-handheld .window img.profile {
@@ -689,33 +691,55 @@ border: 1px solid #333;
         clear: none;
     }
 
-#info-box-handheld .window .stop a,
-#info-box-handheld .window .stop_name,
-#info-box-handheld .window h3.name a,
-#info-box-handheld .window h3.name {
-    color: white;
-}
-    #info-box-handheld .window .stop_name {
-    line-height: 15px;
-    font-size: 20px;
+    #info-box-handheld .window .stop a, #info-box-handheld .window .stop_name, #info-box-handheld .window h3.name a, #info-box-handheld .window h3.name {
+        color: white;
     }
 
-    #info-box-handheld .window .details {
-    display: flex;
-    margin: 0;
+    #info-box-handheld .window .stop_name {
+        line-height: 23px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 
     #info-box-handheld .window .stop-wrapper {
-    padding: 10px 0;
-    font-family: 'Open Sans', sans-serif;
-    bottom: 100px;
-    position: relative;
-    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
-    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#333333',GradientType=0 );
-}
-}
+        bottom: 140px;
+        position: relative;
+        background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#333333',GradientType=0 );
+    }
+
+    #info-box-handheld .window h3.name {
+        font-size: 30px;
+        line-height: 35px;
+        top: 0;
+    }
+
+    .details, .details a {
+        margin-top: -130px;
+        text-indent: -15px;
+    }
+
+    #info-box-handheld .window button.visit-page {
+        width: 90%;
+        height: auto;
+        float: none;
+        margin: auto;
+    }
+
+    #info-box-handheld .window #social {
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+     #info-box-handheld .window #social > a {
+        display: inline-block;
+        opacity: 1;
+    }
 
 
 }
