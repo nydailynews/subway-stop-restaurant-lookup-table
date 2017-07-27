@@ -652,13 +652,9 @@ border: 1px solid #333;
         position: absolute;
         top: -10px;
         color: white;
-        left: 174px;
+        left: 123px;
         font-size: 80px;
         font-weight: bold;
-    }
-
-    #info-box-handheld svg#subway + h3 {
-        left: 123px;
     }
 
     body #info-box-handheld #box #head {
