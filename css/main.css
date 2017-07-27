@@ -652,7 +652,7 @@ border: 1px solid #333;
 
 /*HANDHELD STYLES*/
 
-@media only screen and (min-width: 250px) and (max-width: 1100px) {
+@media only screen and (min-width: 250px) and (max-width: 727px) {
 
     .right, .left {
         display: inline-table;
@@ -673,7 +673,7 @@ border: 1px solid #333;
         position: absolute;
         top: -10px;
         color: white;
-        left: 123px;
+        left: 41%;
         font-size: 80px;
         font-weight: bold;
     }
@@ -692,13 +692,13 @@ border: 1px solid #333;
         width: 95%;
         height: auto;
         border: 1px solid #ddd;
+        margin: 10px auto;
     }
 
     #info-box-handheld .card_top {
         width: 100%;
         height: auto;
         overflow-y: hidden;
-        max-height: 400px;
     }
 
     #info-box-handheld .window img.profile {
@@ -715,7 +715,6 @@ border: 1px solid #333;
     #info-box-handheld .window .stop_name {
         line-height: 23px;
         font-size: 16px;
-        font-weight: bold;
         letter-spacing: 1px;
     }
 
@@ -746,7 +745,7 @@ border: 1px solid #333;
     }
 
     #info-box-handheld .window button.visit-page {
-        width: 90%;
+        width: 75%;
         height: auto;
         float: none;
         margin: auto;
@@ -764,6 +763,125 @@ border: 1px solid #333;
         display: inline-block;
         opacity: 1;
     }
+
+}
+
+/*TABLET STYLES*/
+
+@media only screen and (min-width: 728px) and (max-width: 1024px) {
+    
+    .right, .left {
+        display: inline-table;
+    }
+
+    body #info-box-handheld #box {
+        width: 75%;
+        overflow: auto;
+        margin: 10px auto;
+    }
+
+    svg#subway {
+        margin-top: -8px;
+        margin-left: 14px;
+        width: 100%;
+    }
+    svg#subway + h3 {
+        position: absolute;
+        top: -10px;
+        color: white;
+        left: 46.25%;
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    body #info-box-handheld #box #head {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #info-box-handheld #social_map {
+        display: none;
+    }
+
+    #info-box-handheld .window {
+        width: 75%;
+        height: auto;
+        border: 1px solid #ddd;
+        margin: 10px auto;
+    }
+
+    #info-box-handheld .card_top {
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    #info-box-handheld .window img.profile {
+        width: 100%;
+        margin: 0;
+        float: none;
+        clear: none;
+    }
+
+    #info-box-handheld .window .stop a, #info-box-handheld .window .stop_name, #info-box-handheld .window h3.name a, #info-box-handheld .window h3.name {
+        color: white;
+    }
+
+    #info-box-handheld .window .stop {
+        color: white;
+        padding: 10px 30px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        bottom: 33px;
+        position: relative;
+        background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#333333',GradientType=0 );
+    }
+
+    #info-box-handheld .window .stop_name {
+        line-height: 23px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    #info-box-handheld .window h3.name {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        top: -33px;
+        padding-left: 30px;
+        background-color: rgb(0,0,0);
+}
+
+    .details, .details a {
+        margin-top: -25px;
+        text-indent: -15px;
+        position: relative;
+    }
+
+    #info-box-handheld .window button.visit-page {
+        width: 75%;
+        height: auto;
+        float: none;
+        margin: auto;
+    }
+
+    #info-box-handheld .window #social {
+        float: none;
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+     #info-box-handheld .window #social > a {
+        display: inline-block;
+        opacity: 1;
+    }
+
 
 }
 
@@ -845,9 +963,6 @@ border: 1px solid #333;
 .stop_name a, h3 a { color: white; }
 
 
-svg#subway + h3#N, #subway + h3#Q {
-    color: black;
-}
 #info-box-handheld svg#subway {
   margin-left: 0;
   }
