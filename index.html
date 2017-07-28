@@ -73,38 +73,11 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <meta name="localeCountry" content="US"/>
     <meta name="localeLanguage" content="en" />
     <link rel="stylesheet" href="css/foundation.css" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 <!--begin main content -->
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-   <script>
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-20856122-5']);
-          _gaq.push(['_trackPageview']);
-          var _googleTrackerCount = 1;
-          (function() {
-            var ga = document.createElement('script'); ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
-        </script>
-        
-<!-- http://www.nydailynews.com/cmlink/content.localedge.header.html -->
-    
-    
-
 
    <!-- HTML Element: 7.2210747 -->   <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -132,6 +105,41 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
         jQuery("#nydn-menu").removeClass("on");
         jQuery("#nydn-menu nav").slideUp();
     }
+        // We skip loading a bunch of this stuff on mobile.
+        function load_js(url, callback) {
+            var s = document.createElement('script');
+            s.onload = function() { callback(); }
+            s.setAttribute('src', url);
+            document.body.appendChild(s);
+        }
+        function load_css(url) {
+            var l = document.createElement('link');
+            l.setAttribute('rel', 'stylesheet');
+            l.setAttribute('type', 'text/css');
+            l.setAttribute('href', url);
+            document.getElementsByTagName('head')[0].appendChild(l);
+        }
+
+        load_js('data/mta.min.geojson', function(){});
+        if ( is_mobile )
+        {
+            $('#info-box-desktop').remove();
+            load_js('js/jquery.touchwipe.min.js', function(){});
+        }
+        else {
+            $('#info-box-handheld').remove();
+            // Load the map js.
+            // This unholy chain makes sure the app.js dependencies are all loaded by the time the app.js loads.
+            load_js('data/subway_geo.min.geojson', function() { load_js('data/nyc.min.geojson', function() { load_js('js/leaflet.js', function() { load_js('js/app.js', function(){})})})});
+            load_css('https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css');
+            load_css('css/jquery-ui.css');
+            /*
+            load_js('data/mta.min.geojson');
+            load_js('data/nyc.min.geojson');
+            load_js('js/leaflet.js');
+            */
+            load_js('js/markerwithlabel_packed.js', function(){});
+        }
   </script>
   
   <header id="nydn-header" style="z-index: 10000;">
@@ -181,6 +189,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 
     <footer id="nydn-footer"></footer>
 
+<!--
     <script src="js/markerwithlabel_packed.js"></script>
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" type="text/css" />
     <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
@@ -188,18 +197,12 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
     <script src="data/mta.min.geojson"></script>
     <script src="data/nyc.min.geojson"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-    <script src="js/app.js"></script>
+-->
     <script>
-        if ( is_mobile )
-        {
-            $('#info-box-desktop').remove();
-            var s = document.createElement('script');
-            s.setAttribute('src', 'js/jquery.touchwipe.min.js');
-            document.body.appendChild(s);
-        }
-        else {
-            $('#info-box-handheld').remove();
-            // Load the map js
+        if ( is_mobile ) {
+            $( document ).ready(function() {
+                load_js('js/app.js', function(){});
+            });
         }
     </script>
     <script>_satellite.pageBottom();</script>

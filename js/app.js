@@ -355,6 +355,7 @@ $(document).ready(function() {
         $.getJSON(json_selected, function(data){
             if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
+            //if ( !is_mobile ) {
             selected_mta = [];
             selected_stops = [];
             selected_stops_empty = [];
@@ -379,18 +380,18 @@ $(document).ready(function() {
                 } 
             }
 
-            var l = stops.features.length;
-            for (i=0; i<l; i++) {
-                if (stops.features[i].properties.line == line_selected) {
-                    if ($.inArray(stops.features[i].properties.stations,my_stops) !== -1) {
-                        selected_stops.push(stops.features[i]);
-                    } else {
-                        selected_stops_empty.push(stops.features[i])
+            if ( !is_mobile ) {
+                var l = stops.features.length;
+                for (i=0; i<l; i++) {
+                    if (stops.features[i].properties.line == line_selected) {
+                        if ($.inArray(stops.features[i].properties.stations,my_stops) !== -1) {
+                            selected_stops.push(stops.features[i]);
+                        } else {
+                            selected_stops_empty.push(stops.features[i])
+                        }
                     }
                 }
-            }
         
-            if ( !is_mobile ) {
                 map.removeLayer(geojson_stop);
                 map.removeLayer(geojson_stop_empty); 
                 //map.removeLayer(geojson_stop_highlight);   
