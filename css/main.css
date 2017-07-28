@@ -344,7 +344,7 @@ body #info-box-handheld #box .scroll_box {
 }
 
 #top_ad {
-  margin: 0px 20px 40px 20px;
+  margin: 20px auto;
   padding: 20px; 
   background: white;
   width: 400px;
@@ -764,11 +764,15 @@ border: 1px solid #333;
         opacity: 1;
     }
 
+    #info-box-handheld .ad, #info-box-handheld #box {
+      margin: 20px auto;
+    }
+
 }
 
 /*TABLET STYLES*/
 
-@media only screen and (min-width: 728px) and (max-width: 1024px) {
+@media only screen and (min-width: 728px) and (max-width: 1023px) {
     
     .right, .left {
         display: inline-table;
@@ -882,6 +886,9 @@ border: 1px solid #333;
         opacity: 1;
     }
 
+    #info-box-handheld .ad, #info-box-handheld #box {
+      margin: 20px auto;
+    }
 
 }
 
