@@ -467,8 +467,8 @@ $(document).ready(function() {
 <h3 id="head">Explore the ' + line_selected + ' line</h3>\n\
 <div class"img_box">\n\
     <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
-        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
         <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
+        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
         <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
     </div>\n\
 </div>\n\
