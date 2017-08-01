@@ -1,175 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600" rel="stylesheet">
-    <script src="js/vendor/jquery.js"></script> 
-    <style type="text/css">
-        .include {
-            width: 100%;
-            max-width: 600px;
-            height: 80px;
-            margin: auto;
-            background: url(img/include-return.jpg) no-repeat;
+<script>
+    var lines = ['2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
+    var hash = document.location.hash.replace('#', '');
+        if (hash != "") {
+            if (lines.indexOf(hash.toUpperCase()) != -1) {
+                var line_from = hash.toUpperCase();
+            }
         }
 
-        img.left, img.right {
-            top: 87px;
-        }
 
-        button {
-            background: rgba(0,0,0,0.4);
-            text-align: center;
-            padding: 0 7px 10px 7px;
-            margin: 13px auto 15px 30px;
-            font-family: 'Open Sans Condensed', sans-serif;
-            font-size: 20px;
-            font-weight: 300;
-            letter-spacing: 0.1em;
-            cursor: pointer;
-            color: white;
-            width: 42%;
-            border: 1px solid white;
-        }
 
-        #standalone .include {
-            height: 150px;
-            background: url(img/include-default.jpg) no-repeat;
 
-        }
 
-        #standalone .include > div {
-            width: 300px;
-            float: right;
-        }
+function goToHash() {
+    var url="";
+    top.location = url+"#"+hash;
+}
+console.log("it works, yo");
+</script>
 
-        #standalone button {
-            padding: 5px;
-            margin: 0 0 0 52px;
-            width: 65%;
-            font-weight: 700;
-        }
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700|Roboto:400,700" rel="stylesheet" type="text/css">
 
-        #standalone img.left {
-            top: 158px;
-        }
+<style type="text/css">
+.include {
+  border: solid 8px #0077A2;
+  width: 100%;
+  max-width: 600px;
+/*  height: 300px;
+*//*  margin: auto;
+*/  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background: url(img/include.png) no-repeat;
+}
 
-        #standalone img.right {
-            top: 158px;
-        }
-        
-        .hide {
-            display: none;
-        }
+.include_back_button {
+  background-color: #0077A2;
+  padding: 10px;
+  text-align: center;
+  font-family: Open Sans Condensed;
+  font-size: 25px;
+  line-height: 28px;
+  margin: 220px auto 0px auto;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  display: block;
+  border: none;
+}
 
-        p {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 15px;
-            font-weight: 300;
-            color: white;
-            text-align: center;
-            line-height: 1.8em;
-            letter-spacing: 0.1em;
-            margin: 20px 20px 10px 20px;
-        }
+@media only screen and (max-width: 599px){
+    
+}
 
-        button img{
-            width: 35px;
-            position: relative;
-            display: inline-block;
-            top: 10px;
-        }
 
-        #legend_box {
-            box-shadow: none;
-        }
-
-        @media only screen and (max-width: 599px) {
-            .include {
-                background-size: 
-            }    
-        }
-    </style>
-
+</style>
 </head>
-
 <body>
 
-    <div>
-    <div class="include" id="return">
+    <div class="include">
         <button class="include_back_button" onclick="goToHash()">
-        RETURN TO THE<span id="return-link"></span>LINE </button>
+        BACK TO THE MAP </button>
     </div>
-
-    <div class="include hide" id="discover">
-            <div>
-                <p>DISCOVER THE BEST FOOD<br>
-                ON YOUR SUBWAY LINE</p>
-                <button>GET STARTED</button>
-            </div>
-            </div>
-
-    <div id="legend_box">
-        <div class="left_box"><a href="javascript: scroll_legend('left');"><img alt="Scroll left" class="left" src="img/left.png"></a></div>
-        <div class="logo_box"><a href="./#1" target="_top"><img alt="1 restaurants" class="legend no_restaurant" id="1" src="img/line_1.png"></a></div>
-        <div class="logo_box"><a href="./#2" target="_top"><img alt="2 restaurants" class="legend" id="2" src="img/line_2.png"></a></div>
-        <div class="logo_box"><a href="./#3" target="_top"><img alt="3 restaurants" class="legend" id="3" src="img/line_3.png"></a></div>
-        <div class="logo_box"><a href="./#4" target="_top"><img alt="4 restaurants" class="legend" id="4" src="img/line_4.png"></a></div>
-        <div class="logo_box"><a href="./#5" target="_top"><img alt="5 restaurants" class="legend" data-pin-nopin="true" id="5" src="img/line_5.png"></a></div>
-        <div class="logo_box"><a href="./#6" target="_top"><img alt="6 restaurants" class="legend no_restaurant" data-pin-nopin="true" id="6" src="img/line_6.png"></a></div>
-        <div class="logo_box"><a href="./#7" target="_top"><img alt="7 restaurants" class="legend" id="7" src="img/line_7.png"></a></div>
-        <div class="logo_box"><a href="./#A" target="_top"><img alt="A restaurants" class="legend" id="A" src="img/line_A.png"></a></div>
-        <div class="logo_box"><a href="./#C" target="_top"><img alt="C restaurants" class="legend no_restaurant" id="C" src="img/line_C.png"></a></div>
-        <div class="logo_box"><a href="./#E" target="_top"><img alt="E restaurants" class="legend no_restaurant" id="E" src="img/line_E.png"></a></div>
-        <div class="logo_box"><a href="./#B" target="_top"><img alt="B restaurants" class="legend no_restaurant" id="B" src="img/line_B.png"></a></div>
-        <div class="logo_box"><a href="./#D" target="_top"><img alt="D restaurants" class="legend no_restaurant" id="D" src="img/line_D.png"></a></div>
-        <div class="logo_box"><a href="./#F" target="_top"><img alt="F restaurants" class="legend no_restaurant" id="F" src="img/line_F.png"></a></div>
-        <div class="logo_box"><a href="./#M" target="_top"><img alt="M restaurants" class="legend" data-pin-nopin="true" id="M" src="img/line_M.png"></a></div>
-        <div class="logo_box"><a href="./#N" target="_top"><img alt="N restaurants" class="legend" data-pin-nopin="true" id="N" src="img/line_N.png"></a></div>
-        <div class="logo_box"><a href="./#Q" target="_top"><img alt="Q restaurants" class="legend" id="Q" src="img/line_Q.png"></a></div>
-        <div class="logo_box"><a href="./#R" target="_top"><img alt="R restaurants" class="legend no_restaurant" id="R" src="img/line_R.png"></a></div>
-        <div class="logo_box"><a href="./#J" target="_top"><img alt="J restaurants" class="legend" data-pin-nopin="true" id="J" src="img/line_J.png"></a></div>
-        <div class="logo_box"><a href="./#Z" target="_top"><img alt="Z restaurants" class="legend" id="Z" src="img/line_Z.png"></a></div>
-        <div class="logo_box"><a href="./#G" target="_top"><img alt="G restaurants" class="legend" id="G" src="img/line_G.png"></a></div>
-        <div class="logo_box"><a href="./#L" target="_top"><img alt="L restaurants" class="legend no_restaurant" id="L" src="img/line_L.png"></a></div>
-        <div class="right_box"><a href="javascript: scroll_legend('right');"><img alt="Scroll right" class="right" src="img/right.png"></a></div>
-    </div>
-    </div>
-
-    <script>
-        var lines = ['2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
-        var hash = document.location.hash.replace('#', '');
-            if (hash != "") {
-                if (lines.indexOf(hash.toUpperCase()) != -1) {
-                    var line_from = hash.toUpperCase();
-                    // add line image to button
-                    document.getElementById("return-link").innerHTML='<img src="img/line_' + line_from + '.png">'
-                }
-            }
-
-        function goToHash() {
-        var url="";
-            top.location = url+"#"+hash;
-        }
-        
-        var search = document.location.search;
-            if (search == '?map') {
-                document.body.id = "standalone";
-                document.getElementById('return').style.display = 'none';
-                document.getElementById('discover').style.display = 'block';
-            }
-
-        // $("#legend_box").prepend('<div class="left_box" ><img class="left" src="img/left.png" alt="Scroll left"></div>');
-        // $("#legend_box").append('<div class="right_box" ><img class="right" src="img/right.png" alt="Scroll right"></div>');
-
-        function scroll_legend(lr) {
-            var slideW = $('.logo_box').width();
-            if ( lr == 'left' ) $('#legend_box').animate({scrollLeft: "-="+slideW*2 }, 600);      
-            else $('#legend_box').animate({scrollLeft: "+="+slideW*2 }, 600);
-        }
-
-    </script>
 
 </body>
 </html>
