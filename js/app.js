@@ -19,7 +19,6 @@ $(document).ready(function() {
     {
         // Parse out the pieces of the hash, which we use for permanent links
         line_selected = window.location.hash[1];
-        window.scrollTo(0,0);
     }
   //}
   var json_selected;
@@ -563,6 +562,7 @@ $(document).ready(function() {
     $(".legend").click(function(){
         line_selected = $(this).attr("id");
         click_legend(line_selected);
+        window.scrollTo(0,0);
     });
 
     function click_legend(value) {
@@ -645,28 +645,30 @@ $(document).ready(function() {
                 $("#label_back").css({"width":parseInt(width)+20, "height":parseInt(height)+0, "display":"inline"});
                 $("#label").css({"display":"inline"});
 
-                $.each(geojson_stop._layers, function() {
-                    var stop = $(this)[0].feature.properties.stations;
-                    var layer = $(this)[0];
-                    var latlng = $(this)[0].feature.geometry.coordinates;
-                    if (station1 == stop) {
-                        var lat = latlng[0];
-                        var lng = latlng[1];
-                        geojson_stop.setStyle(style_stop);
-                        geojson_stop_empty.setStyle(style_stop_empty);
-                        layer.setStyle(style_stop_clicked(get_line(line_selected)));
-                        layer.openPopup();
-                        select_layer = layer;
-                        map.panTo(layer._latlng);
-                    }
-                    if (station2 == stop) {
-                        geojson_stop.setStyle(style_stop);
-                        geojson_stop_empty.setStyle(style_stop_empty);
-                        layer.setStyle(style_stop_clicked(get_line(line_selected)));
-                        layer.openPopup();
-                        select_layer2 = layer;
-                    }
-                });
+                if ( !is_mobile ) {
+                    $.each(geojson_stop._layers, function() {
+                        var stop = $(this)[0].feature.properties.stations;
+                        var layer = $(this)[0];
+                        var latlng = $(this)[0].feature.geometry.coordinates;
+                        if (station1 == stop) {
+                            var lat = latlng[0];
+                            var lng = latlng[1];
+                            geojson_stop.setStyle(style_stop);
+                            geojson_stop_empty.setStyle(style_stop_empty);
+                            layer.setStyle(style_stop_clicked(get_line(line_selected)));
+                            layer.openPopup();
+                            select_layer = layer;
+                            map.panTo(layer._latlng);
+                        }
+                        if (station2 == stop) {
+                            geojson_stop.setStyle(style_stop);
+                            geojson_stop_empty.setStyle(style_stop_empty);
+                            layer.setStyle(style_stop_clicked(get_line(line_selected)));
+                            layer.openPopup();
+                            select_layer2 = layer;
+                        }
+                    });
+                }
 
                 var windowWidth = $(scroll_obj).width();
                 if (windowWidth > 480 ) {
