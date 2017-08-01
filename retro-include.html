@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var lines = ['2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
+	var hash = document.location.hash.replace('#', '');
+		if (hash != "") {
+			if (lines.indexOf(hash.toUpperCase()) != -1) {
+				var line_from = hash.toUpperCase();
+			}
+		}
+
+
+
+
+
+function goToHash() {
+	var url="";
+	top.location = url+"#"+hash;
+}
+console.log("it works, yo");
+</script>
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700|Roboto:400,700" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.include {
+  border: solid 8px #0077A2;
+  width: 100%;
+  max-width: 600px;
+/*  height: 300px;
+*//*  margin: auto;
+*/  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background: url(img/include.png) no-repeat;
+}
+
+.include_back_button {
+  background-color: #0077A2;
+  padding: 10px;
+  text-align: center;
+  font-family: Open Sans Condensed;
+  font-size: 25px;
+  line-height: 28px;
+  margin: 220px auto 0px auto;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  display: block;
+  border: none;
+}
+
+@media only screen and (max-width: 599px){
+    
+}
+
+
+</style>
+</head>
+<body>
+
+	<div class="include">
+		<button class="include_back_button" onclick="goToHash()">
+		BACK TO THE MAP </button>
+	</div>
+
+</body>
+</html>
