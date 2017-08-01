@@ -19,6 +19,7 @@ $(document).ready(function() {
     {
         // Parse out the pieces of the hash, which we use for permanent links
         line_selected = window.location.hash[1];
+        window.scrollTo(0,0);
     }
   //}
   var json_selected;
