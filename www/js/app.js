@@ -450,7 +450,6 @@ $(document).ready(function() {
         <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
     </div>\n\
 </div>\n\
-<div class="text">'+ intro +'</div>\n\
 </div>\n\
 <div class="scroll_box"><img class="scroll" src="img/scroll.png" alt="Scroll down image"></div>');
 
