@@ -52,7 +52,8 @@ $(document).ready(function() {
     {"line":"3", "link":"http://www.nydailynews.com/json/cmlink/eating-3-line-1.3001232"},
     {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"},
     {"line":"1", "link":""},
-    {"line":"B", "link":"http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799"}
+    {"line":"B", "link":"http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799"},
+    {"line":"W", "link":"http://www.nydailynews.com/json/cmlink/eating-w-line-1.3377961"},
   ]
 
   // These are the stations that have labels that need to be angled up
@@ -84,7 +85,7 @@ $(document).ready(function() {
   }
 
     // BUILD THE LEGEND
-    var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
+    var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','W','J','Z','G','L']
     var lines_no = ['1','6','C','E','D','F','R','L']
 
     for (i=0; i<lines.length; i++) {
@@ -135,10 +136,10 @@ $(document).ready(function() {
     function get_line(d) {
         // Return the line's color, or black if the line name doesn't match anything we've set up.
         return d == "1" || d == "2" || d == "3" ? '#ee352e' :
-               d == "4" || d == "5" || d == "6"  ? '#00933c' :
+               d == "4" || d == "5" || d == "6" ? '#00933c' :
                d == "7"  ? '#b933ad' :
-               d == "R" || d == "N" || d == "Q"? '#fccc0a' :
-               d == "A" || d == "C" || d == "E"  ? '#2850ad' :
+               d == "R" || d == "N" || d == "Q" || d == "W" ? '#fccc0a' :
+               d == "A" || d == "C" || d == "E" ? '#2850ad' :
                d == "B" || d == "D" || d == "F" || d == "M"  ? '#ff6319' :
                d == "S"  ? '#808183' :
                d == "L"  ? '#a7a9ac' :
