@@ -1,3 +1,11 @@
+var share = {
+    url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
+    url_short: '',
+    subject: 'The Daily News Subway Restaurant Guide',
+    blurb: 'A curated guide to NYC restaurants for each MTA subway line in Manhattan, Brooklyn, Queens and the Bronx, by the New York Daily News',
+    blurb_encoded: ''
+};
+
 $(document).ready(function() {
   var main_div = 'info-box-desktop';
   if ( is_mobile ) main_div = 'info-box-handheld';
@@ -421,14 +429,6 @@ $(document).ready(function() {
                 }            
             }
           }
-
-        var share = {
-            url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
-            url_short: '',
-            subject: 'The Daily News Subway Restaurant Guide',
-            blurb: 'A curated guide to NYC restaurants for each MTA subway line in Manhattan, Brooklyn, Queens and the Bronx, by the New York Daily News',
-            blurb_encoded: ''
-        };
 
         // Clean up the main_div between different lines loading
         $("#" + main_div + ' .window').remove();
