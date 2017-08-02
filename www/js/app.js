@@ -51,7 +51,8 @@ $(document).ready(function() {
     {"line":"5", "link":"http://www.nydailynews.com/json/cmlink/eating-5-line-1.3001238"},
     {"line":"3", "link":"http://www.nydailynews.com/json/cmlink/eating-3-line-1.3001232"},
     {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"},
-    {"line":"1", "link":""}
+    {"line":"1", "link":""},
+    {"line":"B", "link":"http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799"}
   ]
 
   // These are the stations that have labels that need to be angled up
@@ -84,7 +85,7 @@ $(document).ready(function() {
 
     // BUILD THE LEGEND
     var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
-    var lines_no = ['1','6','C','E','B','D','F','R','L']
+    var lines_no = ['1','6','C','E','D','F','R','L']
 
     for (i=0; i<lines.length; i++) {
         $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
