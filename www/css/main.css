@@ -225,7 +225,7 @@ svg#subway + h3 {
     font-weight: bold;
 }
 
-svg#subway + h3#N, #subway + h3#Q {
+svg#subway + h3#N, #subway + h3#Q, #subway + h3#W {
     color: black;
 }
 

@@ -1,3 +1,11 @@
+var share = {
+    url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
+    url_short: '',
+    subject: 'The Daily News Subway Restaurant Guide',
+    blurb: 'A curated guide to NYC restaurants for each MTA subway line in Manhattan, Brooklyn, Queens and the Bronx, by the New York Daily News',
+    blurb_encoded: ''
+};
+
 $(document).ready(function() {
   var main_div = 'info-box-desktop';
   if ( is_mobile ) main_div = 'info-box-handheld';
@@ -43,22 +51,9 @@ $(document).ready(function() {
     {"line":"5", "link":"http://www.nydailynews.com/json/cmlink/eating-5-line-1.3001238"},
     {"line":"3", "link":"http://www.nydailynews.com/json/cmlink/eating-3-line-1.3001232"},
     {"line":"J", "link":"http://www.nydailynews.com/json/cmlink/eating-j-line-1.2962618"},
-    {"line":"1", "link":""}
-  ]
-
-   var cover = [
-    {"line":"N", "image":"img/N_Train-min.jpg","text":""},
-    {"line":"7", "image":"img/7_Train-min.jpg","text":""},
-    {"line":"Q", "image":"img/Q_Train-min.jpg","text":""},
-    {"line":"4", "image":"img/4_Train-min.jpg","text":""},
-    {"line":"M", "image":"img/M_Train-min.jpg","text":""},
-    {"line":"G", "image":"img/G_Train-min.jpg","text":""},
-    {"line":"A", "image":"img/A_Train-min.jpg","text":""},
-    {"line":"2", "image":"img/2_Train-min.jpg","text":""},
-    {"line":"Z", "image":"img/Z_Train-min.jpg","text":""},
-    {"line":"5", "image":"img/5_Train-min.jpg","text":""},
-    {"line":"3", "image":"img/3_Train-min.jpg","text":""},
-    {"line":"J", "image":"img/J_Train-min.jpg","text":""}
+    {"line":"1", "link":""},
+    {"line":"B", "link":"http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799"},
+    {"line":"W", "link":"http://www.nydailynews.com/json/cmlink/eating-w-line-1.3377961"},
   ]
 
   // These are the stations that have labels that need to be angled up
@@ -90,8 +85,8 @@ $(document).ready(function() {
   }
 
     // BUILD THE LEGEND
-    var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L']
-    var lines_no = ['1','6','C','E','B','D','F','R','L']
+    var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','W','J','Z','G','L']
+    var lines_no = ['1','6','C','E','D','F','R','L']
 
     for (i=0; i<lines.length; i++) {
         $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
@@ -141,10 +136,10 @@ $(document).ready(function() {
     function get_line(d) {
         // Return the line's color, or black if the line name doesn't match anything we've set up.
         return d == "1" || d == "2" || d == "3" ? '#ee352e' :
-               d == "4" || d == "5" || d == "6"  ? '#00933c' :
+               d == "4" || d == "5" || d == "6" ? '#00933c' :
                d == "7"  ? '#b933ad' :
-               d == "R" || d == "N" || d == "Q"? '#fccc0a' :
-               d == "A" || d == "C" || d == "E"  ? '#2850ad' :
+               d == "R" || d == "N" || d == "Q" || d == "W" ? '#fccc0a' :
+               d == "A" || d == "C" || d == "E" ? '#2850ad' :
                d == "B" || d == "D" || d == "F" || d == "M"  ? '#ff6319' :
                d == "S"  ? '#808183' :
                d == "L"  ? '#a7a9ac' :
@@ -437,21 +432,6 @@ $(document).ready(function() {
             }
           }
 
-        for (i=0;i<cover.length;i++) {
-          if (cover[i].line == line_selected) {
-            var banner = cover[i].image;
-            var intro = cover[i].text;
-          }
-        }
-
-        var share = {
-            url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
-            url_short: '',
-            subject: 'The Daily News Subway Restaurant Guide',
-            blurb: 'A curated guide to NYC restaurants for each MTA subway line in Manhattan, Brooklyn, Queens and the Bronx, by the New York Daily News',
-            blurb_encoded: ''
-        };
-
         // Clean up the main_div between different lines loading
         $("#" + main_div + ' .window').remove();
 
@@ -472,7 +452,6 @@ $(document).ready(function() {
         <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
     </div>\n\
 </div>\n\
-<div class="text">'+ intro +'</div>\n\
 </div>\n\
 <div class="scroll_box"><img class="scroll" src="img/scroll.png" alt="Scroll down image"></div>');
 
