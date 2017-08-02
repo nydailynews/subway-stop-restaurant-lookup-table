@@ -46,21 +46,6 @@ $(document).ready(function() {
     {"line":"1", "link":""}
   ]
 
-   var cover = [
-    {"line":"N", "image":"img/N_Train-min.jpg","text":""},
-    {"line":"7", "image":"img/7_Train-min.jpg","text":""},
-    {"line":"Q", "image":"img/Q_Train-min.jpg","text":""},
-    {"line":"4", "image":"img/4_Train-min.jpg","text":""},
-    {"line":"M", "image":"img/M_Train-min.jpg","text":""},
-    {"line":"G", "image":"img/G_Train-min.jpg","text":""},
-    {"line":"A", "image":"img/A_Train-min.jpg","text":""},
-    {"line":"2", "image":"img/2_Train-min.jpg","text":""},
-    {"line":"Z", "image":"img/Z_Train-min.jpg","text":""},
-    {"line":"5", "image":"img/5_Train-min.jpg","text":""},
-    {"line":"3", "image":"img/3_Train-min.jpg","text":""},
-    {"line":"J", "image":"img/J_Train-min.jpg","text":""}
-  ]
-
   // These are the stations that have labels that need to be angled up
   var labels = [
     {"line":"N", "upper":["57th St"]},
@@ -436,13 +421,6 @@ $(document).ready(function() {
                 }            
             }
           }
-
-        for (i=0;i<cover.length;i++) {
-          if (cover[i].line == line_selected) {
-            var banner = cover[i].image;
-            var intro = cover[i].text;
-          }
-        }
 
         var share = {
             url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
