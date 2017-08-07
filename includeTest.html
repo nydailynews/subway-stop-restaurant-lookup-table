@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<iframe src="" id="subway-embed" scrolling="no"></iframe>
+
+<script>
+var dev = 0;
+if ( document.location.hash === '#dev' ) dev = 1;
+
+if ( dev == 1 ) {
+
+}
+function modifyInclude() {
+
+    var lines = ['2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','J','Z','G','L'];
+    var iframe = document.getElementById('subway-embed');
+    var query = document.location.search;
+        if(query.length > 0)
+        {
+            query = query.substring(1).toUpperCase();
+        }
+
+    if(lines.indexOf(query) >= 0){
+        iframe.setAttribute('src', 'include-return.html#' + query);
+    }
+
+    else
+    {
+        iframe.setAttribute('src', 'include.html');
+    }
+}
+
+modifyInclude();
+
+</script>
+
+</body>
+</html>
