@@ -321,7 +321,7 @@ $(document).ready(function() {
         // Handle placing and naming markers. 
         // marker_type will be either 'horizontal' 'upper' or 'lower'
         var anchors = { 
-            horizontal: [-15, 10],
+            'horizontal': [-15, 10],
             'upper-right': [30, 90],
             'lower-right': [20, -75]
         };
@@ -344,13 +344,14 @@ $(document).ready(function() {
     var load_map = function (line_selected, json_selected, subsequent_click) {   
         // This is the workhorse function. It loads the map and all the stop-cards.
         $.getJSON(json_selected, function(data){
+            // SOME HARD-CODED CONFIGURATION STUFF THAT COULD MESS WITH YOUR HEAD
             if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
-            //if ( !is_mobile ) {
             selected_mta = [];
             selected_stops = [];
             selected_stops_empty = [];
-            for (i=0; i < mta.features.length; i++) {
+            var len = mta.features.length;
+            for ( var i = 0; i < len; i++ ) {
               if (mta.features[i].properties.route_id == line_selected) {
                     if ( !is_mobile ) {
                       map.removeLayer(geojson_line);
@@ -361,8 +362,8 @@ $(document).ready(function() {
             }
 
             var my_stops = []
-            var l = data.length;
-            for (p = 0; p<l; p++) {
+            var len = data.length;
+            for ( var p = 0; p < len; p++ ) {
                 var stop1 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[0];
                 var stop2 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[1];
                 my_stops.push(stop1);
@@ -372,8 +373,8 @@ $(document).ready(function() {
             }
 
             if ( !is_mobile ) {
-                var l = stops.features.length;
-                for (i=0; i<l; i++) {
+                var len = stops.features.length;
+                for ( var i= 0 ; i < len; i++ ) {
                     if (stops.features[i].properties.line == line_selected) {
                         if ($.inArray(stops.features[i].properties.stations,my_stops) !== -1) {
                             selected_stops.push(stops.features[i]);
@@ -403,14 +404,17 @@ $(document).ready(function() {
                   onEachFeature: on_each_feature2
               }).addTo(map);
 
-              for (i = 0; i < markersArray.length; i++) {
+              var len = markersArray.length;
+              for ( var i = 0; i < len; i++ ) {
                 map.removeLayer(markersArray[i]);
               }
             }
 
-          for (p = 0; p < labels.length; p++) {
+          var len = labels.length;
+          for ( var p = 0; p < len; p++ ) {
             if (labels[p].line == line_selected) {
-                for (i = 0; i < selected_stops.length; i++) {
+                var next_len = selected_stops.length;
+                for ( var i = 0; i < next_len; i++ ) {
                   selected.push(selected_stops[i].properties.stations);
                   // This logic determines if subway stop labels appear horizontal
                   // or turned up at an angle. This is necessary to fix situations
@@ -566,7 +570,6 @@ $(document).ready(function() {
     // That "0" in load_map means "this is the initial load."
     highlight_legend(line_selected);
     load_map(line_selected, json_selected, 0);
-
 
     cover_height = $("#box").css("height");
 
@@ -755,6 +758,8 @@ if ( is_mobile ) {
   });
 
 // I THINK THIS MAKES THINGS STICKY.
+// BUT WHAT THINGS NEED TO BE STICKY?
+// THE LEGEND NEEDS TO BE STICKY.
 $(document).ready(function() {}), 
     function() {
         var e, t;
