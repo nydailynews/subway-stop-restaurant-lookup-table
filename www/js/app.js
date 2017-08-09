@@ -18,17 +18,13 @@ $(document).ready(function() {
   var selected_stops = [];
   var selected_stops_empty = [];
   var selected = [];
-  //if ($.bbq.getState("line") != null) {
-  //  var line_selected = $.bbq.getState("line");
-  //} else {
     var line_selected = "N"
     // Runs the first time the page loads
-    if ( window.location.hash !== '' )
+    if ( window.location.hash !== '' || window.location.search !== '' )
     {
         // Parse out the pieces of the hash, which we use for permanent links
         line_selected = window.location.hash[1];
     }
-  //}
   var json_selected;
   var cover_height;
   var select_layer;
@@ -255,7 +251,7 @@ $(document).ready(function() {
         layer.on({
             click: highlight_feature,
         });
-        layer.bindPopup('<div class="popup-back"></div><div class="popup-front">'+feature.properties.stations+'<img class="line_label" src="img/line_'+feature.properties.line+'.png"></div>', {offset:new L.Point(0,0)});
+        layer.bindPopup('<div class="popup-back"></div><div class="popup-front">'+feature.properties.stations+'<img alt="" class="line_label" src="img/line_'+feature.properties.line+'.png"></div>', {offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         layer.on('mouseover', function(e){
           if (windowWidth > 480  && select_layer.feature.properties.stations != feature.properties.stations) {  
@@ -448,7 +444,7 @@ $(document).ready(function() {
 <div class"img_box">\n\
     <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
         <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=MTA' + line_selected + 'line&via=NYDNi" target="_blank"><div id="twitter"></div></a>\n\
         <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
     </div>\n\
 </div>\n\
@@ -493,7 +489,7 @@ $(document).ready(function() {
 </a>\n\
 <div id="social">\n\
     <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-    <a href="https://twitter.com/share?url=' + url + '&text=' + headline + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+    <a href="https://twitter.com/share?url=' + url + '&text=' + headline + '&hashtags=MTA' + line_selected + 'line&via=NYDNi" target="_blank"><div id="twitter"></div></a>\n\
     <a href="mailto:?subject=' + headline+ '&body=' + details + ' ' + url + '"><div id="email"></div></a>\n\
 </div>\n\
 </div>');
@@ -510,9 +506,9 @@ $(document).ready(function() {
         } // end that big for loop
 
         // Place the final ad on mobile
-        if ( is_mobile ) {
-            $('#' + main_div).append($('#bottom_ad'));
-        }
+        //if ( is_mobile ) {
+        //    $('#' + main_div).append($('#bottom_ad'));
+        //}
 
         if ( !is_mobile ) {
             $('html, body').animate({
