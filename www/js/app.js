@@ -23,7 +23,8 @@ $(document).ready(function() {
     if ( window.location.hash !== '' || window.location.search !== '' )
     {
         // Parse out the pieces of the hash, which we use for permanent links
-        line_selected = window.location.hash[1];
+        if ( window.location.hash !== '' ) line_selected = window.location.hash[1].toUpperCase();
+        else line_selected = window.location.search[1].toUpperCase();
     }
   var json_selected;
   var cover_height;
@@ -87,12 +88,17 @@ $(document).ready(function() {
     var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','W','J','Z','G','L']
     var lines_no = ['1','6','C','E','D','F','R','L']
 
-    for (i=0; i<lines.length; i++) {
-        $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
+    var len = lines.length;
+    for ( var i = 0; i < len; i++ ) {
+        $("#legend_box").append('<div class="logo_box" id="line' + lines[i] + '">\n\
+    <a href="?' + lines[i] + '" onClick="return false;">\n\
+        <img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants">\n\
+    </a></div>');
     }
     
     $.each($(".legend"), function() {
-        for (p=0; p<lines_no.length; p++) {
+        var len = lines_no.length;
+        for ( var p = 0; p < len; p++ ) {
             if ( $(this).attr("id") == lines_no[p]) {
                 $(this).addClass("no_restaurant");
                 // $(this).off("click");
@@ -554,7 +560,7 @@ $(document).ready(function() {
             var l = rss.length;
             for ( i=0; i<l; i++ ) {
                 if (rss[i].line == value) {
-                    window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
+                    window.history.replaceState('', '', window.location.origin + window.location.pathname + '?' + value);
                     highlight_legend(value);
                     json_selected = rss[i].link;
                 }
