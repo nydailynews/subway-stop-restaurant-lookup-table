@@ -220,7 +220,7 @@ svg#subway + h3 {
     position: absolute;
     top: -10px;
     color: white;
-    left: 174px;
+    left: 170px;
     font-size: 80px;
     font-weight: bold;
 }
@@ -503,10 +503,10 @@ body #info-box-handheld #box .scroll_box {
     bottom: 48px;
     position: relative;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,333333+100&0+0,1+100 */
-    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
 }
 
 .visit-page {
