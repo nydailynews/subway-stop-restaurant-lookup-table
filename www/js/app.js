@@ -1,6 +1,6 @@
 var share = {
-    url: 'http://interactive.nydailynews.com/features/nyc-restaurant-guide-subway/',
-    url_short: '',
+    url: 'http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/',
+    url_short: 'http://nydn.us/subwayfare',
     subject: 'The Daily News Subway Restaurant Guide',
     blurb: 'A curated guide to NYC restaurants for each MTA subway line in Manhattan, Brooklyn, Queens and the Bronx, by the New York Daily News',
     blurb_encoded: ''
@@ -445,7 +445,7 @@ $(document).ready(function() {
         $("#" + main_div + ' .window').remove();
 
         $("#box").html('\n\
-<svg id="subway" width="367px" height="118px" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
+<svg id="subway" width="367" height="118" viewBox="0 0 367 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n\
 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n\
     <g id="subway_line" fill="' + get_line(line_selected) + '">\n\
         <path d="M2,8 L365.138914,8 C329.250684,71.8546012 261.381149,114.92314 183.570374,114.92314 C105.753806,114.92314 37.8863002,71.8546012 2.00002871,8.00005109 Z" id="subway_line_path"></path>\n\
@@ -492,7 +492,7 @@ $(document).ready(function() {
 <div class="card_top">\n\
     <img class="profile" src="'+image+'" />\n\
     <div class="stop">\n\
-        <p class="stop_name"><a target="_blank" href="'+url+'"">'+stop+'</a></p>\n\
+        <p class="stop_name"><a href="'+url+'"">'+stop+'</a></p>\n\
     </div>\n\
     <h3 class="name"><a target="_blank" href="'+url+'"">'+headline+'</a></h3>\n\
 </div>\n\
@@ -550,7 +550,6 @@ $(document).ready(function() {
     $(".legend").click(function(){
         line_selected = $(this).attr("id");
         click_legend(line_selected);
-        window.scrollTo(0,0);
     });
 
     function click_legend(value) {
@@ -566,6 +565,7 @@ $(document).ready(function() {
                 }
             }
             load_map(value, json_selected, 1);
+            window.scrollTo(0,0);
         }
     }
 
