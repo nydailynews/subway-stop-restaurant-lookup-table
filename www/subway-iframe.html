@@ -1,0 +1,22 @@
+<iframe id="footer-include" scrolling="no" style="width: 100%; height: 300px;"></iframe>
+
+<script>
+
+var subway_line = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W'];
+
+var source = "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/include.html";
+    if(document.referrer.indexOf('interactive.nydailynews.com') > -1)
+        {
+            var last_char = document.referrer[document.referrer.length -1]
+            if(last_char == '/')
+            {
+                last_char = 'N'
+            }
+            source = "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/include-return.html#" + last_char;
+            document.getElementById('footer-include').style.height = "140px";
+        }
+
+var i = document.getElementById('footer-include');
+    i.setAttribute("src", source);
+
+</script>
