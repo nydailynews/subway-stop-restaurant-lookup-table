@@ -3,7 +3,7 @@
 <head>
 <script>
     var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W']
-    var hash = document.location.hash.replace('?', '');
+    var hash = document.location.hash.replace('#', '');
         if (hash != "") {
             if (lines.indexOf(hash.toUpperCase()) != -1) {
                 var line_from = hash.toUpperCase();
