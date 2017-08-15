@@ -496,8 +496,8 @@ $(document).ready(function() {
     </div>\n\
     <h3 class="name"><a target="_blank" href="'+url+'"">'+headline+'</a></h3>\n\
 </div>\n\
-<p class="details"><a target="_blank" href="'+url+'"">'+details+'</a></p>\n\
-<a class="button_link" target="_blank" href="'+url+'"">\n\
+<p class="details"><a href="'+url+'"">'+details+'</a></p>\n\
+<a class="button_link" href="'+url+'"">\n\
     <button class="visit-page">READ MORE</button>\n\
 </a>\n\
 <div id="social">\n\
