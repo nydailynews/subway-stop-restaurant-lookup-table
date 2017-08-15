@@ -18,17 +18,14 @@ $(document).ready(function() {
   var selected_stops = [];
   var selected_stops_empty = [];
   var selected = [];
-  //if ($.bbq.getState("line") != null) {
-  //  var line_selected = $.bbq.getState("line");
-  //} else {
     var line_selected = "N"
     // Runs the first time the page loads
-    if ( window.location.hash !== '' )
+    if ( window.location.hash !== '' || window.location.search !== '' )
     {
         // Parse out the pieces of the hash, which we use for permanent links
-        line_selected = window.location.hash[1];
+        if ( window.location.hash !== '' ) line_selected = window.location.hash[1].toUpperCase();
+        else line_selected = window.location.search[1].toUpperCase();
     }
-  //}
   var json_selected;
   var cover_height;
   var select_layer;
@@ -75,7 +72,10 @@ $(document).ready(function() {
     {"line":"3", "upper":[""],
                  "lower":["Franklin Ave"]},
     {"line":"J", "upper":["Marcy Ave", "Hewes St", "Lorimer St", "Flushing Ave", "Myrtle Ave", "Kosciuszko St", "Gates Ave", "Halsey St", "Chauncey St", "Broadway Junction", "Alabama Ave", "Van Siclen Ave", "Cleveland St", "Cypress Hills", "75th St - Eldert Ln", "85th St - Forest Pky", "95th St - Forest Pky", "Woodhaven Blvd", "104th-102nd Sts", "121st St"],
-                 "lower":["Broad St", "Fulton St", "Chambers St", "Canal St", "Norwood Ave", "Sutphin Blvd - Archer Av"]}
+                 "lower":["Broad St", "Fulton St", "Chambers St", "Canal St", "Norwood Ave", "Sutphin Blvd - Archer Av"]},
+    {"line":"W", "upper":[],},
+    {"line":"B", "upper":[],},
+    //{"line":"X", "upper":[],},
   ]
 
   for (i=0;i<rss.length;i++) {
@@ -88,12 +88,17 @@ $(document).ready(function() {
     var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','W','J','Z','G','L']
     var lines_no = ['1','6','C','E','D','F','R','L']
 
-    for (i=0; i<lines.length; i++) {
-        $("#legend_box").append('<div class="logo_box"><img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants"></div>')
+    var len = lines.length;
+    for ( var i = 0; i < len; i++ ) {
+        $("#legend_box").append('<div class="logo_box" id="line' + lines[i] + '">\n\
+    <a href="?' + lines[i] + '" onClick="return false;">\n\
+        <img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants">\n\
+    </a></div>');
     }
     
     $.each($(".legend"), function() {
-        for (p=0; p<lines_no.length; p++) {
+        var len = lines_no.length;
+        for ( var p = 0; p < len; p++ ) {
             if ( $(this).attr("id") == lines_no[p]) {
                 $(this).addClass("no_restaurant");
                 // $(this).off("click");
@@ -255,7 +260,7 @@ $(document).ready(function() {
         layer.on({
             click: highlight_feature,
         });
-        layer.bindPopup('<div class="popup-back"></div><div class="popup-front">'+feature.properties.stations+'<img class="line_label" src="img/line_'+feature.properties.line+'.png"></div>', {offset:new L.Point(0,0)});
+        layer.bindPopup('<div class="popup-back"></div><div class="popup-front">'+feature.properties.stations+'<img alt="" class="line_label" src="img/line_'+feature.properties.line+'.png"></div>', {offset:new L.Point(0,0)});
         var windowWidth = $(window).width();
         layer.on('mouseover', function(e){
           if (windowWidth > 480  && select_layer.feature.properties.stations != feature.properties.stations) {  
@@ -325,7 +330,7 @@ $(document).ready(function() {
         // Handle placing and naming markers. 
         // marker_type will be either 'horizontal' 'upper' or 'lower'
         var anchors = { 
-            horizontal: [-15, 10],
+            'horizontal': [-15, 10],
             'upper-right': [30, 90],
             'lower-right': [20, -75]
         };
@@ -348,13 +353,14 @@ $(document).ready(function() {
     var load_map = function (line_selected, json_selected, subsequent_click) {   
         // This is the workhorse function. It loads the map and all the stop-cards.
         $.getJSON(json_selected, function(data){
+            // SOME HARD-CODED CONFIGURATION STUFF THAT COULD MESS WITH YOUR HEAD
             if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
-            //if ( !is_mobile ) {
             selected_mta = [];
             selected_stops = [];
             selected_stops_empty = [];
-            for (i=0; i < mta.features.length; i++) {
+            var len = mta.features.length;
+            for ( var i = 0; i < len; i++ ) {
               if (mta.features[i].properties.route_id == line_selected) {
                     if ( !is_mobile ) {
                       map.removeLayer(geojson_line);
@@ -365,8 +371,8 @@ $(document).ready(function() {
             }
 
             var my_stops = []
-            var l = data.length;
-            for (p = 0; p<l; p++) {
+            var len = data.length;
+            for ( var p = 0; p < len; p++ ) {
                 var stop1 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[0];
                 var stop2 = data[p].body[0].paragraphs.split(": ")[0].split(" & ")[1];
                 my_stops.push(stop1);
@@ -376,8 +382,8 @@ $(document).ready(function() {
             }
 
             if ( !is_mobile ) {
-                var l = stops.features.length;
-                for (i=0; i<l; i++) {
+                var len = stops.features.length;
+                for ( var i= 0 ; i < len; i++ ) {
                     if (stops.features[i].properties.line == line_selected) {
                         if ($.inArray(stops.features[i].properties.stations,my_stops) !== -1) {
                             selected_stops.push(stops.features[i]);
@@ -407,14 +413,17 @@ $(document).ready(function() {
                   onEachFeature: on_each_feature2
               }).addTo(map);
 
-              for (i = 0; i < markersArray.length; i++) {
+              var len = markersArray.length;
+              for ( var i = 0; i < len; i++ ) {
                 map.removeLayer(markersArray[i]);
               }
             }
 
-          for (p = 0; p < labels.length; p++) {
+          var len = labels.length;
+          for ( var p = 0; p < len; p++ ) {
             if (labels[p].line == line_selected) {
-                for (i = 0; i < selected_stops.length; i++) {
+                var next_len = selected_stops.length;
+                for ( var i = 0; i < next_len; i++ ) {
                   selected.push(selected_stops[i].properties.stations);
                   // This logic determines if subway stop labels appear horizontal
                   // or turned up at an angle. This is necessary to fix situations
@@ -448,7 +457,7 @@ $(document).ready(function() {
 <div class"img_box">\n\
     <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
         <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+        <a href="https://twitter.com/share?url=' + share.url + '%23' + line_selected + '&text=' + share.subject + '&hashtags=MTA' + line_selected + 'line&via=NYDNi" target="_blank"><div id="twitter"></div></a>\n\
         <a href="mailto:?subject=' + share.subject + '&body=' + share.blurb + ' ' + share.url + '"><div id="email"></div></a>\n\
     </div>\n\
 </div>\n\
@@ -472,7 +481,7 @@ $(document).ready(function() {
         }
 
         var l = data.length;
-        for (i = 0; i<l; i++) {
+        for ( var i = 0; i<l; i++ ) {
             var stop = data[i].body[0].paragraphs.split(": ")[0];
             var headline = data[i].title;
             var details = data[i].body[0].paragraphs.split(": ")[1];
@@ -493,7 +502,7 @@ $(document).ready(function() {
 </a>\n\
 <div id="social">\n\
     <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
-    <a href="https://twitter.com/share?url=' + url + '&text=' + headline + '&hashtags=SubwayEats,' + line_selected + 'line&via=NYDailynews" target="_blank"><div id="twitter"></div></a>\n\
+    <a href="https://twitter.com/share?url=' + url + '&text=' + headline + '&hashtags=MTA' + line_selected + 'line&via=NYDNi" target="_blank"><div id="twitter"></div></a>\n\
     <a href="mailto:?subject=' + headline+ '&body=' + details + ' ' + url + '"><div id="email"></div></a>\n\
 </div>\n\
 </div>');
@@ -510,9 +519,9 @@ $(document).ready(function() {
         } // end that big for loop
 
         // Place the final ad on mobile
-        if ( is_mobile ) {
-            $('#' + main_div).append($('#bottom_ad'));
-        }
+        //if ( is_mobile ) {
+        //    $('#' + main_div).append($('#bottom_ad'));
+        //}
 
         if ( !is_mobile ) {
             $('html, body').animate({
@@ -551,7 +560,7 @@ $(document).ready(function() {
             var l = rss.length;
             for ( i=0; i<l; i++ ) {
                 if (rss[i].line == value) {
-                    window.history.replaceState('', '', window.location.origin + window.location.pathname + '#' + value);
+                    window.history.replaceState('', '', window.location.origin + window.location.pathname + '?' + value);
                     highlight_legend(value);
                     json_selected = rss[i].link;
                 }
@@ -570,7 +579,6 @@ $(document).ready(function() {
     // That "0" in load_map means "this is the initial load."
     highlight_legend(line_selected);
     load_map(line_selected, json_selected, 0);
-
 
     cover_height = $("#box").css("height");
 
@@ -759,6 +767,8 @@ if ( is_mobile ) {
   });
 
 // I THINK THIS MAKES THINGS STICKY.
+// BUT WHAT THINGS NEED TO BE STICKY?
+// THE LEGEND NEEDS TO BE STICKY.
 $(document).ready(function() {}), 
     function() {
         var e, t;

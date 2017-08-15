@@ -30,6 +30,11 @@ Most all of this is done in js/scripts.js.
 
 Edit the data/subway_geo.geojson file.
 
+### What if a stop isn't showing up on a line?
+
+1. Make sure the stop name is in data/subway_geo.geojson file.
+2. Make sure there's a record for the line in the labels array in `js/app.js` near line 50.
+
 ### How to remove a subway route
 
 #### If the line hasn't been activated
