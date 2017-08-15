@@ -24,13 +24,14 @@ function goToHash() {
 
 <style type="text/css">
 .include {
-  border: solid 8px #0077A2;
-  width: 100%;
-  max-width: 600px;
-/*  height: 300px;
-*//*  margin: auto;
-*/  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background: url(img/include.png) no-repeat;
+    margin: auto;
+    border: solid 8px #0077A2;
+    width: 100%;
+    max-width: 570px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: url(img/include.png) center;
+    background-position-y: inherit;
+    background-repeat: no-repeat;
 }
 
 .include_back_button {
@@ -49,8 +50,18 @@ function goToHash() {
   border: none;
 }
 
-@media only screen and (max-width: 599px){
-    
+@media only screen and (min-width: 250px) and (max-width: 727px) {
+
+  .include {
+    background-size: cover;
+    width: 90%;
+    height: 360px;
+  }
+  
+  .include_back_button {
+    padding: 20px;
+    font-size: 25px;
+  }
 }
 
 
@@ -58,10 +69,10 @@ function goToHash() {
 </head>
 <body>
 
-    <div class="include">
+    <a href="javascript:goToHash();" style="text-decoration: none;"><div class="include">
         <button class="include_back_button" onclick="goToHash()">
         BACK TO THE MAP </button>
-    </div>
+    </div></a>
 
 </body>
 </html>
