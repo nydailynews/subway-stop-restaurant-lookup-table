@@ -330,6 +330,7 @@ body #info-box-handheld #box .scroll_box {
     margin: auto;
     height: 400px;
     width: 500px;
+    overflow-x: hidden;
 }
 
 #bottom_ad {
