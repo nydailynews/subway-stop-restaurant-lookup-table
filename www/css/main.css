@@ -999,20 +999,25 @@ border: 1px solid #333;
 
 
 
-#loader {
-    background: #111;
-    background: radial-gradient(#111, #000);
-}
+#loader {}
 
 .blob {
+    z-index: 10;
     width: 2rem;
     height: 2rem;
-    background: rgba(230,230,230,0.85);
+    background: rgba(0,0,0,0.85);
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     left: calc(50% - 1rem);
     top: calc(50% - 1rem);
-    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.9)
+}
+
+@media only screen and (min-width: 250px) and (max-width: 727px) {
+    .blob {
+        left: calc(40% - 1rem);
+        top: calc(40% - 1rem);
+    }
 }
 
 .blob-2 { animation: animate-to-2 1.5s infinite; }
