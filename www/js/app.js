@@ -103,7 +103,7 @@ $(document).ready(function() {
   }
 
     // BUILD THE LEGEND
-    var lines = ['1', '2','3','4','5','6','7','A','C','E','B','D','F','M','N','Q','R','W','J','Z','G','L']
+    var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W']
     var lines_no = ['1','6','C','E','D','F','R','L']
 
     var len = lines.length;

@@ -373,12 +373,14 @@ body #info-box-handheld #box .scroll_box {
 
 
 .no_restaurant {
-  opacity: 0.2;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-.no_restaurant:hover {
+/*.no_restaurant:hover {
   opacity: 0.2 !important;
-}
+}*/
 
 .logo_box {
   display: inline-table;
