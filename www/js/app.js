@@ -574,6 +574,7 @@ $(document).ready(function() {
         // Handle clicks and taps on the legend at the top of the screen.
         // Why is it called a legend and not a nav
         if ($.inArray(value,lines_no) == -1) {
+            PARSELY.beacon.trackPageView({ url: window.location.origin + window.location.pathname + '?' + value, urlref: document.location.href, js: 1 });
             var l = rss.length;
             for ( i=0; i<l; i++ ) {
                 if (rss[i].line == value) {
