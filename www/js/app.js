@@ -52,6 +52,24 @@ $(document).ready(function() {
     {"line":"B", "link":"http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799"},
     {"line":"W", "link":"http://www.nydailynews.com/json/cmlink/eating-w-line-1.3377961"},
   ]
+  // For when we're serving locally
+  rss = [
+    {"line":"N", "link":"data/eating-n-line-1.2734164"},
+    {"line":"7", "link":"data/eating-7-line-1.2761341"},
+    {"line":"Q", "link":"data/eating-q-line-1.2761339"},
+    {"line":"4", "link":"data/eating-4-line-1.2761335"},
+    {"line":"M", "link":"data/eating-m-line-1.2761327"},
+    {"line":"G", "link":"data/eating-g-line-1.2761325"},
+    {"line":"A", "link":"data/eating-a-line-1.2761311"},
+    {"line":"2", "link":"data/eating-2-line-1.2734246"},
+    {"line":"Z", "link":"data/eating-Z-line-1.3001224"},
+    {"line":"5", "link":"data/eating-5-line-1.3001238"},
+    {"line":"3", "link":"data/eating-3-line-1.3001232"},
+    {"line":"J", "link":"data/eating-j-line-1.2962618"},
+    {"line":"1", "link":""},
+    {"line":"B", "link":"data/eating-b-line-1.3377799"},
+    {"line":"W", "link":"data/eating-w-line-1.3377961"},
+  ]
 
   // These are the stations that have labels that need to be angled up
   var labels = [
