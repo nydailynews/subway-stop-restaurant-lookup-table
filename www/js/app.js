@@ -566,6 +566,7 @@ $(document).ready(function() {
             }
             load_map(value, json_selected, 1);
             window.scrollTo(0,0);
+            $(scroll_obj).animate({scrollTop: 0});
         }
     }
 
