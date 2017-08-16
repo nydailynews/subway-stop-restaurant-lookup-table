@@ -27,11 +27,9 @@ function goToHash() {
     margin: auto;
     border: solid 8px #0077A2;
     width: 100%;
-    max-width: 570px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background: url(img/include.png) center;
-    background-position-y: inherit;
-    background-repeat: no-repeat;
+    background: url(img/include.png) no-repeat;
+    background-size: cover;
 }
 
 .include_back_button {
@@ -50,17 +48,20 @@ function goToHash() {
   border: none;
 }
 
-@media only screen and (min-width: 250px) and (max-width: 727px) {
+@media only screen and (max-width: 450px) {
 
   .include {
-    background-size: cover;
-    width: 90%;
-    height: 360px;
+    background-size: contain;
+    border: solid 1px black;
   }
   
   .include_back_button {
-    padding: 20px;
-    font-size: 25px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 94px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: black;
   }
 }
 
@@ -71,7 +72,7 @@ function goToHash() {
 
     <a href="javascript:goToHash();" style="text-decoration: none;"><div class="include">
         <button class="include_back_button" onclick="goToHash()">
-        BACK TO THE MAP </button>
+        Where to eat at every stop</button>
     </div></a>
 
 </body>
