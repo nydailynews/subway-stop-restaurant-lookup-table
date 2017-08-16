@@ -330,7 +330,6 @@ body #info-box-handheld #box .scroll_box {
     margin: auto;
     height: 400px;
     width: 500px;
-    overflow-x: hidden;
 }
 
 #bottom_ad {
@@ -716,7 +715,7 @@ border: 1px solid #333;
     #info-box-handheld .window .stop_name {
         line-height: 23px;
         font-size: 16px;
-        letter-spacing: 1px;
+        font-weight: bold;
     }
 
     #info-box-handheld .window .stop {
