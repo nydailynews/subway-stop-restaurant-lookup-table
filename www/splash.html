@@ -237,10 +237,15 @@ body {
   color: white
 }
 #social_map {
-    top: 0px;
+    top: 0;
+    width: 150px;
 }
 h1, h2, h3, h4, h5, h6, p {
     font-family: "Open Sans", sans-serif;
+}
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 article {
 	max-width: 1024px;
@@ -252,6 +257,7 @@ article > div { margin: auto!important; }
 article p {
 	font-size: 1.2rem;
     clear: both;
+    padding-top: 10px;
 }
 article #title {
 	margin-top: 10px;
@@ -323,6 +329,10 @@ section#up-next > div {
 }
 @media only screen and (max-width: 768px) {
 	article { width: 85%; }
+	article #title {
+        width: 100%;
+        margin: auto;
+    }
 	article p {	font-size: 1rem; }
 	article nav .legend { width: 40px; }
     
