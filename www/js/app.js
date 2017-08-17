@@ -370,8 +370,8 @@ $(document).ready(function() {
 
     var load_map = function (line_selected, json_selected, subsequent_click) {   
         // This is the workhorse function. It loads the map and all the stop-cards.
-        $('#loader').addClass('hide');
         $.getJSON(json_selected, function(data){
+            $('#loader').addClass('hide');
             // SOME HARD-CODED CONFIGURATION STUFF THAT COULD MESS WITH YOUR HEAD
             if (line_selected == "4" || line_selected == "5" ) { data.reverse(); }
 
@@ -573,8 +573,8 @@ $(document).ready(function() {
 
     function click_legend(value) {
         // Handle clicks and taps on the legend at the top of the screen.
-        $('#loader').removeClass('hide');
         if ($.inArray(value,lines_no) == -1) {
+            $('#loader').removeClass('hide');
             PARSELY.beacon.trackPageView({ url: window.location.origin + window.location.pathname + '?' + value, urlref: document.location.href, js: 1 });
             var l = rss.length;
             for ( i=0; i<l; i++ ) {
