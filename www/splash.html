@@ -41,7 +41,7 @@
                 "headline": "SPLASH: NYC subway restaurant guide",
                 "url": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html",
                 "thumbnailUrl": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share.png",
-                "dateCreated": "2017-08-12T06:00:00Z",
+                "dateCreated": "2017-08-16T06:00:00Z",
                 "articleSection": "Interactive",
                 "creator": ["Interactive Project","Evie Liu", "Joe Murphy", "Kelli R. Parker", "Steve Smirti", "Mike Sullivan"],
                 "keywords": ["interactive project","interactive","mta","subway fare","new york restaurants","manhattan restaurants","brooklyn restaurants","queens restaurants","bronx restaurants","interactive map"]
@@ -70,7 +70,6 @@
     <meta name="searchBinding" content="/search" />
     <meta name="localeCountry" content="US"/>
     <meta name="localeLanguage" content="en" />
-    <link rel="stylesheet" href="css/foundation.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -237,6 +236,12 @@ body {
   background-size: cover;
   color: white
 }
+#social_map {
+    top: 0px;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Open Sans", sans-serif;
+}
 article {
 	max-width: 1024px;
 	width: 100%;
@@ -245,7 +250,7 @@ article {
 }
 article > div { margin: auto!important; }
 article p {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
     clear: both;
 }
 article #title {
@@ -260,7 +265,7 @@ article nav {
 }
 article nav #bg {
 	width: 100%;
-	height: 100%;
+	height: 130%;
 	background-color: #000;
 	filter:alpha(opacity=60); /* IE */
 	-moz-opacity:0.6; /* Mozilla */
@@ -285,6 +290,10 @@ article h2 {
 	color: white;
 }
 article nav .legend { width: 60px; }
+
+section#up-next h2 {
+    margin-top: 10px;
+}
 
 section#up-next > div {
     margin-top: -25px;
@@ -316,6 +325,7 @@ section#up-next > div {
 	article { width: 85%; }
 	article p {	font-size: 1rem; }
 	article nav .legend { width: 40px; }
+    
 }
 </style>
 
@@ -347,11 +357,6 @@ section#up-next > div {
 </footer>
 
 
-    <script src="js/foundation.min.js"></script>
-    <script src="js/foundation/foundation.equalizer.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
     <script>_satellite.pageBottom();</script>
 
     </div>
