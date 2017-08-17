@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#bg {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid white;
+    background-color: #000;
+    filter:alpha(opacity=60); /* IE */
+    -moz-opacity:0.6; /* Mozilla */
+    opacity: 0.6; /* CSS3 */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#legend_box {
+  width: 100%;
+  height: 60px;
+  z-index: 3;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo_box {
+  display: inline-table;
+  white-space: normal;
+  height: 100%;
+}
+
+.legend {
+    width: 60px;
+}
+
+@media only screen and (min-width: 220px) and (max-width:727px) {
+    .hp-sml {
+        background-image: url(img/homepage-sml.jpg);
+        width: 100%;
+    }
+
+    .legend {
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 728px) and (max-width: 989px) {
+    .hp-sml {
+        background-image: url(img/homepage-med.jpg);
+        width: 100%;
+    }
+
+    .legend {
+        width: 40px;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1100px) {
+    .hp-sml {
+        background-image: url(img/homepage-lg.jpg);
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <div>
+        <div class="hp-sml">test</div>
+        <div class="hp-med"></div>
+        <div class="hp-lrg"></div>
+    </div>
+
+    <div id="bg"></div>
+    <div id="legend_box">
+    <div class="logo_box" id="line2">
+    <a href="?2" onclick="return false;">
+    <img style="cursor: pointer;" class="legend" id="2" src="img/line_2.png" alt="2 restaurants">
+    </a></div>
+
+    <div class="logo_box" id="line3">
+    <a href="?3" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="3" src="img/line_3.png" alt="3 restaurants">
+    </a></div>
+
+    <div class="logo_box" id="line4">
+    <a href="?4" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="4" src="img/line_4.png" alt="4 restaurants">
+    </a></div>
+
+    <div class="logo_box" id="line5">
+    <a href="?5" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="5" src="img/line_5.png" alt="5 restaurants">
+    </a></div>
+
+    <div class="logo_box" id="line7">
+    <a href="?7" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="7" src="img/line_7.png" alt="7 restaurants">
+    </a></div>
+
+    <div class="logo_box" id="lineA">
+    <a href="?A" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="A" src="img/line_A.png" alt="A restaurants">
+    </a></div>
+
+    <div class="logo_box" id="lineB">
+    <a href="?B" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="B" src="img/line_B.png" alt="B restaurants">
+    </a></div>
+    
+    <div class="logo_box" id="lineM">
+    <a href="?M" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="M" src="img/line_M.png" alt="M restaurants">
+    </a></div>
+
+    <div class="logo_box" id="lineG">
+    <a href="?G" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="G" src="img/line_G.png" alt="G restaurants">
+    </a></div>
+
+    <div class="logo_box" id="lineJ">
+    <a href="?J" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="J" src="img/line_J.png" alt="J restaurants">
+    </a></div>
+
+    <div class="logo_box" id="lineZ">
+    <a href="?Z" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="Z" src="img/line_Z.png" alt="Z restaurants">
+    </a></div>
+    
+    <div class="logo_box selected" id="lineN">
+    <a href="?N" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="N" src="img/line_N.png" alt="N restaurants">
+    </a></div>
+    <div class="logo_box" id="lineQ">
+    <a href="?Q" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="Q" src="img/line_Q.png" alt="Q restaurants">
+    </a></div>
+
+    <div class="logo_box" id="lineW">
+    <a href="?W" onclick="return false;">
+        <img style="cursor: pointer;" class="legend" id="W" src="img/line_W.png" alt="W restaurants">
+    </a></div>
+
+    </body>
+</html>
