@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-        <title>NYC subway map with restaurant reviews: Where to eat every stop, by the NY Daily News</title>
+        <title>NYC subway map with restaurant reviews: Where to eat at every stop, by the NY Daily News</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -12,8 +12,8 @@
         <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
 
         <!-- TITLES-->
-        <meta property="og:title" content="NYC subway map with restaurant reviews: Where to eat every stop" />
-        <meta name="twitter:title" content="NYC subway map with restaurant reviews: Where to eat every stop"/>
+        <meta property="og:title" content="NYC subway map with restaurant reviews: Where to eat at every stop" />
+        <meta name="twitter:title" content="NYC subway map with restaurant reviews: Where to eat at every stop"/>
 
         <!-- DESCRIPTION-->
         <meta name="description" content="Our NYC subway map restaurant guide will help you find your new favorite restaurant in New York’s five boroughs" />
@@ -28,8 +28,8 @@
         <meta name="twitter:url" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/">
 
         <!-- THUMBNAIL IMAGE-->
-        <meta property="og:image" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share-img.jpg" />
-        <meta name="twitter:image:src" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share-img.jpg" />
+        <meta property="og:image" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share.png" />
+        <meta name="twitter:image:src" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share.png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="512" />
 
@@ -38,9 +38,9 @@
             {
                 "@context": "http://schema.org",
                 "@type": "NewsArticle",
-                "headline": "NYC subway map with restaurant reviews: Where to eat every stop",
+                "headline": "NYC subway map with restaurant reviews: Where to eat at every stop",
                 "url": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/",
-                "thumbnailUrl": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share-img.jpg",
+                "thumbnailUrl": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share.png",
                 "dateCreated": "2017-08-16T06:00:00Z",
                 "articleSection": "Interactive",
                 "creator": ["Interactive Project","Evie Liu", "Joe Murphy", "Kelli R. Parker", "Steve Smirti", "Mike Sullivan"],
@@ -203,6 +203,7 @@
     </div>
   </header>
 
+
     <div id="map-container"></div>
     <div id="legend_box"></div>
     <div id="close_box">BACK</div>
@@ -242,6 +243,18 @@
     </div>
     <div id="parsely-root" style="display: none">
         <span id="parsely-cfg" data-parsely-site="nydailynews.com"></span>
+    </div>
+    <div id="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="gooey">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+              <feBlend in="SourceGraphic" in2="goo"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+        <div class="blob blob-0"></div><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div><div class="blob blob-4"></div><div class="blob blob-5"></div>
     </div>
   </body>
 </html>
