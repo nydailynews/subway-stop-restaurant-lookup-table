@@ -513,7 +513,7 @@ $(document).ready(function() {
     <div class="stop">\n\
         <p class="stop_name"><a href="'+url+'"">'+stop+'</a></p>\n\
     </div>\n\
-    <h3 class="name"><a target="_blank" href="'+url+'"">'+headline+'</a></h3>\n\
+    <h3 class="name"><a href="'+url+'"">'+headline+'</a></h3>\n\
 </div>\n\
 <p class="details"><a href="'+url+'"">'+details+'</a></p>\n\
 <a class="button_link" href="'+url+'"">\n\

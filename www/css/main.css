@@ -378,10 +378,6 @@ body #info-box-handheld #box .scroll_box {
   filter: grayscale(100%);
 }
 
-/*.no_restaurant:hover {
-  opacity: 0.2 !important;
-}*/
-
 .logo_box {
   display: inline-table;
   white-space: normal;
@@ -409,16 +405,16 @@ body #info-box-handheld #box .scroll_box {
   top: 53px;
 }
 
-#nydn-header {
-  position: relative;
-}
-
 .legend {
   width: 40px;
 }
 
 .legend:hover {
   opacity: 0.6;
+}
+
+#nydn-header {
+  position: relative;
 }
 
 .selected {
@@ -892,76 +888,6 @@ border: 1px solid #333;
 
 }
 
-/*@media (max-width: 480px) {
-
-    #map-container { 
-     z-index: -1;
-    }
-
-    #box {
-      margin-left: 5%;
-      background-color: white;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-
-    #info-box-desktop {
-      position: absolute;
-      left: 0;
-      width:90%; 
-      margin-left: 5%;
-    }
-
-    #social{
-      text-align: center;
-      background-color: white;
-      padding: 10px 25% 60px 25%;
-      opacity: .9;
-    }
-
-    #social_map {
-      padding-left: 7px;
-    }
-
-    #label {
-      position: fixed;
-      top: 60px;
-      left: 0;
-      z-index: 1000;
-      width: 100%;
-      font-size: 20px;
-      margin: 0;
-    }
-
-    #label_back {
-      position: fixed;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-      margin: 0;
-    }
-
-    .line_label {
-      /*display: none;
-    }
-
-    .map_label {
-      display: inline;
-    }
-
-    #top_ad {
-      width:100%; 
-      margin-left: 0;
-      padding: 0px;
-    }
-
-    #bottom_ad {
-      width:100%; 
-      margin-left: 0;
-      padding: 0px;
-    }
-
-}*/
 .center {
     text-align:center;
     margin: auto;
