@@ -378,10 +378,6 @@ body #info-box-handheld #box .scroll_box {
   filter: grayscale(100%);
 }
 
-/*.no_restaurant:hover {
-  opacity: 0.2 !important;
-}*/
-
 .logo_box {
   display: inline-table;
   white-space: normal;
@@ -409,16 +405,16 @@ body #info-box-handheld #box .scroll_box {
   top: 53px;
 }
 
-#nydn-header {
-  position: relative;
-}
-
 .legend {
   width: 40px;
 }
 
 .legend:hover {
   opacity: 0.6;
+}
+
+#nydn-header {
+  position: relative;
 }
 
 .selected {
