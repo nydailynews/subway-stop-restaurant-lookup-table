@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-    var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W']
-    var hash = document.location.hash.replace('#', '');
-        if (hash != "") {
-            if (lines.indexOf(hash.toUpperCase()) != -1) {
-                var line_from = hash.toUpperCase();
-            }
-        }
-
-function goToHash() {
-    var url="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/";
-    top.location = url+"?"+hash;
-}
-</script>
-
-<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,700|Roboto:400,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
 
 <style type="text/css">
 .include {
@@ -64,9 +49,10 @@ function goToHash() {
 </style>
 </head>
 <body>
-    <a href="javascript:goToHash();" style="text-decoration: none;"><div class="include">
-        <button class="include_back_button" onclick="goToHash()">
-        Where to eat at every stop</button>
-    </div></a>
+    <a href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" style="text-decoration: none;">
+    <div class="include">
+        <button class="include_back_button">Where to eat at every&nbsp;stop</button>
+    </div>
+    </a>
 </body>
 </html>
