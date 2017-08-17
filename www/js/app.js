@@ -110,7 +110,7 @@ $(document).ready(function() {
     for ( var i = 0; i < len; i++ ) {
         $("#legend_box").append('<div class="logo_box" id="line' + lines[i] + '">\n\
     <a href="?' + lines[i] + '" onClick="return false;">\n\
-        <img style="cursor: pointer;" class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants">\n\
+        <img class="legend" id="' + lines[i] + '" src="img/line_' + lines[i] + '.png" alt="' + lines[i] + ' restaurants">\n\
     </a></div>');
     }
     
@@ -119,7 +119,7 @@ $(document).ready(function() {
         for ( var p = 0; p < len; p++ ) {
             if ( $(this).attr("id") == lines_no[p]) {
                 $(this).addClass("no_restaurant");
-                // $(this).off("click");
+                $(this).parent().addClass("no_click");
             }
         }
     })

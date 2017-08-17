@@ -917,7 +917,9 @@ border: 1px solid #333;
 .hide {
     display: none;
 }
-
+.no_click, .no_click img {
+    cursor: default;
+}
 
 
 
