@@ -145,6 +145,13 @@
   right: -2px;
   top: 53px;
 }
+.right, .left {
+    cursor: pointer;
+    height: 60px;
+    z-index: 5;
+    position: fixed;
+    border: 2px solid red;
+}
 .legend {
   width: 40px;
 }
@@ -153,11 +160,8 @@
   opacity: 0.6;
 }
     </style>
-
 </head>
-
 <body>
-
     <div>
     <div class="include" id="return">
         <button class="include_back_button" onclick="goToHash()">
@@ -211,28 +215,25 @@
     <script>
         var lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W'];
         var hash = document.location.hash.replace('#', '');
-            if (hash != "") {
-                if (lines.indexOf(hash.toUpperCase()) != -1) {
-                    var line_from = hash.toUpperCase();
-                    // add line image to button
-                    document.getElementById("return-link").innerHTML='<img src="img/line_' + line_from + '.png">'
-                }
+        if (hash != "") {
+            if (lines.indexOf(hash.toUpperCase()) != -1) {
+                var line_from = hash.toUpperCase();
+                // add line image to button
+                document.getElementById("return-link").innerHTML='<img src="img/line_' + line_from + '.png">'
             }
+        }
 
         function goToHash() {
-        var url="./";
+            var url="./";
             top.location = url+"?"+hash;
         }
         
         var search = document.location.search;
-            if (search == '?map') {
-                document.body.id = "standalone";
-                document.getElementById('return').style.display = 'none';
-                document.getElementById('discover').style.display = 'block';
-            }
-
-        // $("#legend_box").prepend('<div class="left_box" ><img class="left" src="img/left.png" alt="Scroll left"></div>');
-        // $("#legend_box").append('<div class="right_box" ><img class="right" src="img/right.png" alt="Scroll right"></div>');
+        if (search == '?map') {
+            document.body.id = "standalone";
+            document.getElementById('return').style.display = 'none';
+            document.getElementById('discover').style.display = 'block';
+        }
 
         function scroll_legend(lr) {
             var slideW = $('.logo_box').width();
