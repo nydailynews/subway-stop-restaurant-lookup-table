@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width">
 
 <style>
-#bg {
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid white;
-    background-color: #000;
-    filter:alpha(opacity=60); /* IE */
-    -moz-opacity:0.6; /* Mozilla */
-    opacity: 0.6; /* CSS3 */
-    position: absolute;
-    top: 0;
-    left: 0;
+
+body {
+    margin: 0;
+}
+
+.hp {
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #legend_box {
-  width: 100%;
-  height: 60px;
-  z-index: 3;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: relative;
 }
 
 .logo_box {
@@ -34,47 +28,72 @@
 }
 
 .legend {
-    width: 60px;
+    width: 65px;
 }
 
-@media only screen and (min-width: 220px) and (max-width:727px) {
-    .hp-sml {
+@media only screen and (min-device-width: 220px) and (max-device-width: 727px) {
+    .hp {
         background-image: url(img/homepage-sml.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
         width: 100%;
+        height: 360px;
+    }
+
+    #legend_box {
+        height: 0;
+        width: 85%;
+        top: -270px;
+        margin: auto;
     }
 
     .legend {
-        width: 40px;
+        width: 30px;
     }
 }
 
-@media only screen and (min-width: 728px) and (max-width: 989px) {
-    .hp-sml {
-        background-image: url(img/homepage-med.jpg);
+@media only screen and (min-width: 728px) and (max-device-width: 989px) {
+    .hp {
+        background-image: url('img/homepage-med.jpg');
         width: 100%;
+        height: 360px;
+    }
+
+    #legend_box {
+        width: 275px;
+        padding-right: 15px;
+        float: right;
+        top: -308px;
+    }
+
+    .logo_box {
+        display: block;
+        float: left;
     }
 
     .legend {
-        width: 40px;
+        width: 50px;
     }
 }
 
-@media only screen and (min-width: 990px) and (max-width: 1100px) {
-    .hp-sml {
-        background-image: url(img/homepage-lg.jpg);
-        width: 100%;
+@media only screen and (min-width: 990px) {
+    .hp {
+        background-image: url('img/homepage-lg.jpg');
+        background-position-x: center;
+        height: 300px;
+    }
+
+    #legend_box {
+        top: -100px;
     }
 }
 </style>
 </head>
 <body>
     <div>
-        <div class="hp-sml">test</div>
-        <div class="hp-med"></div>
-        <div class="hp-lrg"></div>
+        <div class="hp"></div>
     </div>
 
-    <div id="bg"></div>
     <div id="legend_box">
     <div class="logo_box" id="line2">
     <a href="?2" onclick="return false;">
