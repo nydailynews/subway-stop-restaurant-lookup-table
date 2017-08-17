@@ -437,7 +437,7 @@ stops = {"type":"FeatureCollection","crs":{"type":"name","properties":{"name":"u
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.96269486847974,40.63514227039474]},"properties":{"WKT":"POINT (-73.962694868479744 40.635142270394738)","stations":"Newkirk Ave","line":"B"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.96145344000783,40.65507337471708]},"properties":{"WKT":"POINT (-73.96145344000783 40.655073374717077)","stations":"Parkside Ave","line":"B"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.96203130451713,40.66163378817137]},"properties":{"WKT":"POINT (-73.962031304517126 40.661633788171372)","stations":"Prospect Park","line":"B"}},
-{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.97285279146314,40.677102512887046]},"properties":{"WKT":"POINT (-73.97285279146314 40.677102512887046)","stations":"7th Ave","line":"B"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.97285279146314,40.677102512887046]},"properties":{"WKT":"POINT (-73.97285279146314 40.677102512887046)","stations":"7th Ave / Flatbush","line":"B"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.97678343931106,40.68448865643635]},"properties":{"WKT":"POINT (-73.976783439311063 40.684488656436351)","stations":"Atlantic Ave","line":"B"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.98182400036215,40.69063500033928]},"properties":{"WKT":"POINT (-73.981824000362153 40.690635000339277)","stations":"DeKalb Ave","line":"B"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[-73.984590998399,40.75418433462967]},"properties":{"WKT":"POINT (-73.984590998399 40.75418433462967)","stations":"42nd St - Bryant Pk","line":"B"}},
