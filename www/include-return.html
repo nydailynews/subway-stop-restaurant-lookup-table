@@ -2,6 +2,7 @@
 <html>
 <head>
     <title></title>
+    <link rel="canonical" href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600" rel="stylesheet">
     <script src="js/vendor/jquery.js"></script> 
     <style type="text/css">
@@ -87,10 +88,12 @@
             box-shadow: none;
         }
 
-        @media only screen and (max-width: 599px) {
-            .include {
-                background-size: 
-            }    
+        @media only screen and (max-width: 450px) {
+            .include {}    
+            button {
+                margin-left: 5px;
+                font-size: 15px;
+            }
         }
 #legend_box_wrapper {
   padding: 10px;
@@ -99,7 +102,7 @@
 
 #legend_box {
   width: 100%;
-  height: 60px;
+  height: 46px;
   z-index: 3;
   background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -123,8 +126,8 @@
 }
 
 .legend {
-    position: relative;
-    top: 10px;
+  position: relative;
+  top: 3px;
 }
 
 .right, .left {
@@ -149,7 +152,6 @@
 .legend:hover {
   opacity: 0.6;
 }
-
     </style>
 
 </head>
@@ -168,7 +170,7 @@
                 ON YOUR SUBWAY LINE</p>
                 <button>GET STARTED</button>
             </div>
-            </div>
+    </div>
 
     <div id="legend_box">
         <div class="left_box"><a href="javascript: scroll_legend('left');"><img alt="Scroll left" class="left" src="img/left.png"></a></div>
