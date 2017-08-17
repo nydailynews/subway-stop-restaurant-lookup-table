@@ -3,8 +3,10 @@
 <head>
     <title></title>
     <link rel="canonical" href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+<!--
     <script src="js/vendor/jquery.js"></script> 
+-->
     <style type="text/css">
         .include {
             width: 100%;
@@ -31,6 +33,7 @@
             cursor: pointer;
             color: white;
             border: 1px solid white;
+            text-transform: capitalize;
         }
 
         #standalone .include {
@@ -74,7 +77,7 @@
             margin: 20px 20px 10px 20px;
         }
 
-        button img{
+        button img {
             width: 35px;
             position: relative;
             display: inline-block;
@@ -86,7 +89,9 @@
         }
 
         @media only screen and (max-width: 450px) {
-            .include {}    
+            .include {
+                background-position: 95%;
+            }
             button {
                 margin-left: 5px;
                 font-size: 15px;
@@ -153,18 +158,18 @@
 </head>
 <body>
     <div>
-    <div class="include" id="return">
-        <button class="include_back_button" onclick="goToHash()">
-        RETURN TO THE<span id="return-link"></span>LINE </button>
-    </div>
+        <div class="include" id="return">
+            <button class="include_back_button" onclick="goToHash()">
+            Return to the<span id="return-link"></span>line </button>
+        </div>
 
-    <div class="include hide" id="discover">
+        <div class="include hide" id="discover">
             <div>
                 <p>DISCOVER THE BEST FOOD<br>
                 ON YOUR SUBWAY LINE</p>
                 <button>GET STARTED</button>
             </div>
-    </div>
+        </div>
 
     <div id="legend_box">
         <div class="left_box"><a href="javascript: scroll_legend('left');"><img alt="Scroll left" class="left" src="img/left.png"></a></div>
@@ -225,13 +230,14 @@
             document.getElementById('discover').style.display = 'block';
         }
 
+        /*
         function scroll_legend(lr) {
             var slideW = $('.logo_box').width();
             if ( lr == 'left' ) $('#legend_box').animate({scrollLeft: "-="+slideW*2 }, 600);      
             else $('#legend_box').animate({scrollLeft: "+="+slideW*2 }, 600);
         }
+        */
 
     </script>
-
 </body>
 </html>
