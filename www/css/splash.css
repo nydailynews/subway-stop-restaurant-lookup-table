@@ -105,4 +105,4 @@ section#up-next > div {}
 	article nav .legend { width: 40px; }
     
 }
-article h1:first-child, article h2:first-child { display: none; }
+article h1:first-child  { display: none; }
