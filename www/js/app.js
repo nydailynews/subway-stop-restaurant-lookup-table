@@ -6,9 +6,22 @@ var share = {
     blurb_encoded: ''
 };
 
+rando = function()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 5; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
 $(document).ready(function() {
   var main_div = 'info-box-desktop';
   if ( is_mobile ) main_div = 'info-box-handheld';
+  var uncache = rando();
+  var reporting_on = 'B'; // UPDATE WHEN THE REPORTER MOVES ON TO WRITING ABOUT THE NEXT LINE
   var map;
   var markersArray =[];
   var markerList = {};
@@ -99,6 +112,7 @@ $(document).ready(function() {
   for (i=0;i<rss.length;i++) {
     if (rss[i].line == line_selected) {
       json_selected = rss[i].link;
+      if ( line_selected === reporting_on ) json_selected += '?' + uncache;
     }
   }
 
