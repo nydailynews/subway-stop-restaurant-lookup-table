@@ -443,7 +443,7 @@ body #info-box-handheld #box .scroll_box {
   bottom: 0px;
   top: -51px;
   text-transform: uppercase;
-  background-color: #333;
+  background-color: black;
 }
 
 .details, .details a {
@@ -499,10 +499,10 @@ body #info-box-handheld #box .scroll_box {
     bottom: 48px;
     position: relative;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,333333+100&0+0,1+100 */
-    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 45%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 45%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
 .visit-page {
@@ -669,14 +669,13 @@ border: 1px solid #333;
         position: absolute;
         top: -10px;
         color: white;
-        left: 41%;
+        left: 42%;
         font-size: 80px;
         font-weight: bold;
     }
 
     body #info-box-handheld #box #head {
         text-align: center;
-        margin: 0;
         padding: 0;
     }
 
@@ -711,7 +710,6 @@ border: 1px solid #333;
     #info-box-handheld .window .stop_name {
         line-height: 23px;
         font-size: 16px;
-        font-weight: bold;
     }
 
     #info-box-handheld .window .stop {
@@ -721,9 +719,9 @@ border: 1px solid #333;
         font-size: 18px;
         bottom: 33px;
         position: relative;
-        background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 100%);
-        background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
-        background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%);
+        background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 45%);
+        background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 45%);
+        background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 45%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#333333',GradientType=0 );
     }
 
