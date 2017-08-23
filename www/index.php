@@ -4,11 +4,15 @@ $lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L
 $add = '';
 $add_desc = '';
 $add_desc_full = 'in New York\'s five boroughs';
+$param = '';
+$add_tag = '';
 foreach ( $lines as $line ):
 	if ( isset($_GET[$line]) ):
 		$add = $line . ' line ';
 		$add_desc = ' on the ' . $line . ' line';
 		$add_desc_full = 'along the ' . $line . ' train line in New York City.';
+		$param = '?' . $line;
+		$add_tag = ', "' . $line . ' line", "eating along the ' . $line . ' line"';
 	endif;
 endforeach;
 ?><!DOCTYPE HTML>
@@ -36,8 +40,8 @@ endforeach;
         <meta name="keywords" content="NYC subway map, NYC restaurants, NYC restaurant guide, New York restaurants, restaurants near me" />
 
         <!-- LINK -->
-        <meta property="og:url" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/" />
-        <meta name="twitter:url" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/">
+        <meta property="og:url" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/<?php echo $param; ?>" />
+        <meta name="twitter:url" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/<?php echo $param; ?>">
 
         <!-- THUMBNAIL IMAGE-->
         <meta property="og:image" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share.png" />
@@ -56,7 +60,7 @@ endforeach;
                 "dateCreated": "2017-08-16T06:00:00Z",
                 "articleSection": "Interactive",
                 "creator": ["Interactive Project","Evie Liu", "Joe Murphy", "Kelli R. Parker", "Steve Smirti", "Mike Sullivan"],
-                "keywords": ["interactive project","interactive","mta","subway fare","new york restaurants","manhattan restaurants","brooklyn restaurants","queens restaurants","bronx restaurants","interactive map"]
+                "keywords": ["interactive project","interactive","mta","subway fare","new york restaurants","manhattan restaurants","brooklyn restaurants","queens restaurants","bronx restaurants","interactive map"<?php echo $add_tag; ?>]
             }
         </script>
 
@@ -185,7 +189,7 @@ endforeach;
   
   <header id="nydn-header" style="z-index: 10000;">
     <div id="nydn-header-wrap">
-      <h1 id="nydn-logo"><a href="http://www.nydailynews.com">Daily News</a></h1>
+      <h1 id="nydn-logo"><a href="http://www.nydailynews.com">NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?>, by the NY Daily News</a></h1>
       <nav id="nydn-menu" style="z-index: 10000;">
         <button class="hamburger" id="nydn-menu-open">Menu</button>
         <nav>
