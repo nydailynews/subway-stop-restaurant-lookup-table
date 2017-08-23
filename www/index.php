@@ -1,7 +1,20 @@
-<!DOCTYPE HTML>
+<?php
+$lines = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W'];
+#lines_no = ['1','6','C','E','D','F','R','L']
+$add = '';
+$add_desc = '';
+$add_desc_full = 'in New York\'s five boroughs';
+foreach ( $lines as $line ):
+	if ( isset($_GET[$line]) ):
+		$add = $line . ' line ';
+		$add_desc = ' on the ' . $line . ' line';
+		$add_desc_full = 'along the ' . $line . ' train line in New York City.';
+	endif;
+endforeach;
+?><!DOCTYPE HTML>
 <html lang="en">
   <head>
-        <title>NYC subway map with restaurant reviews: Where to eat at every stop, by the NY Daily News</title>
+        <title>NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?>, by the NY Daily News</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -11,13 +24,13 @@
         <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
 
         <!-- TITLES-->
-        <meta property="og:title" content="NYC subway map with restaurant reviews: Where to eat at every stop" />
-        <meta name="twitter:title" content="NYC subway map with restaurant reviews: Where to eat at every stop"/>
+        <meta property="og:title" content="NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?>" />
+        <meta name="twitter:title" content="NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?>"/>
 
         <!-- DESCRIPTION-->
-        <meta name="description" content="Our NYC subway map restaurant guide will help you find your new favorite restaurant in New York’s five boroughs" />
-        <meta property="og:description" content="Our NYC subway map restaurant guide will help you find your new favorite restaurant in New York’s five boroughs" />
-        <meta name="twitter:description" content="Our NYC subway map restaurant guide will help you find your new favorite restaurant in New York’s five boroughs" />
+        <meta name="description" content="Our NYC <?php echo $add; ?>subway map restaurant guide will help you find your new favorite restaurant <?php echo $add_desc_full; ?>" />
+        <meta property="og:description" content="Our NYC <?php echo $add; ?>subway map restaurant guide will help you find your new favorite restaurant <?php echo $add_desc_full; ?>" />
+        <meta name="twitter:description" content="Our NYC <?php echo $add; ?>subway map restaurant guide will help you find your new favorite restaurant <?php echo $add_desc_full; ?>" />
 
         <!-- KEYWORD -->
         <meta name="keywords" content="NYC subway map, NYC restaurants, NYC restaurant guide, New York restaurants, restaurants near me" />
