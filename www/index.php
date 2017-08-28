@@ -19,8 +19,8 @@ endforeach;
 <html lang="en">
   <head>
         <title>NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?> - NY Daily News</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="format-detection" content="telephone=no"/>
@@ -54,8 +54,8 @@ endforeach;
             {
                 "@context": "http://schema.org",
                 "@type": "NewsArticle",
-                "headline": "NYC subway map with restaurant reviews: Where to eat at every stop",
-                "url": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/",
+                "headline": "NYC <?php echo $add; ?>subway map with restaurant reviews",
+                "url": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/<?php echo $param; ?>",
                 "thumbnailUrl": "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/subway-share.png",
                 "dateCreated": "2017-08-16T06:00:00Z",
                 "articleSection": "Interactive",
