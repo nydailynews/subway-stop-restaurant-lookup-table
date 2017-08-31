@@ -506,9 +506,11 @@ $(document).ready(function() {
 <div class="scroll_box"><img class="scroll" src="img/scroll.png" alt="Scroll down image"></div>');
 
           $(".scroll").on("click",function(){
-              $('html, body').animate({
-                  scrollTop: $("#" + main_div).offset().top - 120
-              }, 600);
+                var offset_adjust = 120;
+                if ( main_div === 'info-box-handheld' ) offset_adjust = -300;
+                $('html, body').animate({
+                    scrollTop: $("#" + main_div).offset().top - offset_adjust
+                }, 600);
           });
 
         // RESIZE USING VIEWPORT DIMENSIONS ON MOBILE
