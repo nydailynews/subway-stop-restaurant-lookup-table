@@ -52,7 +52,7 @@ class GetJson:
             if 'verbose' in self.args and self.args.verbose:
                 print "URL: %s" % url
             raise ValueError("URL %s response: %s" % (url, response['status']))
-        self.xml = response.read()
+        self.xml = response.read().replace('\\u2013', '-')
         fh = open(fn, 'wb')
         fh.write(self.xml)
         fh.close()
