@@ -10,7 +10,7 @@ import argparse
 class GetJson:
     """ Methods for ingesting JSON feeds.
         >>> rj = GetJson()
-        >>> rj.get('')
+        >>> rj.get('http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799')
         True
         """
 
@@ -26,20 +26,20 @@ class GetJson:
             Return a string we can use as a filename.
             >>> rj = GetJson()
             >>> rj.get_filename('http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799')
-            eating-b-line-1.3377799
+            'eating-b-line-1.3377799'
             >>> rj.get_filename('http://www.nydailynews.com/json/cmlink/eating-b-line/json/')
-            json.json
+            'json.json'
             >>> rj.get_filename('http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799.json')
-            eating-b-line-1.3377799.json
+            'eating-b-line-1.3377799.json'
             """
         bits = url.split('/')
         if url[-1] == '/':
-            return '%s.json' % bits[-1]
+            return '%s.json' % bits[-2]
         return bits[-1]
 
     def get(self, url):
         """ Wrapper for API requests. Take a URL, return a json array.
-            >>> url = ''
+            >>> url = 'http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799'
             >>> parser = build_parser()
             >>> args = parser.parse_args([url])
             >>> rj = GetJson(args)
@@ -66,6 +66,8 @@ def main(args):
     if args:
         articles = []
         for arg in args.urls[0]:
+            if arg == '':
+                raise ValueError('URL expected')
             if args.verbose:
                 print arg
             rj.get(arg)
@@ -83,6 +85,7 @@ def build_parser():
                                                   ''',
                                      epilog='')
     parser.add_argument("-v", "--verbose", dest="verbose", default=False, action="store_true")
+    parser.add_argument("--test", dest="test", default=False, action="store_true")
     parser.add_argument("urls", action="append", nargs="*")
     return parser
 
@@ -92,7 +95,7 @@ if __name__ == '__main__':
     parser = build_parser()
     args = parser.parse_args()
 
-    if args.verbose:
+    if args.test:
         doctest.testmod(verbose=args.verbose)
 
     main(args)
