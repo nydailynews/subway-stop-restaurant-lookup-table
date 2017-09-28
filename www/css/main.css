@@ -570,7 +570,7 @@ body #info-box-handheld #box .scroll_box {
   margin: auto;
   position: relative;
   top: -20px;
-  width: 180px;
+  width: 160px;
   float: none;
 }
 #info-box-handheld #social_map {
@@ -583,7 +583,8 @@ body #info-box-handheld #box .scroll_box {
   background-position: 1px 4px;
   width: 40px;
   height: 40px;
-  margin-right: 11px;
+  margin-right: 20px;
+  margin-bottom: 40px;
   cursor: pointer;
   float: left;
 }
@@ -594,7 +595,8 @@ body #info-box-handheld #box .scroll_box {
   background-position: 0 -42px;
   width: 40px;
   height: 40px;
-  margin-right: 11px;
+  margin-right: 20px;
+  margin-bottom: 40px;
   cursor: pointer;
   float: left;
 }
@@ -605,6 +607,7 @@ body #info-box-handheld #box .scroll_box {
   background-position: 0 -88px;
   width: 40px;
   height: 40px;
+  margin-bottom: 40px;
   cursor: pointer;
   float: left;
 }
