@@ -495,7 +495,7 @@ $(document).ready(function() {
 </svg>\n\
 <h3 id="' + line_selected + '">' + line_selected + '</h3>\n\
 <h3 id="head">Explore the ' + line_selected + ' line</h3>\n\
-<div class"img_box">\n\
+<div class="img_box">\n\
     <div id="social_map" class="large-12 medium-12 small-12 columns">\n\
         <a class="fb-share" href="http://www.facebook.com/sharer.php?u=' + share.url + '" target="_blank"><div id="facebook" class="small-text-center"></div></a>\n\
         <a href="https://twitter.com/share?url=' + share.url + '%3F' + line_selected + '&text=' + share.subject + '&hashtags=MTA' + line_selected + 'line&via=NYDNi" target="_blank"><div id="twitter"></div></a>\n\

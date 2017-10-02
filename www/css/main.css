@@ -583,7 +583,7 @@ body #info-box-handheld #box .scroll_box {
   background-position: 1px 4px;
   width: 40px;
   height: 40px;
-  margin-right: 20px;
+  margin-right: 3px;
   margin-bottom: 40px;
   cursor: pointer;
   float: left;
@@ -595,7 +595,7 @@ body #info-box-handheld #box .scroll_box {
   background-position: 0 -42px;
   width: 40px;
   height: 40px;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-bottom: 40px;
   cursor: pointer;
   float: left;
@@ -623,7 +623,7 @@ body #info-box-handheld #box .scroll_box {
 }
 
 .text {
-  font-family: PT Serif;
+  font-family: 'PT Serif', serif;
   font-size: 16px;
   line-height: 20px;
   color: #333;

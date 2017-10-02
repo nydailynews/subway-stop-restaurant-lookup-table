@@ -145,7 +145,7 @@ endforeach;
         }
     </script>
 <div id="nydn-shell">
-  <script src="http://interactive.nydailynews.com/includes/js/vendor/jquery.js"></script> 
+  <script src="/js/jquery.min.js"></script> 
   <script>
         jQuery(document).ready(function(){ Rnav(); });
       
@@ -187,34 +187,33 @@ endforeach;
         }
   </script>
   
-  <header id="nydn-header" style="z-index: 10000;">
-    <div id="nydn-header-wrap">
-      <h1 id="nydn-logo"><a href="http://www.nydailynews.com">NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?>, by the NY Daily News</a></h1>
-      <nav id="nydn-menu" style="z-index: 10000;">
-        <button class="hamburger" id="nydn-menu-open">Menu</button>
-        <nav>
-          <ul>
-            <li><a href="http://www.nydailynews.com/new-york">New York</a></li>
-            <li><a href="http://www.nydailynews.com/news">News</a></li>
-            <li><a href="http://www.nydailynews.com/news/politics">Politics</a></li>
-            <li><a href="http://www.nydailynews.com/sports">Sports</a></li>
-            <li><a href="http://www.nydailynews.com/entertainment">Entertainment</a></li>
-            <li><a href="http://www.nydailynews.com/opinion">Opinion</a></li>
-            <li><a href="http://www.nydailynews.com/life-style">Living</a></li>
-            <li><a href="http://www.nydailynews.com/autos">Autos</a></li>
-          </ul>
-        </nav>
-        <span id="nydn-menu-close">X</span>
-      </nav>
-      <nav id="nydn-sm">
-         <ul>
-             <li class="facebook"><a href="https://www.facebook.com/NYDailyNews/" target="_blank">facebook</a></li>
-             <li class="twitter"><a href="https://twitter.com/NYDailyNews" target="_blank">twitter</a></li>
-          </ul>
-      </nav>
-    </div>
-  </header>
-
+	<header id="nydn-header" style="z-index: 10000;">
+		<div id="nydn-header-wrap">
+			<h1 id="nydn-logo"><a href="http://www.nydailynews.com">NYC <?php echo $add; ?>subway map with restaurant reviews: Where to eat at every stop<?php echo $add_desc; ?>, by the NY Daily News</a></h1>
+			<nav id="nydn-menu" style="z-index: 10000;">
+				<button class="hamburger" id="nydn-menu-open">Menu</button>
+				<nav>
+					<ul>
+						<li><a href="http://www.nydailynews.com/new-york">New York</a></li>
+						<li><a href="http://www.nydailynews.com/news">News</a></li>
+						<li><a href="http://www.nydailynews.com/news/politics">Politics</a></li>
+						<li><a href="http://www.nydailynews.com/sports">Sports</a></li>
+						<li><a href="http://www.nydailynews.com/entertainment">Entertainment</a></li>
+						<li><a href="http://www.nydailynews.com/opinion">Opinion</a></li>
+						<li><a href="http://www.nydailynews.com/life-style">Living</a></li>
+						<li><a href="http://www.nydailynews.com/autos">Autos</a></li>
+					</ul>
+				</nav>
+				<span id="nydn-menu-close">X</span>
+			</nav>
+			<nav id="nydn-sm">
+				<ul>
+					<li class="facebook"><a href="https://www.facebook.com/NYDailyNews/" target="_blank">facebook</a></li>
+					<li class="twitter"><a href="https://twitter.com/NYDailyNews" target="_blank">twitter</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
     <div id="map-container"></div>
     <div id="legend_box"></div>
@@ -234,16 +233,6 @@ endforeach;
     <div id="bottom-ad-wrapper"><div id='bottom_ad' class='ad center'><div id='div-gpt-ad-1423507761396-2'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });</script></div></div></div>
 
     <footer id="nydn-footer"></footer>
-
-<!--
-    <script src="js/markerwithlabel_packed.js"></script>
-    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" type="text/css" />
-    <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
-    <script src="data/subway_geo.min.geojson"></script>
-    <script src="data/mta.min.geojson"></script>
-    <script src="data/nyc.min.geojson"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
--->
     <script>
         if ( is_mobile ) {
             $( document ).ready(function() {
