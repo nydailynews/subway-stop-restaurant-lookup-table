@@ -2,6 +2,11 @@
 
 ## Usage
 
+### How to update the static JSON files.
+1. `python getjson.py http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799`
+2. `mv eating-b-line-1.3377799 www/data/`
+3. re-deploy.
+
 ### How to update a subway route
 Get the [current MTA route data from CUNY](http://www.gc.cuny.edu/Page-Elements/Academics-Research-Centers-Initiatives/Centers-and-Institutes/Center-for-Urban-Research/CUNY-Mapping-Service/Projects/NYC-Subway-GIS-update-Hudson-Yards,-7-Line-Extension).
 
