@@ -2,20 +2,19 @@
 <html>
 <head>
 	<title></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 
 <style>
-body {
-	margin: 0;
-}
 
 .subwayfare {
-	background-image: url('img/homepage-lg.jpg');
+	background-image: url('http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/homepage-lg.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position-x: center;
 	height: 250px;
+	max-width: 1200px;
+	margin: 0 auto 50px auto;
 }
 
 .module-text {
@@ -25,7 +24,7 @@ body {
 	margin: 50px 85px;
 }
 
-p {
+.subwayfare p {
 	font: bold 25px 'Open Sans', sans-serif;
 	color: #396FAE;
 	text-transform: uppercase;
@@ -33,7 +32,7 @@ p {
     margin-top: 0;
 }
 
-button {
+.subwayfare button {
 	background-color: #4A90E2;
 	border: none;
 	width: 270px;
@@ -44,7 +43,7 @@ button {
 	letter-spacing: 1px;
 }
 
-a {
+.subwayfare a {
 	text-decoration: none;
 	color: white;
 }
@@ -53,9 +52,10 @@ a {
 
 @media only screen and (min-width: 220px) and (max-width: 727px) {
 	.subwayfare {
-		background-image: url('img/homepage-sml.jpg');
+		background-image: url('http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/homepage-sml.jpg');
 		width: 100%;
 		height: 250px;
+		margin-bottom: 30px;
 	}
 
 	.module-text {
@@ -67,13 +67,13 @@ a {
 		top: 52%;
 	}
 
-	p {
+	.subwayfare p {
 		font: bold 17px 'Open Sans', sans-serif;
 		line-height: 27px;
 		margin-bottom: 5px;
 	}
 
-	button {
+	.subwayfare button {
 		width: 200px;
 		height: 35px;
 		font: normal 17px 'Open Sans Condensed', sans-serif;
@@ -84,22 +84,23 @@ a {
 
 @media only screen and (min-width: 728px) and (max-width: 989px) {
 	.subwayfare {
-		background-image: url('img/homepage-med.jpg');
+		background-image: url('http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/img/homepage-med.jpg');
 		width: 100%;
 		height: 175px;
+		margin-bottom: 30px;
 	}
 
 	.module-text {
-		margin: 32px 60px;
+		margin: 32px 12px;
 	}
 
-	p {
+	.subwayfare p {
 		font: bold 23px 'Open Sans', sans-serif;
 		line-height: 33px;
 		margin-bottom: 10px;
 	}
 
-	button {
+	.subwayfare button {
 		width: 200px;
 		height: 35px;
 		font: normal 17px 'Open Sans Condensed', sans-serif;
