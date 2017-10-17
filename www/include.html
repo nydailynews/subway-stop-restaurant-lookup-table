@@ -4,54 +4,68 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
 
 <style type="text/css">
-.include {
-    border: solid 8px #0077A2;
-    width: 95%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background: url(img/include.png) no-repeat;
-    background-size: cover;
-}
+	.include {
+		width: 100%;
+		max-width: 580px;
+		height: 140px;
+		margin: auto;
+		background: url('img/include-default.jpg') no-repeat;
+	}
 
-.include_back_button {
-  background-color: #0077A2;
-  padding: 10px;
-  text-align: center;
-  font-family: Open Sans Condensed;
-  font-size: 25px;
-  line-height: 28px;
-  text-transform: uppercase;
-  margin: 180px auto 0px auto;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  width: 50%;
-  display: block;
-  border: none;
-}
+	.text {
+		color: white;
+		text-transform: uppercase;
+		max-width: 225px;
+		text-align: center;
+		float: left;
+		margin: 21px 42px;
+	}
+
+	p {
+		font: normal 17px 'Open Sans', sans-serif;
+		line-height: 27px;
+		letter-spacing: 0.5px;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+
+	button {
+		width: 205px;
+		background: none;
+    	font: bold 20px 'Open Sans Condensed', sans-serif;
+    	letter-spacing: 0.8px;
+    	cursor: pointer;
+    	color: white;
+    	border: 1px solid white;
+    	text-transform: uppercase;
+	}
 
 @media only screen and (max-width: 450px) {
 
   .include {
-    background-size: contain;
-    border: solid 1px black;
+	background-size: contain;
+	border: solid 1px black;
   }
   
   .include_back_button {
-    padding: 0px;
-    width: 100%;
-    margin-top: 94px;
-    font-size: 18px;
-    background-color: black;
+	padding: 0px;
+	width: 100%;
+	margin-top: 94px;
+	font-size: 18px;
+	background-color: black;
   }
 }
 
 </style>
 </head>
 <body>
-    <a href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" style="text-decoration: none;" target="_parent">
-    <div class="include">
-        <button class="include_back_button">Where to eat at every&nbsp;stop</button>
-    </div>
-    </a>
+	<a href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" style="text-decoration: none;" target="_parent">
+		<div class="include">
+			<div class="text">
+				<p>Discover the best food on your subway line</p>
+				<button type="button">Explore More</button>
+			</div>
+		</div>
+	</a>
 </body>
 </html>
