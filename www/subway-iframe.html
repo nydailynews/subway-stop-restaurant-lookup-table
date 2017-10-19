@@ -2,18 +2,21 @@
 
 <style>
   iframe#footer-include {
-    width: 95%;
+	width: 95%;
   }
   
   @media only screen and (max-width:450px) {
-    iframe#footer-include {
-      height: 140px;
-      max-width:100vw;
-      width: 100vw;
-    }
-    iframe.include_return {
-      // Include mobile styles that are return-layout specific
-    }
+	iframe#footer-include {
+		width: 100%;
+		max-width: 300px;
+		height: 250px;
+	}
+	iframe.include_return {
+	  /*Include mobile styles that are return-layout specific*/
+		width: 100%;
+		max-width: 300px;
+		height: 200px;
+	}
 }
 </style>
 
@@ -22,21 +25,21 @@
 
 var subway_line = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W'];
 
-var source = "http://interactiveqa.nydailynews.com/map/nyc-subway-restaurant-guide/include.html";
+var source = "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/include.html";
 var iframe_class = 'include';
-    if(document.referrer.indexOf('interactive.nydailynews.com') > -1)
-        {
-            var last_char = document.referrer[document.referrer.length -1]
-            if(last_char == '/')
-            {
-                last_char = 'N'
-            }
-            source = "http://interactiveqa.nydailynews.com/map/nyc-subway-restaurant-guide/include-return.html#" + last_char;
-            iframe_class = 'include_return';
-        }
+	if(document.referrer.indexOf('interactive.nydailynews.com') > -1)
+		{
+			var last_char = document.referrer[document.referrer.length -1]
+			if(last_char == '/')
+			{
+				last_char = 'N'
+			}
+			source = "http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/include-return.html#" + last_char;
+			iframe_class = 'include_return';
+		}
 
 var i = document.getElementById('footer-include');
-    i.setAttribute("src", source);
-    i.setAttribute("class", iframe_class);
+	i.setAttribute("src", source);
+	i.setAttribute("class", iframe_class);
 
 </script>
