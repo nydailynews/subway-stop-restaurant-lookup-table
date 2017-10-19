@@ -4,6 +4,8 @@
 	<title></title>
 	<link rel="canonical" href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <!--
 	<script src="js/vendor/jquery.js"></script> 
 -->
@@ -68,6 +70,31 @@
 			display: inline-block;
 			top: 10px;
 		}
+
+		/*HANDHELD*/
+	@media only screen and (min-width: 220px) and (max-width: 727px) {
+		.include {
+			width: 100%;
+			max-width: 300px;
+			height: 200px;
+			margin: auto;
+			background: url('img/include-return-mobile.jpg') no-repeat;
+		}
+
+		button {
+			width: 236px;
+			background: none;
+    		padding: 0px 15px 11px 15px;
+	    	font: bold 20px 'Open Sans Condensed', sans-serif;
+    		letter-spacing: 0.8px;
+    		cursor: pointer;
+    		color: white;
+    		border: 1px solid white;
+    		position: relative;
+    		top: 62%;
+    		margin: 0 35px;
+		}
+	}
 
 	</style>
 </head>

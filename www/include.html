@@ -2,6 +2,8 @@
 <html>
 <head>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 
 <style type="text/css">
 	.include {
@@ -40,21 +42,25 @@
     	text-transform: uppercase;
 	}
 
-@media only screen and (max-width: 450px) {
+	@media only screen and (min-width: 220px) and (max-width: 727px) {
+		.include {
+			width: 100%;
+			max-width: 300px;
+			height: 250px;
+			margin: auto;
+			background: url('img/include-default-mobile.jpg') no-repeat;
+		}
 
-  .include {
-	background-size: contain;
-	border: solid 1px black;
-  }
-  
-  .include_back_button {
-	padding: 0px;
-	width: 100%;
-	margin-top: 94px;
-	font-size: 18px;
-	background-color: black;
-  }
-}
+		.text {
+			color: white;
+			text-transform: uppercase;
+			text-align: center;
+			float: unset;
+			margin: auto;
+			position: relative;
+			top: 50%;
+		}
+	}
 
 </style>
 </head>
