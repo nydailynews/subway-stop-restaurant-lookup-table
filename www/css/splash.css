@@ -63,6 +63,7 @@ article nav #next {
 
 }
 
+article h2 a { color: white; }
 article h2 {
 	color: white;
     font-family: "Open Sans Condensed", sans-serif;
