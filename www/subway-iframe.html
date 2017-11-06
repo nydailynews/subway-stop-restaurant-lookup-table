@@ -2,22 +2,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
   iframe#footer-include {
-	width: 95%;
-	border: none;
+    width: 100%;
+    height: 260px;
   }
   
   @media only screen and (max-width:450px) {
-	iframe#footer-include {
-		width: 100%;
-		max-width: 300px;
-		height: 250px;
-		border: none;
-	}
+    iframe#footer-include {
+      max-width:100vw;
+      width: 100vw;
+  }
 	iframe.include_return {
 	  /*Include mobile styles that are return-layout specific*/
 		width: 100%;
 		max-width: 300px;
-		height: 200px;
 	}
 }
 </style>
@@ -26,8 +23,9 @@
 <script>
 
 var subway_line = ['1','2','3','4','5','6','7','A','C','E','B','D','F','M','G','J','Z','L','N','Q','R','W'];
-var domain = "http://interactiveqa.nydailynews.com/"
-var source = domain + "map/nyc-subway-restaurant-guide/include.html";
+var protocol = "http://";
+var domain = "interactive.nydailynews.com/"
+var source = protocol + domain + "map/nyc-subway-restaurant-guide/include.html";
 var iframe_class = 'include';
 	if(document.referrer.indexOf(domain) > -1)
 		{
@@ -36,7 +34,7 @@ var iframe_class = 'include';
 			{
 				last_char = 'N'
 			}
-			source = domain + "map/nyc-subway-restaurant-guide/include-return.html#" + last_char;
+			source = protocol + domain + "map/nyc-subway-restaurant-guide/include-return.html#" + last_char;
 			iframe_class = 'include_return';
 		}
 
