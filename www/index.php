@@ -37,7 +37,7 @@ endforeach;
         <meta name="twitter:description" content="Our NYC <?php echo $add; ?>subway map restaurant guide will help you find your new favorite restaurant <?php echo $add_desc_full; ?>" />
 
         <!-- KEYWORD -->
-        <meta name="keywords" content="NYC subway map, NYC restaurants, NYC restaurant guide, New York restaurants, restaurants near me" />
+        <meta name="keywords" content="NYC subway map, NYC restaurants, NYC restaurant guide, New York restaurants, restaurants near me, Brooklyn restaurants, Manhattan restaurants, Queens restaurants, Bronx restaurants" />
 
         <!-- LINK -->
         <meta property="og:url" content="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/<?php echo $param; ?>" />
@@ -71,7 +71,7 @@ endforeach;
         <meta name="twitter:site" content="NY Daily News">
         <meta name="decorator" content="responsive" />
 
-        <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-774d60efeb80c8b9f62cea9078508154c4f534ff.js"></script>
+        <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-c91fdc6ac624c6cbcd50250f79786de339793801.js"></script>
 
         <script>
         var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -233,13 +233,6 @@ endforeach;
     <div id="bottom-ad-wrapper"><div id='bottom_ad' class='ad center'><div id='div-gpt-ad-1423507761396-2'><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1423507761396-2'); });</script></div></div></div>
 
     <footer id="nydn-footer"></footer>
-    <script>
-        if ( is_mobile ) {
-            $( document ).ready(function() {
-                load_js('js/app.js', function(){});
-            });
-        }
-    </script>
     <script>_satellite.pageBottom();</script>
     </div>
     <div id="parsely-root" style="display: none">
@@ -257,5 +250,13 @@ endforeach;
         </svg>
         <div class="blob blob-0"></div><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div><div class="blob blob-4"></div><div class="blob blob-5"></div>
     </div>
+    <script>
+        if ( is_mobile ) {
+            $( document ).ready(function() {
+                load_js('js/app.js', function(){});
+            });
+        }
+    if ( typeof PARSELY === 'undefined' ) (function(s, p, d) { var h=d.location.protocol, i=p+"-"+s, e=d.getElementById(i), r=d.getElementById(p+"-root"), u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net" :"static."+p+".com"; if (e) return; e = d.createElement(s); e.id = i; e.async = true; e.src = h+"//"+u+"/p.js"; r.appendChild(e); })("script", "parsely", document);
+    </script>
   </body>
 </html>

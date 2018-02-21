@@ -52,3 +52,7 @@ Edit the data/subway_geo.geojson file.
 ``` 
 
 #### If the line is active on the site 
+
+### Shortcuts
+Updating the json for the B line routes: 
+`python getjson.py http://www.nydailynews.com/json/cmlink/eating-b-line-1.3377799; mv eating-b-line-1.3377799 www/data/; git commit -m "Update json" .;` 
