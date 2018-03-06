@@ -6,6 +6,7 @@ import doctest
 import json
 import urllib2
 import argparse
+import gzip
 
 class GetJson:
     """ Methods for ingesting JSON feeds.
@@ -56,6 +57,13 @@ class GetJson:
         fh = open(fn, 'wb')
         fh.write(self.xml)
         fh.close()
+
+        # Sometimes these come across gzipped
+        if self.xml[0] != '[':
+            self.xml = gzip.GzipFile(fn, 'r').read()
+            fh = open(fn, 'wb')
+            fh.write(self.xml)
+            fh.close()
 
         return True
 
