@@ -3,13 +3,11 @@
 <head>
 	<title></title>
 	<link rel="canonical" href="http://interactive.nydailynews.com/map/nyc-subway-restaurant-guide/splash.html" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet">
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<!--
-    <script src="/js/jquery.min.js"></script>
--->
-	<style type="text/css">
+	<style>
 		.include {
 			width: 100%;
 			max-width: 580px;
@@ -122,7 +120,7 @@
 			if (lines.indexOf(hash.toUpperCase()) != -1) {
 				var line_from = hash.toUpperCase();
 				// add line image to button
-				document.getElementById("return-link").innerHTML='<img src="img/line_' + line_from + '.png">'
+				document.getElementById("return-link").innerHTML='<img src="img/line_' + line_from + '.png" alt="">';
 			}
 		}
 
