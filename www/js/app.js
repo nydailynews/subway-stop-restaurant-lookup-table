@@ -529,11 +529,11 @@ $(document).ready(function() {
             var headline = data[i].title;
             var details = data[i].body[0].paragraphs.split(": ")[1];
             // We don't want the full-size image, so we edit the image string
-            var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500');
+            var image = data[i].images[0].originalSrc.replace('httpImage', 'httpImage/image.jpg_gen/derivatives/article_500').replace('assets.nydailynews', 'interactive.nydailynews');
             var url = data[i].url;     
             $('#' + main_div).append('<div class="window" id="window'+i+'">\n\
 <div class="card_top">\n\
-    <img class="profile" src="'+image+'" />\n\
+    <img class="profile" src="'+image+'" alt="'+headline+'" />\n\
     <div class="stop">\n\
         <p class="stop_name"><a href="'+url+'"">'+stop+'</a></p>\n\
     </div>\n\
