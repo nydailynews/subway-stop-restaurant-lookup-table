@@ -1,0 +1,1058 @@
+[
+  {
+    "stop-name": "15th St - Prospect Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-sunday-march-9-article-1.1709216",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.660365,
+    "lng": -73.979493
+  },
+  {
+    "stop-name": "18th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/bensonhurst-tasty-offerings-include-black-sesame-dessert-article-1.2593923",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.620671,
+    "lng": -73.990414
+  },
+  {
+    "stop-name": "20th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/brooklyn-bakeries-offer-treats-mexico-vietnam-article-1.2589257",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.61741,
+    "lng": -73.985026
+  },
+  {
+    "stop-name": "21st St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-long-island-city-waterfront-article-1.1849714",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.744065,
+    "lng": -73.949724
+  },
+  {
+    "stop-name": "36th St",
+    "url": "http://www.nydailynews.com/life-style/eats/pupusas-worth-heading-sunset-park-article-1.2639712",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.655144,
+    "lng": -74.003549
+  },
+  {
+    "stop-name": "4th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-fourth-ave-stop-brooklyn-article-1.1721778",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.670847,
+    "lng": -73.988302
+  },
+  {
+    "stop-name": "59th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/tamales-tacos-quesadillas-add-spice-sunset-park-article-1.2630427",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.641362,
+    "lng": -74.017881
+  },
+  {
+    "stop-name": "7th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-park-slope-seventh-ave-stop-article-1.1714689",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.666271,
+    "lng": -73.980305
+  },
+  {
+    "stop-name": "7th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-noteworthy-restaurants-popping-seventh-ave-stop-brooklyn-article-1.1117229",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.67705,
+    "lng": -73.972367
+  },
+  {
+    "stop-name": "7th Ave/Flatbush",
+    "url": "http://www.nydailynews.com/life-style/eats/brooklyn-prospect-heights-dessert-destination-article-1.3351214",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.67705,
+    "lng": -73.972367
+  },
+  {
+    "stop-name": "8th Avenue",
+    "url": "http://www.nydailynews.com/life-style/eats/score-great-banh-mi-steamed-buns-noodle-soups-sunset-park-article-1.2622217",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.635064,
+    "lng": -74.011719
+  },
+  {
+    "stop-name": "Alabama Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/mexican-food-diner-grub-kosher-treats-line-brooklyn-stop-article-1.2944151",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.676992,
+    "lng": -73.898654
+  },
+  {
+    "stop-name": "Alabama Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/mexican-food-diner-grub-kosher-treats-line-brooklyn-stop-article-1.2944151",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.676992,
+    "lng": -73.898654
+  },
+  {
+    "stop-name": "Atantic Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-atlantic-ave-stop-brooklyn-article-1.1352170",
+    "subway-lines": 4,
+    "borough": "brooklyn",
+    "lat": 40.684359,
+    "lng": -73.977666
+  },
+  {
+    "stop-name": "Atantic Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-atlantic-ave-stop-brooklyn-article-1.1352170",
+    "subway-lines": 5,
+    "borough": "brooklyn",
+    "lat": 40.684359,
+    "lng": -73.977666
+  },
+  {
+    "stop-name": "Atlantic - Pacific",
+    "url": "http://www.nydailynews.com/life-style/eats/pastelitos-article-1.2646840",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.68446,
+    "lng": -73.97689
+  },
+  {
+    "stop-name": "Atlantic Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/score-perfect-falafel-sandwiches-barclays-center-article-1.3371937",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.68446,
+    "lng": -73.97689
+  },
+  {
+    "stop-name": "Atlantic Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-atlantic-center-brooklyn-biggest-subway-hub-home-inviting-spots-article-1.1120847",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.68446,
+    "lng": -73.97689
+  },
+  {
+    "stop-name": "Ave H",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-midwood-salud-healthy-mexican-sandwiches-smoothies-article-1.1086176",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.62927,
+    "lng": -73.961639
+  },
+  {
+    "stop-name": "Ave M",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-wolf-lamb-steakhouse-midwood-new-dining-destination-article-1.1079283",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.617618,
+    "lng": -73.959399
+  },
+  {
+    "stop-name": "Ave U",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-pho-hoai-serves-traditional-vietnamese-ave-u-article-1.1071953",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.596063,
+    "lng": -73.973357
+  },
+  {
+    "stop-name": "Avenue U",
+    "url": "http://www.nydailynews.com/life-style/eats/brooklyn-miss-cappuccinos-roast-beef-sandwiches-article-1.2564144",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.596063,
+    "lng": -73.973357
+  },
+  {
+    "stop-name": "Bay Parkway",
+    "url": "http://www.nydailynews.com/life-style/eats/bensonhurst-diverse-dining-options-include-korean-russian-article-1.2580438",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.611815,
+    "lng": -73.981848
+  },
+  {
+    "stop-name": "Bedford - Nostrand Aves",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-bedford-nostrand-aves-stop-article-1.1789170",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.689627,
+    "lng": -73.953522
+  },
+  {
+    "stop-name": "Bergen and Atlantic",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-indy-places-bergen-ave-barclays-article-1.2250747",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.680829,
+    "lng": -73.975098
+  },
+  {
+    "stop-name": "Bergen and Atlantic",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-nevins-st-good-ethnic-lunches-article-1.2256684",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.680829,
+    "lng": -73.975098
+  },
+  {
+    "stop-name": "Bergen St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-bergen-st-stop-article-1.1748451",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.686145,
+    "lng": -73.990862
+  },
+  {
+    "stop-name": "Beverly Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-authentic-dominican-fare-head-la-caba-rodriguez-flatbush-article-1.1098580",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.644031,
+    "lng": -73.964492
+  },
+  {
+    "stop-name": "Beverly Road",
+    "url": "http://www.nydailynews.com/life-style/eats/2-line-fine-caribbean-food-beverley-road-stop-article-1.2188449",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.645098,
+    "lng": -73.948959
+  },
+  {
+    "stop-name": "Borough Hall",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-brooklyn-heights-article-1.2276691",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.692404,
+    "lng": -73.990151
+  },
+  {
+    "stop-name": "Borough Hall",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-brooklyn-heights-article-1.2276691",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.692404,
+    "lng": -73.990151
+  },
+  {
+    "stop-name": "Brighton Beach",
+    "url": "http://www.nydailynews.com/life-style/eats/grab-turkish-style-pizza-brighton-beach-article-1.3250290",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.577621,
+    "lng": -73.961376
+  },
+  {
+    "stop-name": "Brighton Beach",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-brighton-beach-tatiana-russian-food-entertainment-article-1.1060742",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.577621,
+    "lng": -73.961376
+  },
+  {
+    "stop-name": "Broadway",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-broadway-stop-williamsburg-article-1.1814211",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.706092,
+    "lng": -73.950308
+  },
+  {
+    "stop-name": "Broadway Junction",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-broadway-junction-brooklyn-article-1.1948583",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.678334,
+    "lng": -73.905316
+  },
+  {
+    "stop-name": "Broadway Junction",
+    "url": "http://www.nydailynews.com/life-style/eats/enjoy-nigerian-food-bitter-leaf-soup-train-stop-article-1.2948748",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.678334,
+    "lng": -73.905316
+  },
+  {
+    "stop-name": "Broadway Junction",
+    "url": "http://www.nydailynews.com/life-style/eats/enjoy-nigerian-food-bitter-leaf-soup-train-stop-article-1.2948748",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.678334,
+    "lng": -73.905316
+  },
+  {
+    "stop-name": "Carroll St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-carroll-st-stop-brooklyn-article-1.1743519",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.680303,
+    "lng": -73.995048
+  },
+  {
+    "stop-name": "Chauncey St",
+    "url": "http://www.nydailynews.com/life-style/eats/taste-nigeria-brooklyn-tain-stop-article-1.2955555",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.682893,
+    "lng": -73.910456
+  },
+  {
+    "stop-name": "Chauncey St",
+    "url": "http://www.nydailynews.com/life-style/eats/taste-nigeria-brooklyn-tain-stop-article-1.2955555",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.682893,
+    "lng": -73.910456
+  },
+  {
+    "stop-name": "Church Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/delicious-mexican-soul-food-line-flatbush-b-train-stop-article-1.3317997",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.650527,
+    "lng": -73.962982
+  },
+  {
+    "stop-name": "Church Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-church-ave-stop-kensington-article-1.1617386",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.644041,
+    "lng": -73.979678
+  },
+  {
+    "stop-name": "Church Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-sybil-bakery-restaurant-flatbush-place-guyanese-cuisine-article-1.1103262",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.650527,
+    "lng": -73.962982
+  },
+  {
+    "stop-name": "Church Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-caribbean-food-article-1.2198159",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.650843,
+    "lng": -73.949575
+  },
+  {
+    "stop-name": "Clark Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-best-bites-brooklyn-heights-article-1.2280969",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.697466,
+    "lng": -73.993086
+  },
+  {
+    "stop-name": "Clark Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-best-bites-brooklyn-heights-article-1.2280969",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.697466,
+    "lng": -73.993086
+  },
+  {
+    "stop-name": "Classon Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-classon-ave-stop-brooklyn-article-1.1781724",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.688873,
+    "lng": -73.96007
+  },
+  {
+    "stop-name": "Cleveland St",
+    "url": "http://www.nydailynews.com/life-style/eats/great-dominican-food-lines-brooklyn-train-stop-article-1.2925865",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.679947,
+    "lng": -73.884639
+  },
+  {
+    "stop-name": "Clinton - Washington Aves",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-clinton-washington-stop-brooklyn-article-1.1771732",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.683263,
+    "lng": -73.965838
+  },
+  {
+    "stop-name": "Coney Island - Stillwell",
+    "url": "http://www.nydailynews.com/life-style/coney-island-treasures-include-williams-candy-article-1.2548161",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.577422,
+    "lng": -73.981233
+  },
+  {
+    "stop-name": "Coney Island - Stillwell Av",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-totonno-pizzeria-coney-island-serves-new-york-best-pie-article-1.1049220",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.577422,
+    "lng": -73.981233
+  },
+  {
+    "stop-name": "Cortelyou Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-ditmas-park-purple-yam-shows-flavors-philippines-article-1.1093657",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.640927,
+    "lng": -73.963891
+  },
+  {
+    "stop-name": "Crescent St",
+    "url": "http://www.nydailynews.com/life-style/eats/must-try-burritos-gorditas-brooklyn-article-1.2912068",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.683194,
+    "lng": -73.873785
+  },
+  {
+    "stop-name": "Crescent St",
+    "url": "http://www.nydailynews.com/life-style/eats/must-try-burritos-gorditas-brooklyn-article-1.2912068",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.683194,
+    "lng": -73.873785
+  },
+  {
+    "stop-name": "Crown Hts - Utica Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-utica-ave-article-1.1364284",
+    "subway-lines": 4,
+    "borough": "brooklyn",
+    "lat": 40.668897,
+    "lng": -73.932942
+  },
+  {
+    "stop-name": "Cypress Hills",
+    "url": "http://www.nydailynews.com/life-style/eats/tasty-tacos-mexico-honduras-line-train-stop-article-1.2899514",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.689941,
+    "lng": -73.87255
+  },
+  {
+    "stop-name": "Dekalb Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-affordable-dining-dekalb-ave-plentiful-supply-article-1.1125835",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.690635,
+    "lng": -73.981824
+  },
+  {
+    "stop-name": "Eastern Parkway - Brooklyn Museum",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-eastern-parkway-grand-army-plaza-article-1.2242827",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.671987,
+    "lng": -73.964375
+  },
+  {
+    "stop-name": "Eastern Parkway - Brooklyn Museum",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-eastern-parkway-grand-army-plaza-article-1.2242827",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.671987,
+    "lng": -73.964375
+  },
+  {
+    "stop-name": "Euclid Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-caribbean-food-east-new-york-article-1.1937970",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.675377,
+    "lng": -73.872106
+  },
+  {
+    "stop-name": "Flatbush - Brooklyn College",
+    "url": "http://www.nydailynews.com/life-style/eats/2-line-food-flatbush-avenue-brooklyn-college-article-1.2172913",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.632836,
+    "lng": -73.947642
+  },
+  {
+    "stop-name": "Flushing Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-flushing-ave-stop-article-1.1430933",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.70026,
+    "lng": -73.941126
+  },
+  {
+    "stop-name": "Flushing Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-flushing-ave-stop-bed-stuy-article-1.1803849",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.700377,
+    "lng": -73.950234
+  },
+  {
+    "stop-name": "Flushing Ave",
+    "url": "http://www.nydailynews.com/life-style/tempting-cakes-sweeten-area-williamsburg-train-stop-article-1.2984517",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.70026,
+    "lng": -73.941126
+  },
+  {
+    "stop-name": "Forest Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-forest-ave-stop-article-1.1399242",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.704423,
+    "lng": -73.903077
+  },
+  {
+    "stop-name": "Fort Hamilton Parkway",
+    "url": "http://www.nydailynews.com/life-style/greek-cheese-fries-reason-hop-subway-article-1.2613774",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.631386,
+    "lng": -74.005351
+  },
+  {
+    "stop-name": "Franklin Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-franklin-ave-stop-article-1.1358735",
+    "subway-lines": 4,
+    "borough": "brooklyn",
+    "lat": 40.670682,
+    "lng": -73.958131
+  },
+  {
+    "stop-name": "Franklin Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-franklin-ave-stop-article-1.1358735",
+    "subway-lines": 5,
+    "borough": "brooklyn",
+    "lat": 40.670682,
+    "lng": -73.958131
+  },
+  {
+    "stop-name": "Franklin Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-franklin-ave-treat-article-1.2232378",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.670682,
+    "lng": -73.958131
+  },
+  {
+    "stop-name": "Franklin Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-franklin-ave-treat-article-1.2232378",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.670682,
+    "lng": -73.958131
+  },
+  {
+    "stop-name": "Fresh Pond Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-fresh-pond-road-stop-article-1.1393033",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.706186,
+    "lng": -73.895877
+  },
+  {
+    "stop-name": "Ft Hamilton Pkwy",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-fort-hamilton-parkway-stop-article-1.1638657",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.650782,
+    "lng": -73.975776
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-fulton-st-stop-fort-greene-article-1.1763849",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.687119,
+    "lng": -73.975375
+  },
+  {
+    "stop-name": "Gates Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/sweet-treats-vegan-delights-line-brooklyn-train-stop-article-1.2965648",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.68963,
+    "lng": -73.92227
+  },
+  {
+    "stop-name": "Gates Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/sweet-treats-vegan-delights-line-brooklyn-train-stop-article-1.2965648",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.68963,
+    "lng": -73.92227
+  },
+  {
+    "stop-name": "Grand Army Plaza",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-eastern-parkway-grand-army-plaza-article-1.2242827",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.675235,
+    "lng": -73.971046
+  },
+  {
+    "stop-name": "Grant Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-grant-ave-brooklyn-article-1.1929824",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.677044,
+    "lng": -73.86505
+  },
+  {
+    "stop-name": "Gravesend - 86th",
+    "url": "http://www.nydailynews.com/life-style/eats/grab-turkish-food-pb-donuts-n-train-stop-article-1.2555983",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.592721,
+    "lng": -73.97823
+  },
+  {
+    "stop-name": "Greenpoint Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-great-breakfasts-greenpoint-article-1.1838168",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.731352,
+    "lng": -73.954449
+  },
+  {
+    "stop-name": "Halsey St",
+    "url": "http://www.nydailynews.com/life-style/eats/deep-fried-cheese-breakfast-treat-line-stop-article-1.2959935",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.695602,
+    "lng": -73.904084
+  },
+  {
+    "stop-name": "Hewes St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-hewes-st-stop-article-1.1444646",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.70687,
+    "lng": -73.953431
+  },
+  {
+    "stop-name": "Hewes St",
+    "url": "http://www.nydailynews.com/life-style/award-winning-pizza-sits-williamsburg-train-stop-article-1.2996821",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.70687,
+    "lng": -73.953431
+  },
+  {
+    "stop-name": "High Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-brooklyn-heights-article-1.1986192",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.699337,
+    "lng": -73.990531
+  },
+  {
+    "stop-name": "Hoyt - Schermerhorn Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-hoyt-schermerhorn-sts-article-1.1970508",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.688484,
+    "lng": -73.985001
+  },
+  {
+    "stop-name": "Hoyt - Schermerhorn Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-hoyt-schermerhorn-stop-brooklyn-article-1.1755943",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.688484,
+    "lng": -73.985001
+  },
+  {
+    "stop-name": "Hoyt Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-hoyt-st-sandwich-stops-article-1.2266927",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.690545,
+    "lng": -73.985065
+  },
+  {
+    "stop-name": "Hoyt Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-hoyt-st-sandwich-stops-article-1.2266927",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.690545,
+    "lng": -73.985065
+  },
+  {
+    "stop-name": "Jay St - Borough Hall",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-jay-st-metrotech-article-1.1980629",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.692338,
+    "lng": -73.987342
+  },
+  {
+    "stop-name": "Kings Hwy",
+    "url": "http://www.nydailynews.com/life-style/beef-tongue-salad-article-1.2572028",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.603217,
+    "lng": -73.972361
+  },
+  {
+    "stop-name": "Kings Hwy",
+    "url": "http://www.nydailynews.com/life-style/eats/midwood-brooklyn-hotspot-turkish-food-fresh-bagels-article-1.3279380",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.603217,
+    "lng": -73.972361
+  },
+  {
+    "stop-name": "Kings Hwy",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-mansoura-pastries-specializes-middle-eastern-treats-article-1.1075717",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.603217,
+    "lng": -73.972361
+  },
+  {
+    "stop-name": "Knickerbocker Ave & Central Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-knickerbocker-ave-stop-article-1.1419065",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.698664,
+    "lng": -73.919711
+  },
+  {
+    "stop-name": "Kosciuszko St",
+    "url": "http://www.nydailynews.com/life-style/eats/vegan-desserts-tempt-brooklyn-train-stop-article-1.2973816",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.693342,
+    "lng": -73.928814
+  },
+  {
+    "stop-name": "Long Island City - Court Sq",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-court-square-long-island-city-article-1.1857555",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.746554,
+    "lng": -73.943832
+  },
+  {
+    "stop-name": "Lorimer St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-moore-street-retail-market-article-1.1437469",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.703869,
+    "lng": -73.947408
+  },
+  {
+    "stop-name": "Lorimer St",
+    "url": "http://www.nydailynews.com/life-style/eats/kimchi-fries-add-spice-williamsburg-brooklyn-article-1.2990165",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.703869,
+    "lng": -73.947408
+  },
+  {
+    "stop-name": "Marcy Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-marcy-ave-station-article-1.1450077",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.708359,
+    "lng": -73.957757
+  },
+  {
+    "stop-name": "Marcy Ave",
+    "url": "http://www.nydailynews.com/life-style/bacon-egg-cheese-triangular-rice-ball-article-1.3013163",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.708359,
+    "lng": -73.957757
+  },
+  {
+    "stop-name": "Marcy Ave",
+    "url": "http://www.nydailynews.com/life-style/bacon-egg-cheese-triangular-rice-ball-article-1.3013163",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.708359,
+    "lng": -73.957757
+  },
+  {
+    "stop-name": "Metropolitan Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-metropolitan-ave-stop-williamsburg-article-1.1820250",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.712792,
+    "lng": -73.951418
+  },
+  {
+    "stop-name": "Middle Village - Metropolitan Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-metropolitan-ave-article-1.1387565",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.711396,
+    "lng": -73.889601
+  },
+  {
+    "stop-name": "Myrtle - Willoughby Aves",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-myrtle-willoughby-aves-station-bedford-stuyvesant-article-1.1795533",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.694568,
+    "lng": -73.949046
+  },
+  {
+    "stop-name": "Myrtle Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-myrtle-wyckoff-station-article-1.1411811",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.697207,
+    "lng": -73.935657
+  },
+  {
+    "stop-name": "Myrtle Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/best-toast-article-1.2979603",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.697207,
+    "lng": -73.935657
+  },
+  {
+    "stop-name": "Myrtle Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/best-toast-article-1.2979603",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.697207,
+    "lng": -73.935657
+  },
+  {
+    "stop-name": "Nassau Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-nassau-ave-stop-article-1.1831689",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.724635,
+    "lng": -73.951277
+  },
+  {
+    "stop-name": "Neck Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-authentic-peruvian-sheepshead-bay-coney-island-taste-article-1.1066560",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.595246,
+    "lng": -73.955161
+  },
+  {
+    "stop-name": "Nevins St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-nevins-st-article-1.1345208",
+    "subway-lines": 4,
+    "borough": "brooklyn",
+    "lat": 40.688246,
+    "lng": -73.980492
+  },
+  {
+    "stop-name": "Nevins St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-nevins-st-article-1.1345208",
+    "subway-lines": 5,
+    "borough": "brooklyn",
+    "lat": 40.688246,
+    "lng": -73.980492
+  },
+  {
+    "stop-name": "Nevins St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-nevins-st-good-ethnic-lunches-article-1.2256684",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.688246,
+    "lng": -73.980492
+  },
+  {
+    "stop-name": "Nevins St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-nevins-st-good-ethnic-lunches-article-1.2256684",
+    "subway-lines": 3,
+    "borough": "brooklyn",
+    "lat": 40.688246,
+    "lng": -73.980492
+  },
+  {
+    "stop-name": "New Utrecht Avenue",
+    "url": "http://www.nydailynews.com/life-style/eats/borough-park-giant-mozzarella-sticks-kosher-eataly-article-1.2601645",
+    "subway-lines": "n",
+    "borough": "brooklyn",
+    "lat": 40.624842,
+    "lng": -73.996353
+  },
+  {
+    "stop-name": "Newkirk Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/real-deal-pizza-entices-flatbush-b-train-stop-article-1.3298382",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.635082,
+    "lng": -73.962793
+  },
+  {
+    "stop-name": "Newkirk Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-article-1.2181074",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.635082,
+    "lng": -73.962793
+  },
+  {
+    "stop-name": "Norwood Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/warm-spicy-tamales-tortas-roti-pupusas-brooklyn-article-1.2916378",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.68141,
+    "lng": -73.880039
+  },
+  {
+    "stop-name": "Norwood Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/warm-spicy-tamales-tortas-roti-pupusas-brooklyn-article-1.2916378",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.68141,
+    "lng": -73.880039
+  },
+  {
+    "stop-name": "Nostrand Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-nostrand-ave-article-1.1966238",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.680438,
+    "lng": -73.950426
+  },
+  {
+    "stop-name": "Ocean Pkwy",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-varenichnaya-brighton-beach-russian-comfort-food-article-1.1056119",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.576312,
+    "lng": -73.968501
+  },
+  {
+    "stop-name": "Parkside Ave",
+    "url": "http://www.nydailynews.com/life-style/eating-q-exploring-multitude-fare-parkside-ave-station-article-1.1106551",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.655292,
+    "lng": -73.961495
+  },
+  {
+    "stop-name": "President Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-president-st-stop-article-1.2223884",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.667883,
+    "lng": -73.950683
+  },
+  {
+    "stop-name": "Prosepct Park",
+    "url": "http://www.nydailynews.com/life-style/eats/shark-burger-celebrate-shark-week-article-1.3332969",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.661614,
+    "lng": -73.962246
+  },
+  {
+    "stop-name": "Prosepct Park",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-food-tour-prospect-park-station-brooklyn-article-1.1111987",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.661614,
+    "lng": -73.962246
+  },
+  {
+    "stop-name": "Rockaway Blvd & 80th St & 88 St",
+    "url": "http://www.nydailynews.com/life-style/baking-supplies-guyanese-meals-bengali-treats-ozone-park-article-1.1924357",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.680429,
+    "lng": -73.843853
+  },
+  {
+    "stop-name": "Seneca Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-myrtle-wyckoff-station-article-1.1411811",
+    "subway-lines": "M",
+    "borough": "brooklyn",
+    "lat": 40.702762,
+    "lng": -73.90774
+  },
+  {
+    "stop-name": "Sheepshead Bay",
+    "url": "http://www.nydailynews.com/life-style/eats/russian-ravioli-armenian-flatbread-spice-sheepshead-bay-article-1.3260545",
+    "subway-lines": "B",
+    "borough": "brooklyn",
+    "lat": 40.586896,
+    "lng": -73.954155
+  },
+  {
+    "stop-name": "Sheepshead Bay",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-fresh-seafood-head-randazzo-clam-bar-sheepshead-bay-article-1.1063599",
+    "subway-lines": "Q",
+    "borough": "brooklyn",
+    "lat": 40.586896,
+    "lng": -73.954155
+  },
+  {
+    "stop-name": "Smith - 9th Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-g-line-unique-spots-smith-st-stop-article-1.1732245",
+    "subway-lines": "G",
+    "borough": "brooklyn",
+    "lat": 40.67358,
+    "lng": -73.995959
+  },
+  {
+    "stop-name": "Sterling Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-proven-delights-sterling-st-article-1.2214675",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.662742,
+    "lng": -73.95085
+  },
+  {
+    "stop-name": "Utica Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-utica-ave-bed-stuy-article-1.1956893",
+    "subway-lines": "A",
+    "borough": "brooklyn",
+    "lat": 40.679364,
+    "lng": -73.930729
+  },
+  {
+    "stop-name": "Van Siclen Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/tacos-bakery-treats-brighten-area-brooklyn-train-stop-article-1.2933312",
+    "subway-lines": "J",
+    "borough": "brooklyn",
+    "lat": 40.678024,
+    "lng": -73.891688
+  },
+  {
+    "stop-name": "Van Siclen Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/tacos-bakery-treats-brighten-area-brooklyn-train-stop-article-1.2933312",
+    "subway-lines": "Z",
+    "borough": "brooklyn",
+    "lat": 40.678024,
+    "lng": -73.891688
+  },
+  {
+    "stop-name": "Winthrop St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-new-places-winthrop-st-stop-article-1.2207396",
+    "subway-lines": 2,
+    "borough": "brooklyn",
+    "lat": 40.656652,
+    "lng": -73.9502
+  }
+]

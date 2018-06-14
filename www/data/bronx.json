@@ -1,0 +1,306 @@
+[
+  {
+    "stop-name": "138th St - Grand Concourse",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-138th-st-grand-concourse-article-1.1275012",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.813224,
+    "lng": -73.929849
+  },
+  {
+    "stop-name": "149th - Grand Concourse",
+    "url": "http://www.nydailynews.com/life-style/eats/homestyle-soul-great-bar-149th-st-grand-concourse-article-1.2420442",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.818375,
+    "lng": -73.927351
+  },
+  {
+    "stop-name": "161st St - Yankee Stadium",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-161st-st-yankee-stadium-article-1.1263466",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.827905,
+    "lng": -73.925651
+  },
+  {
+    "stop-name": "161st St - Yankee Stadium",
+    "url": "http://www.nydailynews.com/life-style/eats/jamaican-mexican-west-african-food-spice-bronx-nabes-article-1.3786183",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.827905,
+    "lng": -73.925651
+  },
+  {
+    "stop-name": "167th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-167th-st-stop-article-1.1256890",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.835537,
+    "lng": -73.9214
+  },
+  {
+    "stop-name": "167th St",
+    "url": "http://www.nydailynews.com/life-style/eats/dominican-specials-irresistible-cakes-liven-bronx-nabe-article-1.3816478",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.833769,
+    "lng": -73.918432
+  },
+  {
+    "stop-name": "170th St",
+    "url": "http://www.nydailynews.com/life-style/eats/find-tasty-chimichangas-tacos-bronx-train-stop-article-1.3834308",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.839306,
+    "lng": -73.9134
+  },
+  {
+    "stop-name": "174th - 175th Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/killer-dominican-cooking-flautas-await-mount-hope-bronx-article-1.3845202",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.8459,
+    "lng": -73.910136
+  },
+  {
+    "stop-name": "174th and West Farms Square - E Tremont",
+    "url": "http://www.nydailynews.com/life-style/eats/discover-diverse-flavors-bronx-2-train-stops-article-1.2472806",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.840295,
+    "lng": -73.880049
+  },
+  {
+    "stop-name": "176th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-176th-st-bronx-article-1.1246039",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.84848,
+    "lng": -73.911794
+  },
+  {
+    "stop-name": "182 -183 Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/bronx-italy-shines-fresh-cheese-baked-goods-pizza-article-1.3872187",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.856093,
+    "lng": -73.900741
+  },
+  {
+    "stop-name": "183rd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-183rd-st-stop-ghanaian-mexican-dominican-article-1.1236634",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.858407,
+    "lng": -73.903879
+  },
+  {
+    "stop-name": "219th St",
+    "url": "http://www.nydailynews.com/life-style/score-seafood-soup-drool-2-train-stop-article-1.2514277",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.883895,
+    "lng": -73.862633
+  },
+  {
+    "stop-name": "225th St",
+    "url": "http://www.nydailynews.com/life-style/eats/homestyle-jamaican-food-hit-2-train-stop-article-1.2524632",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.888022,
+    "lng": -73.860341
+  },
+  {
+    "stop-name": "233rd St",
+    "url": "http://www.nydailynews.com/life-style/grab-amazing-takeout-guyanese-chinese-fare-soul-food-article-1.2532118",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.893193,
+    "lng": -73.857473
+  },
+  {
+    "stop-name": "3rd - 149th",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-ave-149-st-stop-article-1.2426447",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.816109,
+    "lng": -73.917757
+  },
+  {
+    "stop-name": "Allerton Avenue",
+    "url": "http://www.nydailynews.com/life-style/score-mexican-sandwiches-italian-sweets-bronx-article-1.2493225",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.865462,
+    "lng": -73.867352
+  },
+  {
+    "stop-name": "Bedford Park Blvd",
+    "url": "http://www.nydailynews.com/life-style/eats/bronx-strip-foodie-paradise-article-1.3936929",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.873244,
+    "lng": -73.887138
+  },
+  {
+    "stop-name": "Bedford Park Blvd - Lehman College",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-bedford-park-blvd-stop-article-1.1223898",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.873412,
+    "lng": -73.890064
+  },
+  {
+    "stop-name": "Burke Avenue",
+    "url": "http://www.nydailynews.com/life-style/eats/find-fried-chicken-red-velvet-waffles-article-1.2498535",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.871356,
+    "lng": -73.867164
+  },
+  {
+    "stop-name": "Burnside Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-burnside-ave-stop-article-1.1241513",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.853453,
+    "lng": -73.907684
+  },
+  {
+    "stop-name": "E 180th - Bronx Park East",
+    "url": "http://www.nydailynews.com/life-style/eats/find-italian-cookies-colombian-fare-bronx-nabe-article-1.2479580",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.841894,
+    "lng": -73.873488
+  },
+  {
+    "stop-name": "Fordham Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-fordham-road-stop-article-1.1231642",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.862803,
+    "lng": -73.901034
+  },
+  {
+    "stop-name": "Fordham Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/griddled-cornmeal-boats-cool-eats-fordham-heights-bronx-article-1.3886494",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.861296,
+    "lng": -73.897749
+  },
+  {
+    "stop-name": "Freeman Street",
+    "url": "http://www.nydailynews.com/life-style/eats/west-african-fare-rules-bronx-2-train-stop-article-1.2465133",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.829993,
+    "lng": -73.891865
+  },
+  {
+    "stop-name": "Gun Hill Road",
+    "url": "http://www.nydailynews.com/life-style/eats/guyanese-dishes-great-find-bronx-train-stop-article-1.2509199",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.87785,
+    "lng": -73.866256
+  },
+  {
+    "stop-name": "Intervale Avenue",
+    "url": "http://www.nydailynews.com/life-style/find-great-mexican-food-2-train-south-bronx-article-1.2450848",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.822181,
+    "lng": -73.896736
+  },
+  {
+    "stop-name": "Jackson Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-jackson-ave-article-1.2437042",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.81649,
+    "lng": -73.907807
+  },
+  {
+    "stop-name": "Kingsbridge Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-kingsbridge-road-article-1.1226991",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.866978,
+    "lng": -73.893509
+  },
+  {
+    "stop-name": "Kingsbridge Rd",
+    "url": "http://www.nydailynews.com/life-style/eats/score-hidden-mexican-food-bronx-nabe-lot-article-1.3923714",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.866978,
+    "lng": -73.893509
+  },
+  {
+    "stop-name": "Mosholu Parkway",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-mosholu-parkway-stop-article-1.1218548",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.87975,
+    "lng": -73.884655
+  },
+  {
+    "stop-name": "Mt Eden Ave & 170th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-mount-eden-170th-st-article-1.1250727",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.844434,
+    "lng": -73.914685
+  },
+  {
+    "stop-name": "Nereid Avenue",
+    "url": "http://www.nydailynews.com/life-style/eats/west-indian-flavors-reign-wakefield-bronx-article-1.2539938",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.898379,
+    "lng": -73.854376
+  },
+  {
+    "stop-name": "Pelham Parkway",
+    "url": "http://www.nydailynews.com/life-style/eats/tasty-tacos-albanian-treats-2-train-stop-article-1.2485243",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.857192,
+    "lng": -73.867615
+  },
+  {
+    "stop-name": "Prospect Avenue",
+    "url": "http://www.nydailynews.com/life-style/eats/score-dominican-shrimp-prospect-ave-2-train-stop-article-1.2444020",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.819585,
+    "lng": -73.90177
+  },
+  {
+    "stop-name": "Simpson Street",
+    "url": "http://www.nydailynews.com/life-style/little-known-mexican-sandwich-hit-2-train-article-1.2458948",
+    "subway-lines": 2,
+    "borough": "bronx",
+    "lat": 40.824073,
+    "lng": -73.893064
+  },
+  {
+    "stop-name": "Tremont Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/great-bakeries-sandwich-shops-liven-bronx-grand-concourse-article-1.3857032",
+    "subway-lines": "B",
+    "borough": "bronx",
+    "lat": 40.85041,
+    "lng": -73.905227
+  },
+  {
+    "stop-name": "Woodlawn",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-woodlawn-ave-article-1.1214026",
+    "subway-lines": 4,
+    "borough": "bronx",
+    "lat": 40.886037,
+    "lng": -73.878751
+  }
+]

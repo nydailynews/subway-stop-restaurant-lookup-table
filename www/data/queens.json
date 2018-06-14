@@ -1,0 +1,474 @@
+[
+  {
+    "stop-name": "103rd St - Corona Plaza",
+    "url": "http://www.nydailynews.com/life-style/nixtamal-best-tortillas-article-1.966186",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.749865,
+    "lng": -73.8627
+  },
+  {
+    "stop-name": "104th-102nd Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/drink-bubble-tea-play-pool-richmond-hill-queens-article-1.2862644",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.695178,
+    "lng": -73.84433
+  },
+  {
+    "stop-name": "104th-102nd Sts",
+    "url": "http://www.nydailynews.com/life-style/eats/drink-bubble-tea-play-pool-richmond-hill-queens-article-1.2862644",
+    "subway-lines": "Z",
+    "borough": "queens",
+    "lat": 40.695178,
+    "lng": -73.84433
+  },
+  {
+    "stop-name": "111th St",
+    "url": "http://www.nydailynews.com/new-york/queens/corona-empanadas-cafe-adds-new-flavor-traditional-empanadas-article-1.965456",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.75173,
+    "lng": -73.855334
+  },
+  {
+    "stop-name": "111th St",
+    "url": "http://www.nydailynews.com/life-style/eats/delicious-cakes-peruvian-south-asian-food-await-queens-article-1.2854228",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.697418,
+    "lng": -73.836345
+  },
+  {
+    "stop-name": "121st St",
+    "url": "http://www.nydailynews.com/life-style/eats/sicilian-pizza-queens-famous-article-1.2844256",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.700492,
+    "lng": -73.828294
+  },
+  {
+    "stop-name": "121st St",
+    "url": "http://www.nydailynews.com/life-style/eats/sicilian-pizza-queens-famous-article-1.2844256",
+    "subway-lines": "Z",
+    "borough": "queens",
+    "lat": 40.700492,
+    "lng": -73.828294
+  },
+  {
+    "stop-name": "23rd St - Ely Av",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-court-square-station-queens-article-1.1521030",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.742878,
+    "lng": -73.992821
+  },
+  {
+    "stop-name": "30th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-30th-ave-stop-article-1.1190266",
+    "subway-lines": "Q",
+    "borough": "queens",
+    "lat": 40.766779,
+    "lng": -73.921479
+  },
+  {
+    "stop-name": "36th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-36th-ave-stop-queens-article-1.1178511",
+    "subway-lines": "W",
+    "borough": "queens",
+    "lat": 40.756804,
+    "lng": -73.929575
+  },
+  {
+    "stop-name": "36th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-36th-st-stop-long-island-city-article-1.1535231",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.752039,
+    "lng": -73.928781
+  },
+  {
+    "stop-name": "39th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/tasty-brazilian-peruvian-bites-boost-long-island-city-article-1.2770305",
+    "subway-lines": "n",
+    "borough": "queens",
+    "lat": 40.752882,
+    "lng": -73.932755
+  },
+  {
+    "stop-name": "40th St",
+    "url": "http://www.nydailynews.com/life-style/eats/dining-7-line-dazie-restaurant-destination-italian-food-sunnyside-article-1.1008790",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.743781,
+    "lng": -73.924016
+  },
+  {
+    "stop-name": "45th Rd - Court House Sq",
+    "url": "http://www.nydailynews.com/life-style/eats/john-brown-smokehouse-brings-kansas-city-style-barbecue-long-island-city-article-1.1012578",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.747023,
+    "lng": -73.945264
+  },
+  {
+    "stop-name": "46th St",
+    "url": "http://www.nydailynews.com/life-style/eats/sunnyside-eatery-dee-thai-go-to-queens-locals-no-7-local-find-article-1.1000823",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.743132,
+    "lng": -73.918435
+  },
+  {
+    "stop-name": "52nd St",
+    "url": "http://www.nydailynews.com/life-style/eats/head-woodside-sik-gaek-korean-style-seafood-live-octopus-article-1.998444",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.74405,
+    "lng": -73.912502
+  },
+  {
+    "stop-name": "63rd Dr - Rego Park",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-63rd-drive-stop-rego-park-article-1.1592894",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.729846,
+    "lng": -73.861604
+  },
+  {
+    "stop-name": "65th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-65th-st-stop-article-1.1556934",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.749669,
+    "lng": -73.898453
+  },
+  {
+    "stop-name": "67th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-67th-ave-stop-forest-hills-article-1.1600688",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.726523,
+    "lng": -73.852719
+  },
+  {
+    "stop-name": "69th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-7-line-woodside-sripraphai-destination-traditional-thai-food-article-1.991332",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.746325,
+    "lng": -73.896403
+  },
+  {
+    "stop-name": "74th St - Broadway",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-7-line-jackson-diner-must-try-indian-eatery-jackson-heights-article-1.988045",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.746848,
+    "lng": -73.891394
+  },
+  {
+    "stop-name": "75th St - Eldert Ln",
+    "url": "http://www.nydailynews.com/life-style/eats/shake-shack-dominican-burgers-article-1.2890337",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.691324,
+    "lng": -73.867139
+  },
+  {
+    "stop-name": "75th St - Eldert Ln",
+    "url": "http://www.nydailynews.com/life-style/eats/shake-shack-dominican-burgers-article-1.2890337",
+    "subway-lines": "Z",
+    "borough": "queens",
+    "lat": 40.691324,
+    "lng": -73.867139
+  },
+  {
+    "stop-name": "82nd St - Jackson Hts",
+    "url": "http://www.nydailynews.com/life-style/eats/la-pequena-colombia-brings-bit-colombia-roosevelt-ave-no-7-jackson-heights-article-1.981349",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.747659,
+    "lng": -73.883697
+  },
+  {
+    "stop-name": "85th St - Forest Pky",
+    "url": "http://www.nydailynews.com/life-style/eats/peruvian-plate-woodhaven-leave-drooling-article-1.2882666",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.692435,
+    "lng": -73.86001
+  },
+  {
+    "stop-name": "90th St - Elmhurst Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/la-pequena-colombia-brings-bit-colombia-roosevelt-ave-no-7-jackson-heights-article-1.981349",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.748408,
+    "lng": -73.876613
+  },
+  {
+    "stop-name": "Aqueduct - North Conduit Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-spots-ozone-park-article-1.1916114",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.668234,
+    "lng": -73.834058
+  },
+  {
+    "stop-name": "Astoria",
+    "url": "http://www.nydailynews.com/life-style/eats/shots-mini-sandwiches-astoria-queens-article-1.2807342",
+    "subway-lines": "n",
+    "borough": "queens",
+    "lat": 40.770258,
+    "lng": -73.917843
+  },
+  {
+    "stop-name": "Astoria - Ditmars",
+    "url": "http://www.nydailynews.com/life-style/find-tasty-italian-cookies-subs-pizza-astoria-article-1.2815821",
+    "subway-lines": "n",
+    "borough": "queens",
+    "lat": 40.775036,
+    "lng": -73.912034
+  },
+  {
+    "stop-name": "Astoria - Ditmars Blvd",
+    "url": "http://www.nydailynews.com/new-york/queens/world-best-q-uisine-astoria-article-1.1205272",
+    "subway-lines": "W",
+    "borough": "queens",
+    "lat": 40.775036,
+    "lng": -73.912034
+  },
+  {
+    "stop-name": "Astoria Blvd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-astoria-blvd-stop-article-1.1202619",
+    "subway-lines": "W",
+    "borough": "queens",
+    "lat": 40.770258,
+    "lng": -73.917843
+  },
+  {
+    "stop-name": "Beach 105th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-105th-st-stop-seaside-article-1.1874855",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.583209,
+    "lng": -73.827559
+  },
+  {
+    "stop-name": "Beach 90th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-new-old-beach-90th-st-article-1.1891509",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.588034,
+    "lng": -73.813641
+  },
+  {
+    "stop-name": "Beach 98th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-beach-98th-st-stop-seaside-queens-article-1.1882929",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.585307,
+    "lng": -73.820558
+  },
+  {
+    "stop-name": "Broad Channel",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-broad-channel-article-1.1898656",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.608382,
+    "lng": -73.815925
+  },
+  {
+    "stop-name": "Broadway",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-broadway-stop-astoria-article-1.1185840",
+    "subway-lines": "Q",
+    "borough": "queens",
+    "lat": 40.76182,
+    "lng": -73.925508
+  },
+  {
+    "stop-name": "Elmhurst Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-elmhurst-ave-station-article-1.1568834",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.742454,
+    "lng": -73.882017
+  },
+  {
+    "stop-name": "Flushing Main Street",
+    "url": "http://www.nydailynews.com/life-style/eats/hot-7-train-hunan-house-flushing-article-1.961059",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.7596,
+    "lng": -73.83003
+  },
+  {
+    "stop-name": "Forest Hills - 71st Av",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-71st-ave-forest-hills-article-1.1608621",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.721691,
+    "lng": -73.844521
+  },
+  {
+    "stop-name": "Grand Ave - Newtown",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-grand-ave-newtown-stop-article-1.1578124",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.737015,
+    "lng": -73.877223
+  },
+  {
+    "stop-name": "Howard Beach - JFK Airport",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-italian-specialties-howard-beach-article-1.1905239",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.660476,
+    "lng": -73.830301
+  },
+  {
+    "stop-name": "Hunters Point Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/old-world-southern-italian-food-manducatis-long-island-city-article-1.1019723",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.742216,
+    "lng": -73.948916
+  },
+  {
+    "stop-name": "Jackson Hts - Roosevelt Av",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-jackson-heights-roosevelt-ave-stop-article-1.1561718",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.746644,
+    "lng": -73.891338
+  },
+  {
+    "stop-name": "Jamaica Ctr - Parsons / ARcher",
+    "url": "http://www.nydailynews.com/life-style/eats/fried-ice-cream-trinidadian-jamaican-food-spice-queens-article-1.2825770",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.702147,
+    "lng": -73.801109
+  },
+  {
+    "stop-name": "Jamaica Ctr - Parsons / ARcher",
+    "url": "http://www.nydailynews.com/life-style/eats/fried-ice-cream-trinidadian-jamaican-food-spice-queens-article-1.2825770",
+    "subway-lines": "Z",
+    "borough": "queens",
+    "lat": 40.702147,
+    "lng": -73.801109
+  },
+  {
+    "stop-name": "Junction Blvd",
+    "url": "http://www.nydailynews.com/life-style/eats/peruvian-paradise-costa-verde-serves-best-latin-food-7-line-junction-blvd-article-1.975647",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.749145,
+    "lng": -73.869527
+  },
+  {
+    "stop-name": "Mets - Willets Point",
+    "url": "http://www.nydailynews.com/life-style/eats/dining-7-train-citi-field-article-1.964664",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.754622,
+    "lng": -73.845625
+  },
+  {
+    "stop-name": "Northern Blvd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-46th-st-northern-blvd-stops-article-1.1547186",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.752885,
+    "lng": -73.906006
+  },
+  {
+    "stop-name": "Queens Plz",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-queens-plaza-stop-article-1.1528464",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.748973,
+    "lng": -73.937243
+  },
+  {
+    "stop-name": "Queensboro Plz & 39th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-queensboro-plaza-39th-ave-stops-article-1.1172841",
+    "subway-lines": "Q",
+    "borough": "queens",
+    "lat": 40.750582,
+    "lng": -73.940202
+  },
+  {
+    "stop-name": "Rockaway Park - Beach 116th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-beach-116th-st-rockaway-park-article-1.1866304",
+    "subway-lines": "A",
+    "borough": "queens",
+    "lat": 40.580903,
+    "lng": -73.835592
+  },
+  {
+    "stop-name": "Steinway St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-steinway-st-astoria-article-1.1540144",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.756879,
+    "lng": -73.92074
+  },
+  {
+    "stop-name": "Sutphin Blvd - Archer Av",
+    "url": "http://www.nydailynews.com/life-style/eats/best-looking-nachos-deli-article-1.2834200",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.70546,
+    "lng": -73.810708
+  },
+  {
+    "stop-name": "Sutphin Blvd - Archer Av",
+    "url": "http://www.nydailynews.com/life-style/eats/best-looking-nachos-deli-article-1.2834200",
+    "subway-lines": "Z",
+    "borough": "queens",
+    "lat": 40.70546,
+    "lng": -73.810708
+  },
+  {
+    "stop-name": "Vernon Blvd - Jackson Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-7-line-sweetleaf-serves-great-espresso-long-island-city-article-1.1027687",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.742626,
+    "lng": -73.953581
+  },
+  {
+    "stop-name": "Woodhaven Blvd",
+    "url": "http://www.nydailynews.com/life-style/eats/score-turkey-shaped-chocolates-pizza-puffs-queens-article-1.2874279",
+    "subway-lines": "J",
+    "borough": "queens",
+    "lat": 40.693879,
+    "lng": -73.851576
+  },
+  {
+    "stop-name": "Woodhaven Blvd",
+    "url": "http://www.nydailynews.com/life-style/eats/score-turkey-shaped-chocolates-pizza-puffs-queens-article-1.2874279",
+    "subway-lines": "Z",
+    "borough": "queens",
+    "lat": 40.693879,
+    "lng": -73.851576
+  },
+  {
+    "stop-name": "Woodhaven Blvd - Queens Mall",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-woodhaven-blvd-stop-queens-article-1.1585521",
+    "subway-lines": "M",
+    "borough": "queens",
+    "lat": 40.733106,
+    "lng": -73.869229
+  },
+  {
+    "stop-name": "Woodside - 61st St",
+    "url": "http://www.nydailynews.com/life-style/eats/sapori-ischia-restaurant-offers-unique-italian-experience-woodside-queens-article-1.994867",
+    "subway-lines": 7,
+    "borough": "queens",
+    "lat": 40.74563,
+    "lng": -73.902984
+  }
+]

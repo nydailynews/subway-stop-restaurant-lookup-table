@@ -1,0 +1,994 @@
+[
+  {
+    "stop-name": "103rd St",
+    "url": "http://www.nydailynews.com/life-style/eats/quick-food-upper-west-side-banh-mi-indian-dishes-article-1.3634674",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.796092,
+    "lng": -73.961454
+  },
+  {
+    "stop-name": "116th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-b-line-home-cooking-take-out-eats-harlem-article-1.3678845",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.805085,
+    "lng": -73.954882
+  },
+  {
+    "stop-name": "116th Street",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-jay-z-approved-desserts-article-1.2394039",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.802098,
+    "lng": -73.949625
+  },
+  {
+    "stop-name": "116th Street",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-jay-z-approved-desserts-article-1.2394039",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.802098,
+    "lng": -73.949625
+  },
+  {
+    "stop-name": "125th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-e-125th-st-stop-article-1.1281993",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.804138,
+    "lng": -73.937594
+  },
+  {
+    "stop-name": "125th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-e-125th-st-stop-article-1.1281993",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.804138,
+    "lng": -73.937594
+  },
+  {
+    "stop-name": "125th St",
+    "url": "http://www.nydailynews.com/life-style/eating-line-125th-stop-harlem-article-1.2072722",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.811109,
+    "lng": -73.952343
+  },
+  {
+    "stop-name": "125th St",
+    "url": "http://www.nydailynews.com/life-style/eats/sylvia-isn-harlem-spot-score-great-comfort-food-article-1.3735169",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.811109,
+    "lng": -73.952343
+  },
+  {
+    "stop-name": "125th Street",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-shakes-pies-fish-harlem-article-1.2403001",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.807754,
+    "lng": -73.945495
+  },
+  {
+    "stop-name": "125th Street",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-shakes-pies-fish-harlem-article-1.2403001",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.807754,
+    "lng": -73.945495
+  },
+  {
+    "stop-name": "135th St",
+    "url": "http://www.nydailynews.com/life-style/eats/hip-hop-inspired-ice-cream-adds-harlem-culinary-cred-article-1.3746461",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.817894,
+    "lng": -73.947649
+  },
+  {
+    "stop-name": "135th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-135th-st-lenox-ave-article-1.2411671",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.814229,
+    "lng": -73.94077
+  },
+  {
+    "stop-name": "135th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-135th-st-lenox-ave-article-1.2411671",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.814229,
+    "lng": -73.94077
+  },
+  {
+    "stop-name": "145th St",
+    "url": "http://www.nydailynews.com/life-style/eats/a-line-harlem-offers-world-flavors-article-1.2081977",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.824783,
+    "lng": -73.944216
+  },
+  {
+    "stop-name": "145th St",
+    "url": "http://www.nydailynews.com/life-style/eats/best-grab-and-go-eateries-hamilton-heights-manhattan-article-1.3758200",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.824783,
+    "lng": -73.944216
+  },
+  {
+    "stop-name": "14th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-sweets-14th-st-8th-ave-article-1.2046023",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.740893,
+    "lng": -74.00169
+  },
+  {
+    "stop-name": "14th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-14th-st-sixth-ave-article-1.1478567",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.737826,
+    "lng": -74.000201
+  },
+  {
+    "stop-name": "14th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-sandwhich-village-14th-st-article-1.2326325",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.737826,
+    "lng": -74.000201
+  },
+  {
+    "stop-name": "14th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-sandwhich-village-14th-st-article-1.2326325",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.737826,
+    "lng": -74.000201
+  },
+  {
+    "stop-name": "155th St",
+    "url": "http://www.nydailynews.com/life-style/eats/score-tasty-hard-to-find-mexican-food-upper-manhattan-article-1.3772650",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.830135,
+    "lng": -73.938209
+  },
+  {
+    "stop-name": "168th St",
+    "url": "http://www.nydailynews.com/life-style/eating-line-washington-heights-168th-st-stop-article-1.2089892",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.840556,
+    "lng": -73.940133
+  },
+  {
+    "stop-name": "175th St",
+    "url": "http://www.nydailynews.com/life-style/eats/great-eats-washington-height-article-1.2106258",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.847391,
+    "lng": -73.939704
+  },
+  {
+    "stop-name": "181st St",
+    "url": "http://www.nydailynews.com/life-style/eats/line-181st-street-stop-article-1.2126313",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.851695,
+    "lng": -73.937969
+  },
+  {
+    "stop-name": "190th St",
+    "url": "http://www.nydailynews.com/life-style/eats/line-hudson-heights-article-1.2134488",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.859022,
+    "lng": -73.93418
+  },
+  {
+    "stop-name": "23rd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-23rd-st-sixth-ave-stop-article-1.1485018",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.742878,
+    "lng": -73.992821
+  },
+  {
+    "stop-name": "23rd St",
+    "url": "http://www.nydailynews.com/life-style/eats/skip-shake-shack-head-nearby-flatiron-takeout-spots-article-1.2685833",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.741303,
+    "lng": -73.989344
+  },
+  {
+    "stop-name": "28th St",
+    "url": "http://www.nydailynews.com/life-style/eats/korean-tacos-south-asian-snacks-nabe-article-1.2701504",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.745494,
+    "lng": -73.988691
+  },
+  {
+    "stop-name": "34th - Penn Station",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-good-options-penn-station-article-1.2343431",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.750373,
+    "lng": -73.991057
+  },
+  {
+    "stop-name": "34th - Penn Station",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-good-options-penn-station-article-1.2343431",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.750373,
+    "lng": -73.991057
+  },
+  {
+    "stop-name": "34th St - Penn Station",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-34th-st-stop-article-1.2054926",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.752287,
+    "lng": -73.993391
+  },
+  {
+    "stop-name": "42nd St - Bryant Park",
+    "url": "http://www.nydailynews.com/life-style/eats/street-eats-worth-stopping-midtown-bryant-park-article-1.3490328",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.754222,
+    "lng": -73.984569
+  },
+  {
+    "stop-name": "42nd St - Bryant Pk",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-42nd-st-47th-50th-sts-article-1.1499026",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.754222,
+    "lng": -73.984569
+  },
+  {
+    "stop-name": "42nd St - Port Authority Bus Terminal",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-42nd-st-8th-ave-stop-article-1.2057634",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.757308,
+    "lng": -73.989735
+  },
+  {
+    "stop-name": "47th-50th Sts - Rockefeller Ctr",
+    "url": "http://www.nydailynews.com/life-style/eats/delicious-dosas-await-rockefeller-center-subway-station-article-1.3509622",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.758663,
+    "lng": -73.981329
+  },
+  {
+    "stop-name": "49th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-toast-watering-holes-49th-st-stop-article-1.1152375",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.759901,
+    "lng": -73.984139
+  },
+  {
+    "stop-name": "49th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/theater-district-best-priced-lunches-found-article-1.2725744",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.759901,
+    "lng": -73.984139
+  },
+  {
+    "stop-name": "57th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-find-quick-bites-57th-st-stop-article-1.1157060",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.764664,
+    "lng": -73.980658
+  },
+  {
+    "stop-name": "57th Street",
+    "url": "http://www.nydailynews.com/life-style/eats/taste-elements-unique-lunches-midtown-article-1.2734063",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.764664,
+    "lng": -73.980658
+  },
+  {
+    "stop-name": "59th St - Columbus Circle",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-tasty-sandwiches-59th-st-article-1.2064260",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.768247,
+    "lng": -73.981929
+  },
+  {
+    "stop-name": "59th St - Columbus Circle",
+    "url": "http://www.nydailynews.com/life-style/eats/flawless-flatbread-donuts-subway-stop-dining-hotspot-article-1.3551508",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.768247,
+    "lng": -73.981929
+  },
+  {
+    "stop-name": "5th - 59th",
+    "url": "http://www.nydailynews.com/life-style/eats/pizza-rolls-picnic-perfect-food-central-park-article-1.2738669",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.764811,
+    "lng": -73.973347
+  },
+  {
+    "stop-name": "5th Ave - 53rd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-ave-53rd-st-stop-article-1.1506238",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.760167,
+    "lng": -73.975224
+  },
+  {
+    "stop-name": "5th Ave - 59th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-plaza-food-hall-57th-st-ave-stop-article-1.1162272",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.764811,
+    "lng": -73.973347
+  },
+  {
+    "stop-name": "5th Ave - Bryant Park",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-7-japanese-bakery-cafe-zaiya-affordable-lunch-spot-overlooking-bryant-park-article-1.1035483",
+    "subway-lines": 7,
+    "borough": "manhattan",
+    "lat": 40.753851,
+    "lng": -73.981854
+  },
+  {
+    "stop-name": "72nd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-b-line-tasty-cheap-eats-upper-west-side-article-1.3567329",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.775594,
+    "lng": -73.97641
+  },
+  {
+    "stop-name": "72nd St",
+    "url": "http://www.nydailynews.com/life-style/don-dim-sum-upper-east-side-lenox-hill-area-article-1.3180101",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.768633,
+    "lng": 73.958481
+  },
+  {
+    "stop-name": "72nd Street",
+    "url": "http://www.nydailynews.com/new-york/eating-2-line-lunch-spots-72nd-st-article-1.2371548",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.778453,
+    "lng": -73.98197
+  },
+  {
+    "stop-name": "72nd Street",
+    "url": "http://www.nydailynews.com/new-york/eating-2-line-lunch-spots-72nd-st-article-1.2371548",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.778453,
+    "lng": -73.98197
+  },
+  {
+    "stop-name": "7th Ave",
+    "url": "http://www.nydailynews.com/life-style/eats/top-midtown-lunch-spots-include-deli-made-famous-late-show-article-1.3523421",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.67705,
+    "lng": -73.972367
+  },
+  {
+    "stop-name": "81st St",
+    "url": "http://www.nydailynews.com/life-style/eats/5-delicious-meals-snacks-5-upper-west-side-article-1.3583825",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.781433,
+    "lng": -73.972143
+  },
+  {
+    "stop-name": "86th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-86th-st-stop-article-1.1288638",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.779492,
+    "lng": -73.955589
+  },
+  {
+    "stop-name": "86th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-86th-st-stop-article-1.1288638",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.779492,
+    "lng": -73.955589
+  },
+  {
+    "stop-name": "86th St",
+    "url": "http://www.nydailynews.com/life-style/eats/2-menu-great-grub-deals-central-park-west-article-1.3602394",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.785868,
+    "lng": -73.968916
+  },
+  {
+    "stop-name": "86th St",
+    "url": "http://www.nydailynews.com/life-style/eats/cannoli-cream-french-toast-strawberries-article-1.3207418",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.777843,
+    "lng": -73.951653
+  },
+  {
+    "stop-name": "8th - NYU",
+    "url": "http://www.nydailynews.com/life-style/eats/first-rate-frozen-yogurt-awaits-greenwich-village-article-1.2672023",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.730712,
+    "lng": -73.992726
+  },
+  {
+    "stop-name": "96th St",
+    "url": "http://www.nydailynews.com/life-style/eats/avocado-toast-middle-eastern-twist-fave-nabe-article-1.3622210",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.791646,
+    "lng": -73.964699
+  },
+  {
+    "stop-name": "96th Street",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-upper-west-side-spots-flavor-article-1.2380027",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.793919,
+    "lng": -73.972323
+  },
+  {
+    "stop-name": "96th Street",
+    "url": "http://www.nydailynews.com/life-style/eating-2-line-upper-west-side-spots-flavor-article-1.2380027",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.793919,
+    "lng": -73.972323
+  },
+  {
+    "stop-name": "Bowery",
+    "url": "http://www.nydailynews.com/life-style/bruleed-peeps-japanese-curry-must-try-treats-bowery-article-1.3031514",
+    "subway-lines": "J",
+    "borough": "manhattan",
+    "lat": 40.72028,
+    "lng": -73.993915
+  },
+  {
+    "stop-name": "Bowery",
+    "url": "http://www.nydailynews.com/life-style/bruleed-peeps-japanese-curry-must-try-treats-bowery-article-1.3031514",
+    "subway-lines": "Z",
+    "borough": "manhattan",
+    "lat": 40.72028,
+    "lng": -73.993915
+  },
+  {
+    "stop-name": "Broad St",
+    "url": "http://www.nydailynews.com/life-style/spots-serve-quick-tasty-lunches-financial-district-article-1.3150098",
+    "subway-lines": "J",
+    "borough": "manhattan",
+    "lat": 40.706476,
+    "lng": -74.011056
+  },
+  {
+    "stop-name": "Broad St",
+    "url": "http://www.nydailynews.com/life-style/spots-serve-quick-tasty-lunches-financial-district-article-1.3150098",
+    "subway-lines": "Z",
+    "borough": "manhattan",
+    "lat": 40.706476,
+    "lng": -74.011056
+  },
+  {
+    "stop-name": "Broadwat - Lafayette St",
+    "url": "http://www.nydailynews.com/life-style/eats/churro-sundaes-tasty-sweets-line-nolita-train-stop-article-1.3423568",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.725297,
+    "lng": -73.996204
+  },
+  {
+    "stop-name": "Broadway - Lafayette St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-broadway-lafayette-stop-article-1.1464988",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.725297,
+    "lng": -73.996204
+  },
+  {
+    "stop-name": "Brooklyn Bridge - City Hall",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-brooklyn-bridge-city-hall-stop-article-1.1317577",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.711824,
+    "lng": -74.005057
+  },
+  {
+    "stop-name": "Brooklyn Bridge - City Hall",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-brooklyn-bridge-city-hall-stop-article-1.1317577",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.711824,
+    "lng": -74.005057
+  },
+  {
+    "stop-name": "Canal St",
+    "url": "http://www.nydailynews.com/life-style/dole-whip-disney-world-article-1.3053277",
+    "subway-lines": "J",
+    "borough": "manhattan",
+    "lat": 40.718092,
+    "lng": -73.999892
+  },
+  {
+    "stop-name": "Canal St",
+    "url": "http://www.nydailynews.com/life-style/dole-whip-disney-world-article-1.3053277",
+    "subway-lines": "Z",
+    "borough": "manhattan",
+    "lat": 40.718092,
+    "lng": -73.999892
+  },
+  {
+    "stop-name": "Canal St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-cheap-eats-canal-st-article-1.1131549",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.718092,
+    "lng": -73.999892
+  },
+  {
+    "stop-name": "Canal Street",
+    "url": "http://www.nydailynews.com/life-style/eats/chinatown-tastiest-treats-lava-cake-scallion-rolls-article-1.2655817",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.718092,
+    "lng": -73.999892
+  },
+  {
+    "stop-name": "Canal Street - Holland Tunnel",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-canal-st-stop-article-1.2011535",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.720824,
+    "lng": -74.005229
+  },
+  {
+    "stop-name": "Cathedral Pkwy (110th St)",
+    "url": "http://www.nydailynews.com/life-style/eats/suprisingly-good-cheap-meals-line-upper-west-side-train-sto-article-1.3662798",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.800605,
+    "lng": -73.958158
+  },
+  {
+    "stop-name": "Central Park North",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-central-park-north-station-article-1.2383551",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.799075,
+    "lng": -73.951822
+  },
+  {
+    "stop-name": "Central Park North",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-central-park-north-station-article-1.2383551",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.799075,
+    "lng": -73.951822
+  },
+  {
+    "stop-name": "Chambers St",
+    "url": "http://www.nydailynews.com/life-style/tasty-asian-buns-dumplings-curry-train-stop-article-1.3099529",
+    "subway-lines": "J",
+    "borough": "manhattan",
+    "lat": 40.713243,
+    "lng": -74.003401
+  },
+  {
+    "stop-name": "Chambers St",
+    "url": "http://www.nydailynews.com/life-style/tasty-asian-buns-dumplings-curry-train-stop-article-1.3099529",
+    "subway-lines": "Z",
+    "borough": "manhattan",
+    "lat": 40.713243,
+    "lng": -74.003401
+  },
+  {
+    "stop-name": "Chambers St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-chambers-st-stop-bargains-article-1.2310916",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.714111,
+    "lng": -74.008585
+  },
+  {
+    "stop-name": "Chambers St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-chambers-st-stop-bargains-article-1.2310916",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.714111,
+    "lng": -74.008585
+  },
+  {
+    "stop-name": "Chambers St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-sweet-savory-chambers-st-article-1.2004963",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.714111,
+    "lng": -74.008585
+  },
+  {
+    "stop-name": "Dyckman St",
+    "url": "http://www.nydailynews.com/life-style/eats/a-line-eat-drink-upper-manhattan-article-1.2148672",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.865491,
+    "lng": -73.927271
+  },
+  {
+    "stop-name": "Essex St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-essex-delancey-article-1.1457531",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.718315,
+    "lng": -73.987437
+  },
+  {
+    "stop-name": "Essex St",
+    "url": "http://www.nydailynews.com/life-style/nordic-sandwiches-unique-food-essex-street-market-article-1.3020737",
+    "subway-lines": "J",
+    "borough": "manhattan",
+    "lat": 40.718315,
+    "lng": -73.987437
+  },
+  {
+    "stop-name": "Essex St",
+    "url": "http://www.nydailynews.com/life-style/nordic-sandwiches-unique-food-essex-street-market-article-1.3020737",
+    "subway-lines": "Z",
+    "borough": "manhattan",
+    "lat": 40.718315,
+    "lng": -73.987437
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-fulton-st-article-1.1326473",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.709416,
+    "lng": -74.006571
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-fulton-st-article-1.1326473",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.709416,
+    "lng": -74.006571
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/great-healthy-lunch-downtown-manhattan-article-1.3123843",
+    "subway-lines": "J",
+    "borough": "manhattan",
+    "lat": 40.709416,
+    "lng": -74.006571
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/great-healthy-lunch-downtown-manhattan-article-1.3123843",
+    "subway-lines": "Z",
+    "borough": "manhattan",
+    "lat": 40.687119,
+    "lng": -73.975375
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-fulton-st-area-diverse-treats-article-1.2297935",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.709416,
+    "lng": -74.006571
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-fulton-st-area-diverse-treats-article-1.2297935",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.709416,
+    "lng": -74.006571
+  },
+  {
+    "stop-name": "Fulton St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-line-hoagies-aussie-coffee-korean-article-1.1996866",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.709416,
+    "lng": -74.006571
+  },
+  {
+    "stop-name": "Grand Central - 42nd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-grand-central-area-article-1.1301627",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.751431,
+    "lng": -73.976041
+  },
+  {
+    "stop-name": "Grand Central - 42nd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-grand-central-area-article-1.1301627",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.751431,
+    "lng": -73.976041
+  },
+  {
+    "stop-name": "Grand Central - 42nd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-7-line-grand-central-terminal-great-food-stop-manhattan-article-1.1031914",
+    "subway-lines": 7,
+    "borough": "manhattan",
+    "lat": 40.751431,
+    "lng": -73.976041
+  },
+  {
+    "stop-name": "Grand St",
+    "url": "http://www.nydailynews.com/life-style/eats/new-york-best-2-lunch-tasty-cheap-chinatown-options-article-1.3411059",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.718267,
+    "lng": -73.993753
+  },
+  {
+    "stop-name": "Herald Sq - 34th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-treats-herald-square-article-1.1492908",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.749719,
+    "lng": -73.987823
+  },
+  {
+    "stop-name": "Herald Sq - 34th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-tasty-stops-busy-herald-square-commuters-article-1.1141139",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.749719,
+    "lng": -73.987823
+  },
+  {
+    "stop-name": "Herald Square - 34th",
+    "url": "http://www.nydailynews.com/life-style/eats/beat-heat-wave-cool-koreatown-treats-dishes-article-1.2707402",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.749719,
+    "lng": -73.987823
+  },
+  {
+    "stop-name": "Herald Square - 34th St",
+    "url": "http://www.nydailynews.com/life-style/eats/miss-korean-fast-food-midtown-food-hall-article-1.3471066",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.749719,
+    "lng": -73.987823
+  },
+  {
+    "stop-name": "Inwood - 207th St",
+    "url": "http://www.nydailynews.com/life-style/eats/inwood-darling-coffee-piper-kilt-g-coffee-article-1.2159519",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.868072,
+    "lng": -73.919899
+  },
+  {
+    "stop-name": "Lexington - 53rd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-lexington-ave-53rd-st-stop-article-1.1510848",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.757552,
+    "lng": -73.969055
+  },
+  {
+    "stop-name": "Lexington - 59th",
+    "url": "http://www.nydailynews.com/life-style/eats/midtown-east-restaurant-row-offers-fast-food-big-flavor-article-1.2752216",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.762526,
+    "lng": -73.967967
+  },
+  {
+    "stop-name": "Lexington - 59th",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-59th-st-sto-article-1.1294211",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.762526,
+    "lng": -73.967967
+  },
+  {
+    "stop-name": "Lexington - 59th",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-59th-st-sto-article-1.1294211",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.762526,
+    "lng": -73.967967
+  },
+  {
+    "stop-name": "Lexington Ave - 59th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-classic-joints-lexington-ave-59th-st-stop-don-disappoint-article-1.1169364",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.762526,
+    "lng": -73.967967
+  },
+  {
+    "stop-name": "Lexington Ave - 63rd St",
+    "url": "http://www.nydailynews.com/life-style/score-roman-style-pizza-new-lenox-hill-q-train-stop-article-1.3167988",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.764606,
+    "lng": 73.966124
+  },
+  {
+    "stop-name": "Park Place",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-park-place-offers-options-article-1.2305928",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.713051,
+    "lng": -74.008811
+  },
+  {
+    "stop-name": "Park Place",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-park-place-offers-options-article-1.2305928",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.713051,
+    "lng": -74.008811
+  },
+  {
+    "stop-name": "Prince Street",
+    "url": "http://www.nydailynews.com/life-style/eats/granola-chocolate-looked-good-article-1.2664328",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.724329,
+    "lng": -73.997702
+  },
+  {
+    "stop-name": "Times Square - 42nd",
+    "url": "http://www.nydailynews.com/life-style/eats/times-square-takeout-food-doesn-terrible-article-1.2717320",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.754672,
+    "lng": -73.986754
+  },
+  {
+    "stop-name": "Times Square - 42nd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-times-square-eating-purists-article-1.2359920",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.757308,
+    "lng": -73.989735
+  },
+  {
+    "stop-name": "Times Square - 42nd",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-times-square-eating-purists-article-1.2359920",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.757308,
+    "lng": -73.989735
+  },
+  {
+    "stop-name": "Times Square - 42nd",
+    "url": "http://www.nydailynews.com/life-style/eats/dining-7-line-town-nyc-article-1.1040860",
+    "subway-lines": 7,
+    "borough": "manhattan",
+    "lat": 40.757308,
+    "lng": -73.989735
+  },
+  {
+    "stop-name": "Times Square - 42nd St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-tourist-mecca-times-square-gourmet-article-1.1145606",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.757308,
+    "lng": -73.989735
+  },
+  {
+    "stop-name": "Union Sq - 14th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-14th-st-article-1.1307793",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.734789,
+    "lng": -73.99073
+  },
+  {
+    "stop-name": "Union Sq - 14th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-14th-st-article-1.1307793",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.734789,
+    "lng": -73.99073
+  },
+  {
+    "stop-name": "Union Sq - 14th St",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-q-line-union-square-home-crowded-new-street-food-scene-article-1.1137075",
+    "subway-lines": "Q",
+    "borough": "manhattan",
+    "lat": 40.734789,
+    "lng": -73.99073
+  },
+  {
+    "stop-name": "Union Square - 14th",
+    "url": "http://www.nydailynews.com/life-style/eats/best-casual-bites-union-square-park-article-1.2680891",
+    "subway-lines": "n",
+    "borough": "manhattan",
+    "lat": 40.734789,
+    "lng": -73.99073
+  },
+  {
+    "stop-name": "W 4th St - Washington Sq",
+    "url": "http://www.nydailynews.com/life-style/eats/line-kopi-kopi-pepe-rosso-ny-dosas-article-1.2019316",
+    "subway-lines": "A",
+    "borough": "manhattan",
+    "lat": 40.732338,
+    "lng": -74.000495
+  },
+  {
+    "stop-name": "W 4th St - Washington Sq",
+    "url": "http://www.nydailynews.com/life-style/eats/great-food-new-york-university-spots-article-1.3452870",
+    "subway-lines": "B",
+    "borough": "manhattan",
+    "lat": 40.732338,
+    "lng": -74.000495
+  },
+  {
+    "stop-name": "W 4th St - Washington Sq",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-m-line-w-fourth-st-article-1.1470084",
+    "subway-lines": "M",
+    "borough": "manhattan",
+    "lat": 40.732338,
+    "lng": -74.000495
+  },
+  {
+    "stop-name": "Wall St & Bowling Green",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-wall-st-bowling-green-article-1.1333431",
+    "subway-lines": 4,
+    "borough": "manhattan",
+    "lat": 40.707557,
+    "lng": -74.011862
+  },
+  {
+    "stop-name": "Wall St & Bowling Green",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-4-line-wall-st-bowling-green-article-1.1333431",
+    "subway-lines": 5,
+    "borough": "manhattan",
+    "lat": 40.707557,
+    "lng": -74.011862
+  },
+  {
+    "stop-name": "Wall Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-wall-st-cheap-article-1.2288297",
+    "subway-lines": 2,
+    "borough": "manhattan",
+    "lat": 40.706821,
+    "lng": -74.0091
+  },
+  {
+    "stop-name": "Wall Street",
+    "url": "http://www.nydailynews.com/life-style/eats/eating-2-line-wall-st-cheap-article-1.2288297",
+    "subway-lines": 3,
+    "borough": "manhattan",
+    "lat": 40.706821,
+    "lng": -74.0091
+  }
+]
